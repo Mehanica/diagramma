@@ -5,7 +5,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/ElMessiri-Bold.ttf") format("ttf");
+    url("../fonts/el-messiri-latin-bold.woff2") format("woff2"),
+    url("../fonts/el-messiri-latin-bold.woff") format("woff");
 }
 
 @font-face {
@@ -15,7 +16,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/ElMessiri-SemiBold.ttf") format("ttf");
+    url("../fonts/el-messiri-latin-semibold.woff2") format("woff2"),
+    url("../fonts/el-messiri-latin-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -25,7 +27,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/ElMessiri-Medum.ttf") format("ttf");
+    url("../fonts/el-messiri-latin-medium.woff2") format("woff2"),
+    url("../fonts/el-messiri-latin-medium.woff") format("woff");
 }
 
 
@@ -36,7 +39,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/ElMessiri-Regular.ttf") format("ttf");
+    url("../fonts/el-messiri-latin-regular.woff2") format("woff2"),
+    url("../fonts/el-messiri-latin-regular.woff") format("woff");
 }
 
 @font-face {
@@ -46,7 +50,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-Bold.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-bold.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-bold.woff") format("woff");
 }
 
 @font-face {
@@ -56,7 +61,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-BoldItalic.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-bold-italic.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-bold-italic.woff") format("woff");
 }
 
 @font-face {
@@ -66,7 +72,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-Medum.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-medium.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-medium.woff") format("woff");
 }
 
 @font-face {
@@ -76,7 +83,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-MedumItalic.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-medium.italic.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-medium.italic.woff") format("woff");
 }
 
 @font-face {
@@ -86,7 +94,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-Regular.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-regular.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-regular.woff") format("woff");
 }
 
 @font-face {
@@ -96,7 +105,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-RegularItalic.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-regular-italic.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-regular-italic.woff") format("woff");
 }
 
 @font-face {
@@ -106,7 +116,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-Light.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-light.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-light.woff") format("woff");
 }
 
 @font-face {
@@ -116,7 +127,8 @@
 
   font-display: swap;
   src:
-    url("../fonts/Ubuntu-LightItalic.ttf") format("ttf");
+    url("../fonts/ubuntu-latin-light-italic.woff2") format("woff2"),
+    url("../fonts/ubuntu-latin-light-italic.woff") format("woff");
 }
 
 
