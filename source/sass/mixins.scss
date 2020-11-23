@@ -30,28 +30,66 @@
   }
 }
 
-// Mobile first
+@mixin font($mod) {
+  margin: 0;
 
-/* @mixin viewport--md {
-  @media (min-width: $viewport--md) {
-    @content;
+  font-weight: 400;
+
+  @if $mod == h1 {
+    font-weight: 500;
+    font-size: 106px;
+    line-height: 112px;
+    font-family: 'El Messiri';
+
+    @include viewport--sm {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+  } @else if $mod == h2 {
+
+    color: $color-carrot-orange;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 68px;
+    font-family: 'El Messiri';
+
+    @include viewport--sm {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+  } @else if $mod == h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    font-family: 'Ubuntu';
+
+    @include viewport--sm {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  } @else if $mod == h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'El Messiri';
+
+  } @else if $mod == h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Ubuntu';
+
+  } @else if $mod == h6 {
+    color: $color-elm;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Ubuntu';
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
   }
 }
 
-@mixin viewport--lg {
-  @media (min-width: $viewport--lg) {
-    @content;
-  }
-}
-
-@mixin viewport--xl {
-  @media (min-width: $viewport--xl) {
-    @content;
-  }
-}
-
-@mixin viewport--xxl {
-  @media (min-width: $viewport--xxl) {
-    @content;
-  }
-} */

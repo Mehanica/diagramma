@@ -1,10 +1,122 @@
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: 700;
+  font-family: "El Messiri";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/ElMessiri-Bold.ttf") format("ttf");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "El Messiri";
+
+  font-display: swap;
+  src:
+    url("../fonts/ElMessiri-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "El Messiri";
+
+  font-display: swap;
+  src:
+    url("../fonts/ElMessiri-Medum.ttf") format("ttf");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "El Messiri";
+
+  font-display: swap;
+  src:
+    url("../fonts/ElMessiri-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-BoldItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-Medum.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-MedumItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-RegularItalic.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Ubuntu";
+
+  font-display: swap;
+  src:
+    url("../fonts/Ubuntu-LightItalic.ttf") format("ttf");
+}
+
+

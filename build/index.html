@@ -1,4 +1,8 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Makfa">
@@ -24,3 +28,74 @@
 <link rel="preload" href="fonts/Ubuntu-Medum.ttf" as="font" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Список страниц</title>
+
+  <style>
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      color: #f39d23;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      font-family: 'El Messiri';
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 7px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      ol {
+        padding-left: 20px;
+      }
+
+      ol li {
+        margin-bottom: 15px;
+      }
+
+      .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x"  width="168" alt="Логотип проекта">
+      <h1>Список страниц и компонентов</h1>
+      <ol>
+        <li>
+          <a href="components.html">UI Kit — components.html</a>
+        </li>
+        <li>
+          <a href="main.html">Главная — main.html</a>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+</body>
+</html>
