@@ -1,0 +1,47 @@
+.main-nav {
+  display: flex;
+  align-self: flex-start;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 24px);
+    margin: 0 0 -24px;
+
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    display: flex;
+
+    color: $color-default-white;
+    font-family: $font-family--Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+
+    transition: color $default-transition-settings;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-carrot-orange;
+      }
+    }
+
+    &:active {
+      color: $color-elm;
+    }
+  }
+}

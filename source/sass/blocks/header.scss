@@ -1,14 +1,16 @@
 .header {
+  position: relative;
   display: flex;
-  align-items: center;
-  min-height: 100px;
-  padding: 0 40px;
+  min-height: 84px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   background-color: $color-transparent;
 
   &__wrapper {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   a,
@@ -16,18 +18,12 @@
     color: $color-default-white;
   }
 
-  ul {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
-    padding: 0;
-
-    list-style: none;
-
-    li {
-      margin-right: 20px;
-    }
+  &__social {
+    margin-left: auto;
+    position: relative;
+    right: -10.2%;
+    top: -7px;
+    max-width: 162px;
   }
 
   .main-nav__toggle {
