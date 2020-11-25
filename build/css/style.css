@@ -915,7 +915,7 @@ button,
     transition: fill 0.3s ease; }
   @media (hover: hover), screen and (min-width: 0\0) {
     .footer__designed:hover span, .footer__designed:focus span {
-      color: #f39d23; }
+      color: #ffffff; }
     .footer__designed:hover svg, .footer__designed:focus svg {
       fill: #f39d23; } }
   .footer__designed:active span {
