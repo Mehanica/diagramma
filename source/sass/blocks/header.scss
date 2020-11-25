@@ -66,6 +66,37 @@
       &--active {
         display: flex;
 
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 79px;
+          height: 80px;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &::before {
+          top: 73px;
+          right: 23.5%;
+          background-image: url('../img/bg/farfalle-1@1x.png');
+
+          @include retina {
+            background-image: url("../img/bg/farfalle-1@2x.png");
+          }
+        }
+
+        &::after {
+          top: 150px;
+          right: 6.5%;
+          background-image: url('../img/bg/farfalle-2@1x.png');
+
+          @include retina {
+            background-image: url("../img/bg/farfalle-2@2x.png");
+          }
+        }
+
         .header__menu-logo {
           display: none;
 
