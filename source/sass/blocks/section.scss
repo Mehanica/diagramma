@@ -1,0 +1,13 @@
+.section {
+  &__category {
+    @include font(h6);
+  }
+
+  &__heading {
+    @include font(h2);
+  }
+
+  &__intro {
+    @include font(h3);
+  }
+}
