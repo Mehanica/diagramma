@@ -671,6 +671,8 @@ button,
         left: 16px; } }
   .header__menu-logo {
     display: none; }
+  .header__bg-image-1, .header__bg-image-2 {
+    display: none; }
   .header__menu-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -705,29 +707,28 @@ button,
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          .header__menu-wrapper--active::before, .header__menu-wrapper--active::after {
-            content: "";
+          .header__menu-wrapper--active .header__bg-image-1,
+          .header__menu-wrapper--active .header__bg-image-2 {
+            display: block;
             position: absolute;
             width: 79px;
-            height: 80px;
-            background-repeat: no-repeat;
-            background-size: cover; }
-          .header__menu-wrapper--active::before {
+            height: 80px; }
+            .header__menu-wrapper--active .header__bg-image-1 img,
+            .header__menu-wrapper--active .header__bg-image-2 img {
+              width: auto;
+              height: auto;
+              max-height: 100%;
+              -o-object-fit: contain;
+                 object-fit: contain;
+              /* stylelint-disable */
+              font-family: 'object-fit: contain;';
+              /* stylelint-enable */ }
+          .header__menu-wrapper--active .header__bg-image-1 {
             top: 73px;
-            right: 23.5%;
-            background-image: url("../img/bg/farfalle-1@1x.png"); } }
-      @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-        .header__menu-wrapper--active::before {
-          background-image: url("../img/bg/farfalle-1@2x.png"); } }
-    @media (max-width: 767px) {
-          .header__menu-wrapper--active::after {
+            right: 23.5%; }
+          .header__menu-wrapper--active .header__bg-image-2 {
             top: 150px;
-            right: 6.5%;
-            background-image: url("../img/bg/farfalle-2@1x.png"); } }
-      @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-        .header__menu-wrapper--active::after {
-          background-image: url("../img/bg/farfalle-2@2x.png"); } }
-    @media (max-width: 767px) {
+            right: 6.5%; }
           .header__menu-wrapper--active .header__menu-logo {
             display: none; } }
       @media (max-width: 767px) and (max-width: 767px) {
