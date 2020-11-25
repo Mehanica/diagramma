@@ -1,16 +1,21 @@
 .main-nav {
   display: flex;
-  align-self: flex-start;
+
+
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + 24px);
+    // width: calc(100% + 24px);
     margin: 0 0 -24px;
 
     padding: 0;
 
     list-style: none;
+
+    @include viewport--sm {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -42,6 +47,12 @@
 
     &:active {
       color: $color-elm;
+    }
+  }
+
+  &__link--ttup-mobile:not(.hack-selector) {
+    @include viewport--sm {
+      text-transform: uppercase;
     }
   }
 }
