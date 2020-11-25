@@ -1,6 +1,84 @@
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
-  background-color: $color-dark-green-2;
+  background-color: $color-dark-green;
+
+  @include viewport--sm {
+    flex-direction: column;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+
+  &__copyright {
+    color: $color-cyprus;
+    font-family:$font-family--Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  &__social {
+    margin-right: 23px;
+
+    @include viewport--sm {
+      order: -1;
+      margin-right: -14px;
+      margin-bottom: -6px;
+
+      .social__item {
+        margin-right: 14px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  &__designed {
+
+    span {
+      color: $color-cyprus;
+      font-family: $font-family--Ubuntu;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 32px;
+
+      transition: color $default-transition-settings;
+    }
+
+    svg {
+      fill: $color-default-white;
+
+      transition: fill $default-transition-settings;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        span {
+          color: $color-carrot-orange;
+        }
+
+        svg {
+          fill: $color-carrot-orange;
+        }
+      }
+    }
+
+    &:active {
+      span {
+        color: $color-elm;
+      }
+
+      svg {
+        fill: $color-elm;
+      }
+    }
+  }
 }

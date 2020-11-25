@@ -7,8 +7,14 @@
 
   background-color: $color-transparent;
 
+  @include viewport--md {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   @include viewport--sm {
-    min-height: 62px;
+    min-height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
   }

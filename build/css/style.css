@@ -640,9 +640,14 @@ button,
   padding-top: 35px;
   padding-bottom: 35px;
   background-color: rgba(255, 255, 255, 0); }
+  @media (max-width: 1023px) {
+    .header {
+      min-height: auto;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   @media (max-width: 767px) {
     .header {
-      min-height: 62px;
+      min-height: auto;
       padding-top: 15px;
       padding-bottom: 15px; } }
   .header__wrapper {
@@ -854,9 +859,69 @@ button,
         background-color: #248274; }
 
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
-  background-color: #032B25; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #07352e; }
+  @media (max-width: 767px) {
+    .footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-top: 29px;
+      padding-bottom: 29px; } }
+  .footer__copyright {
+    color: #0c4c42;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    text-transform: uppercase; }
+  .footer__social {
+    margin-right: 23px; }
+    @media (max-width: 767px) {
+      .footer__social {
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+        margin-right: -14px;
+        margin-bottom: -6px; }
+        .footer__social .social__item {
+          margin-right: 14px;
+          margin-bottom: 14px; } }
+  .footer__designed span {
+    color: #0c4c42;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  .footer__designed svg {
+    fill: #ffffff;
+    -webkit-transition: fill 0.3s ease;
+    transition: fill 0.3s ease; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .footer__designed:hover span, .footer__designed:focus span {
+      color: #f39d23; }
+    .footer__designed:hover svg, .footer__designed:focus svg {
+      fill: #f39d23; } }
+  .footer__designed:active span {
+    color: #248274; }
+  .footer__designed:active svg {
+    fill: #248274; }
 
 .modal {
   position: fixed;
