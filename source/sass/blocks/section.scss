@@ -1,10 +1,34 @@
 .section {
+  margin-bottom: 130px;
+
+  @include viewport--xxl {
+    margin-bottom: 85px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 45px;
+  }
+
   &__category {
     @include font(h6);
+
+    display: block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    @include viewport--sm {
+      margin-bottom: 17px;
+    }
   }
 
   &__heading {
     @include font(h2);
+
+    margin-bottom: 12px;
+
+    @include viewport--sm {
+      margin-bottom: 9px;
+    }
   }
 
   &__intro {
