@@ -669,7 +669,8 @@ button,
         position: absolute;
         top: 15px;
         left: 16px;
-        width: 108px; } }
+        width: 108px;
+        z-index: 10; } }
   .header__menu-logo {
     display: none; }
   .header__bg-image-1, .header__bg-image-2 {

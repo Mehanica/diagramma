@@ -39,7 +39,7 @@
     max-width: 40%;
     margin-bottom: 9px;
 
-    @include viewport--xl {
+    @include viewport--xxl {
       margin-bottom: 49px;
     }
 
@@ -116,7 +116,7 @@
 
     border-radius: 50%;
 
-    @include viewport--xl {
+    @include viewport--xxl {
       width: 128px;
       height: 128px;
     }
@@ -137,7 +137,7 @@
         width: 64px;
         fill: $color-niagara;
 
-        @include viewport--xl {
+        @include viewport--xxl {
           width: 48px;
         }
 
@@ -157,7 +157,7 @@
         width: 76px;
         fill: $color-mandy;
 
-        @include viewport--xl {
+        @include viewport--xxl {
           width: 58px;
         }
 
@@ -177,7 +177,7 @@
         width: 64px;
         fill: $color-gamboge;
 
-        @include viewport--xl {
+        @include viewport--xxl {
           width: 48px;
         }
 
