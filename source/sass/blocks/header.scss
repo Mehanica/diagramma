@@ -38,10 +38,18 @@
       position: absolute;
       top: 15px;
       left: 16px;
+      width: 108px;
+
+      z-index: 10;
     }
   }
 
   &__menu-logo {
+    display: none;
+  }
+
+  &__bg-image-1,
+  &__bg-image-2 {
     display: none;
   }
 
@@ -72,35 +80,32 @@
       &--active {
         display: flex;
 
-        &::before,
-        &::after {
-          content: "";
+        .header__bg-image-1,
+        .header__bg-image-2 {
+          display: block;
           position: absolute;
           width: 79px;
           height: 80px;
 
-          background-repeat: no-repeat;
-          background-size: cover;
+          img {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            /* stylelint-disable */
+            font-family: 'object-fit: contain;';
+            /* stylelint-enable */
+          }
         }
 
-        &::before {
+        .header__bg-image-1 {
           top: 73px;
           right: 23.5%;
-          background-image: url('../img/bg/farfalle-1@1x.png');
-
-          @include retina {
-            background-image: url("../img/bg/farfalle-1@2x.png");
-          }
         }
 
-        &::after {
+        .header__bg-image-2 {
           top: 150px;
           right: 6.5%;
-          background-image: url('../img/bg/farfalle-2@1x.png');
-
-          @include retina {
-            background-image: url("../img/bg/farfalle-2@2x.png");
-          }
         }
 
         .header__menu-logo {
