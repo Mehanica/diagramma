@@ -1,7 +1,4 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-height: auto;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -9,9 +6,18 @@
   background-color: $color-dark-green;
 
   @include viewport--sm {
-    flex-direction: column;
     padding-top: 29px;
     padding-bottom: 29px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include viewport--sm {
+      flex-direction: column;
+    }
   }
 
   &__copyright {
@@ -62,7 +68,7 @@
       &:hover,
       &:focus {
         span {
-          color: $color-carrot-orange;
+          color: $color-default-white;
         }
 
         svg {
