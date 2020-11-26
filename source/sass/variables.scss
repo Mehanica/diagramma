@@ -27,7 +27,9 @@ $color-dark-green-2:              #032B25;
 
 // Opacity
 $color-black-semitransparent:     rgba($color-default-black, 0.7); // оверлей
-$color-elm-semitransparent:       rgba($color-elm, 0.3); // круги в hero
+$color-elm-semitransparent-03:       rgba($color-elm, 0.3);
+$color-elm-semitransparent-02:       rgba($color-elm, 0.2);
+$color-elm-semitransparent-01:       rgba($color-elm, 0.1);
 
 
 // Gradient
@@ -55,11 +57,13 @@ $modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 // Viewports
 //---------------------------------
 
-$viewport--sm:                      320px;
+$viewport--xs:                      320px;
+$viewport--sm:                      540px;
 $viewport--md:                      768px;
 $viewport--lg:                      1024px;
 $viewport--xl:                      1440px;
-$viewport--xxl:                     1920px;
+$viewport--xxl:                     1560px;
+$viewport--xxxl:                    1920px;
 
 // Retina
 //---------------------------------

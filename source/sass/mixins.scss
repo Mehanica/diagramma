@@ -6,6 +6,12 @@
 
 // Desktop first
 
+@mixin viewport--xxl {
+  @media (max-width: $viewport--xxxl - 1) {
+    @content;
+  }
+}
+
 @mixin viewport--xl {
   @media (max-width: $viewport--xxl - 1) {
     @content;
@@ -30,6 +36,12 @@
   }
 }
 
+@mixin viewport--xs {
+  @media (max-width: $viewport--sm - 1) {
+    @content;
+  }
+}
+
 @mixin font($mod) {
   margin: 0;
 
@@ -40,6 +52,11 @@
     font-size: 106px;
     line-height: 112px;
     font-family: 'El Messiri';
+
+    @include viewport--md {
+      font-size: 96px;
+      line-height: 84px;
+    }
 
     @include viewport--sm {
       font-size: 42px;
@@ -81,6 +98,10 @@
     font-size: 14px;
     line-height: 28px;
     font-family: 'Ubuntu';
+
+    @include viewport--sm {
+      line-height: 26px;
+    }
 
   } @else if $mod == h6 {
     color: $color-elm;
