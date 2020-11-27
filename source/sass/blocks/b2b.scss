@@ -1,12 +1,15 @@
 .b2b {
-  padding: 140px 0 132px;
+  padding-top: 140px;
+  padding-bottom: 132px;
 
   @include viewport--lg {
-    padding: 100px 0 93px;
+    padding-top: 100px;
+    padding-bottom: 93px;
   }
 
   @include viewport--sm {
-    padding: 60px 0 38px;
+    padding-top: 60px;
+    padding-bottom: 38px;
   }
 
   &__partner-logo {
