@@ -4,6 +4,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/init-modals';
 import {initMenu} from './modules/init-menu';
 
+//Sliders
+import {initRecipesSlider} from './modules/slider/init-recipes-slider';
+
 // Utils
 // ---------------------------------
 
@@ -15,3 +18,7 @@ iosVhFix();
 
 initModals();
 initMenu();
+
+
+// Sliders
+initRecipesSlider();
