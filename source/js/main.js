@@ -5,6 +5,9 @@ import {initModals} from './modules/init-modals';
 import {initMenu} from './modules/init-menu';
 import {initVideoPlayBtn} from './modules/init-video-play-btn';
 
+//Sliders
+import {initRecipesSlider} from './modules/slider/init-recipes-slider';
+
 // Utils
 // ---------------------------------
 
@@ -17,3 +20,6 @@ iosVhFix();
 initModals();
 initMenu();
 initVideoPlayBtn();
+
+// Sliders
+initRecipesSlider();
