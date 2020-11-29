@@ -90,6 +90,8 @@
     </g>
 </symbol><symbol id="icon-phone" viewBox="0 0 65 64">
 <path id="Phone" d="M30.7081 39.3612C25.2087 34.8486 21.5367 29.2803 19.6062 26.1119L18.1662 23.4028C18.6697 22.8637 22.5093 18.7608 24.1733 16.5347C26.2643 13.7393 23.2326 11.2147 23.2326 11.2147C23.2326 11.2147 14.7022 2.70083 12.7581 1.01202C10.814 -0.679161 8.57607 0.26012 8.57607 0.26012C4.49003 2.89472 0.254127 5.18528 8.57797e-06 16.2013C-0.00946904 26.5151 7.83622 37.1528 16.3205 45.3882C24.8183 54.6888 36.4859 64.0106 47.766 64C58.8039 63.7488 61.0986 59.5223 63.7388 55.4448C63.7388 55.4448 64.6806 53.2133 62.9877 51.2715C61.2935 49.3303 52.7607 40.8159 52.7607 40.8159C52.7607 40.8159 50.2326 37.79 47.4307 39.8784C45.3427 41.436 41.5931 44.9005 40.6898 45.7405C40.6916 45.7434 34.4192 42.4066 30.7081 39.3612Z"/>
+</symbol><symbol id="icon-play-btn" viewBox="0 0 50 60">
+<path d="M7.69466 0.75193C4.32231 -1.34428 0 1.18952 0 5.29724V54.7028C0 58.8317 4.32909 61.3302 7.69466 59.2551L47.5182 34.5877C50.8295 32.5338 50.8227 27.5509 47.525 25.49L7.69466 0.75193Z"/>
 </symbol><symbol id="icon-time" viewBox="0 0 16 16">
 <circle cx="8" cy="8" r="7" stroke="#248274"/>
 <path d="M8 5V8L11 10" stroke="#248274"/>
@@ -226,8 +228,9 @@
           </div>
         </div>
       </section>
+
       <section class="section products container">
-        <p class="section__category">Types of pasta</p>
+        <span class="section__category">Types of pasta</span>
         <h2 class="section__heading">Product</h2>
         <p class="section__intro products__intro">Traditional Italian pasta with authentic taste for restaurant level cooking in your home kitchen.</p>
         <ul class="products__list">
@@ -323,56 +326,80 @@
           </li>
         </ul>
       </section>
-      <a href="#" data-modal="recipes" data-slider="1">SHOW RECIPE MODAL</a>
-      <div class="container">
-        <!-- <section class="video">
-          <video src="" controls></video>
-        </section> -->
 
-        <section class="b2b section">
-          <a class="b2b__partner-logo" href="http://shop.monolith.mobi/">
-            <svg class="social__icon" width="128" height="69" focusable="false">
-              <use xlink:href="#icon-monolith"></use>
-            </svg>
+      <section class="video section container">
+        <span class="section__category">Video</span>
+        <h2 class="section__heading">Experiment</h2>
+        <p class="section__intro video__intro">Simple pasta made with teflon die sure gives you an opportunity to cook something nice. But can you imagine an Italian chef being satisfied with «nice»? We can’t either. That’s why we follow traditional Italian ways and use bronze die instead. Watch our video and see the difference between just pasta and masterpice of cooking.</p>
+
+        <div class="video__wrapper">
+          <video class="video__container" poster="img/bg/video-bg.jpg" width="1468" height="656">
+            <source src="video/bronze-vs-teflon.mp4">
+          </video>
+
+          <div class="video__overlay"></div>
+
+          <div class="video__play-button-wrapper">
+            <button class="video__play-btn btn-reset" type="button">
+              <svg width="50" height="60" focusable="false">
+                <use xlink:href="#icon-play-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes section container">
+        <span class="section__category">Kitchen</span>
+        <h2 class="section__heading">Recipes</h2>
+        <p class="section__intro recepies__intro">Go classic or explore your own creativity — you will always get a meal like it was made by your favorite chef.</p>
+        <a href="#" data-modal="recipes" data-slider="1">SHOW RECIPE MODAL</a>
+
+      </section>
+
+      <section class="b2b section container">
+        <a class="b2b__partner-logo" href="http://shop.monolith.mobi/">
+          <svg class="social__icon" width="128" height="69" focusable="false">
+            <use xlink:href="#icon-monolith"></use>
+          </svg>
+        </a>
+
+        <h2 class="b2b__title section__heading">Our distributor in&nbsp;the&nbsp;United Kingdom Monolith UK Ltd.</h2>
+
+        <p class="b2b__intro section__intro">A leading distributor of europead foods and spirits to the United Kingdom.</p>
+
+        <div class="b2b__partner-contacts">
+          <a class="b2b__partner-link b2b__partner-link--tel" href="tel:+44 (0) 2075400039">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="64" height="64" focusable="false">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Phone</h3>
+            <span class="b2b__partner-contact">+44 (0) 2075400039</span>
           </a>
 
-          <h2 class="b2b__title section__heading">Our distributor in&nbsp;the&nbsp;United Kingdom Monolith UK Ltd.</h2>
+          <a class="b2b__partner-link b2b__partner-link--email" href="mailto:uk.sales@monolith-uk.com">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="76" height="48" focusable="false">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Email</h3>
+            <span class="b2b__partner-contact">uk.sales@monolith-uk.com</span>
+          </a>
 
-          <p class="b2b__intro section__intro">A leading distributor of europead foods and spirits to the United Kingdom.</p>
-
-          <div class="b2b__partner-contacts">
-            <a class="b2b__partner-link b2b__partner-link--tel" href="tel:+44 (0) 2075400039">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="64" height="64" focusable="false">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Phone</h3>
-              <span class="b2b__partner-contact">+44 (0) 2075400039</span>
-            </a>
-
-            <a class="b2b__partner-link b2b__partner-link--email" href="mailto:uk.sales@monolith-uk.com">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="76" height="48" focusable="false">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Email</h3>
-              <span class="b2b__partner-contact">uk.sales@monolith-uk.com</span>
-            </a>
-
-            <a class="b2b__partner-link b2b__partner-link--website" href="shop.monolith.mobi">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="64" height="70" focusable="false">
-                  <use xlink:href="#icon-website"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Website</h3>
-              <span class="b2b__partner-contact">shop.monolith.mobi</span>
-            </a>
-          </div>
-        </section>
-      </div>
+          <a class="b2b__partner-link b2b__partner-link--website" href="shop.monolith.mobi">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="64" height="70" focusable="false">
+                <use xlink:href="#icon-website"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Website</h3>
+            <span class="b2b__partner-contact">shop.monolith.mobi</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

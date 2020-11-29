@@ -44,8 +44,9 @@
           </div>
         </div>
       </section>
+
       <section class="section products container">
-        <p class="section__category">Types of pasta</p>
+        <span class="section__category">Types of pasta</span>
         <h2 class="section__heading">Product</h2>
         <p class="section__intro products__intro">Traditional Italian pasta with authentic taste for restaurant level cooking in your home kitchen.</p>
         <ul class="products__list">
@@ -141,56 +142,80 @@
           </li>
         </ul>
       </section>
-      <a href="#" data-modal="recipes" data-slider="1">SHOW RECIPE MODAL</a>
-      <div class="container">
-        <!-- <section class="video">
-          <video src="" controls></video>
-        </section> -->
 
-        <section class="b2b section">
-          <a class="b2b__partner-logo" href="http://shop.monolith.mobi/">
-            <svg class="social__icon" width="128" height="69" focusable="false">
-              <use xlink:href="#icon-monolith"></use>
-            </svg>
+      <section class="video section container">
+        <span class="section__category">Video</span>
+        <h2 class="section__heading">Experiment</h2>
+        <p class="section__intro video__intro">Simple pasta made with teflon die sure gives you an opportunity to cook something nice. But can you imagine an Italian chef being satisfied with «nice»? We can’t either. That’s why we follow traditional Italian ways and use bronze die instead. Watch our video and see the difference between just pasta and masterpice of cooking.</p>
+
+        <div class="video__wrapper">
+          <video class="video__container" poster="img/bg/video-bg.jpg" width="1468" height="656">
+            <source src="video/bronze-vs-teflon.mp4">
+          </video>
+
+          <div class="video__overlay"></div>
+
+          <div class="video__play-button-wrapper">
+            <button class="video__play-btn btn-reset" type="button">
+              <svg width="50" height="60" focusable="false">
+                <use xlink:href="#icon-play-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes section container">
+        <span class="section__category">Kitchen</span>
+        <h2 class="section__heading">Recipes</h2>
+        <p class="section__intro recepies__intro">Go classic or explore your own creativity — you will always get a meal like it was made by your favorite chef.</p>
+        <a href="#" data-modal="recipes" data-slider="1">SHOW RECIPE MODAL</a>
+
+      </section>
+
+      <section class="b2b section container">
+        <a class="b2b__partner-logo" href="http://shop.monolith.mobi/">
+          <svg class="social__icon" width="128" height="69" focusable="false">
+            <use xlink:href="#icon-monolith"></use>
+          </svg>
+        </a>
+
+        <h2 class="b2b__title section__heading">Our distributor in&nbsp;the&nbsp;United Kingdom Monolith UK Ltd.</h2>
+
+        <p class="b2b__intro section__intro">A leading distributor of europead foods and spirits to the United Kingdom.</p>
+
+        <div class="b2b__partner-contacts">
+          <a class="b2b__partner-link b2b__partner-link--tel" href="tel:+44 (0) 2075400039">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="64" height="64" focusable="false">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Phone</h3>
+            <span class="b2b__partner-contact">+44 (0) 2075400039</span>
           </a>
 
-          <h2 class="b2b__title section__heading">Our distributor in&nbsp;the&nbsp;United Kingdom Monolith UK Ltd.</h2>
+          <a class="b2b__partner-link b2b__partner-link--email" href="mailto:uk.sales@monolith-uk.com">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="76" height="48" focusable="false">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Email</h3>
+            <span class="b2b__partner-contact">uk.sales@monolith-uk.com</span>
+          </a>
 
-          <p class="b2b__intro section__intro">A leading distributor of europead foods and spirits to the United Kingdom.</p>
-
-          <div class="b2b__partner-contacts">
-            <a class="b2b__partner-link b2b__partner-link--tel" href="tel:+44 (0) 2075400039">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="64" height="64" focusable="false">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Phone</h3>
-              <span class="b2b__partner-contact">+44 (0) 2075400039</span>
-            </a>
-
-            <a class="b2b__partner-link b2b__partner-link--email" href="mailto:uk.sales@monolith-uk.com">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="76" height="48" focusable="false">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Email</h3>
-              <span class="b2b__partner-contact">uk.sales@monolith-uk.com</span>
-            </a>
-
-            <a class="b2b__partner-link b2b__partner-link--website" href="shop.monolith.mobi">
-              <span class="b2b__partner-link-img">
-                <svg class="social__icon" width="64" height="70" focusable="false">
-                  <use xlink:href="#icon-website"></use>
-                </svg>
-              </span>
-              <h3 class="b2b__partner-link-title">Website</h3>
-              <span class="b2b__partner-contact">shop.monolith.mobi</span>
-            </a>
-          </div>
-        </section>
-      </div>
+          <a class="b2b__partner-link b2b__partner-link--website" href="shop.monolith.mobi">
+            <span class="b2b__partner-link-img">
+              <svg class="social__icon" width="64" height="70" focusable="false">
+                <use xlink:href="#icon-website"></use>
+              </svg>
+            </span>
+            <h3 class="b2b__partner-link-title">Website</h3>
+            <span class="b2b__partner-contact">shop.monolith.mobi</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     @@include("source/html/base/footer.html")
