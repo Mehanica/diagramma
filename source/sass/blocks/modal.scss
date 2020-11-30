@@ -10,7 +10,7 @@
   flex-direction: column;
   overflow-y: auto;
 
-  background-color: rgba($color-default-black, 0.6);
+  background-color: $color-black-semitransparent;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -36,7 +36,7 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 60px 60px;
 
     @include viewport--sm {
       padding: 60px 16px;
@@ -58,9 +58,10 @@
     position: relative;
 
     width: 600px;
-    padding: 40px;
+    padding: 60px;
 
-    background-color: $color-default-white;
+
+    background-color: $color-dark-green;
 
     @include viewport--sm {
       width: 100%;
@@ -72,6 +73,20 @@
     position: absolute;
     top: 15px;
     right: 15px;
+
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 10;
+
+    svg {
+      width: 13px;
+      height: 13px;
+
+      fill: $color-default-white;
+    }
   }
 
   &--responsive {

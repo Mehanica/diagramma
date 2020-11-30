@@ -1,12 +1,23 @@
 .recipes {
   display: flex;
   flex-direction: column;
+  margin-bottom: -237px;
+
+  @include viewport--lg {
+    margin-bottom: 0;
+  }
 
   &__intro {
     max-width: 36%;
 
-    @include viewport--md {
-      width: 100%;
+    @include viewport--lg {
+      max-width: 62%;
+      margin-bottom: 49px;
+    }
+
+    @include viewport--sm {
+      margin-bottom: 34px;
+      max-width: 95%;
     }
   }
 
@@ -27,19 +38,51 @@
     display: flex;
     align-self: flex-end;
     flex-wrap: wrap;
-    margin: 0 -32px -32px 0;
+    margin: 0 -32px -57px 0;
     padding: 0;
     width: calc(75% + 32px * 3);
 
     list-style: none;
+
+    @include viewport--lg {
+      top: auto;
+      right: auto;
+      width: calc(100% + 16px);
+      margin: 0 -16px -53px 0;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      margin: 0 0 -33px;
+    }
   }
 
   &__item {
     width: calc(25% - 32px);
-    margin-bottom: 32px;
+    margin-bottom: 57px;
     margin-right: 32px;
-    height: 204px;
+    height: auto;
 
-    outline: 1px solid yellow;
+    @include viewport--lg {
+      width: calc(33.3333% - 16px);
+      margin-bottom: 53px;
+      margin-right: 16px;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 33px;
+    }
+  }
+
+  &__item--plug {
+    .recipe-preview {
+      display: none;
+    }
+
+    @include viewport--lg {
+      display: none;
+    }
   }
 }
