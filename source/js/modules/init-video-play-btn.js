@@ -1,10 +1,23 @@
 const videos = document.querySelectorAll('.video__container');
 const circlePlayButton = document.querySelector('.video__play-btn');
 
+const breakpoint = window.matchMedia('(max-width: 1023px)');
+
 
 const initVideoPlayBtn = () => {
   if (videos.length) {
     videos.forEach((video) => {
+      const breakpointChecker = () => {
+        if (breakpoint.matches) {
+          video.poster = "img/bg/video-bg-mob.jpg";
+        } else {
+          video.poster = 'img/bg/video-bg.jpg';
+        }
+      }
+
+      breakpointChecker();
+      breakpoint.addListener(breakpointChecker);
+
       circlePlayButton.addEventListener('click', () => {
         if (video.paused || video.ended) {
           video.play();
