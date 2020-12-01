@@ -2833,7 +2833,7 @@ button,
   @media (max-width: 767px) {
     .page-error {
       padding-bottom: 20px; } }
-  .page-error__title {
+  .page-error__bg-wrapper {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2852,13 +2852,13 @@ button,
     font-size: 400px;
     line-height: 300px; }
     @media (max-width: 767px) {
-      .page-error__title {
+      .page-error__bg-wrapper {
         margin: 0 0 8px 0; } }
-    .page-error__title svg {
+    .page-error__bg-wrapper svg {
       width: 812px;
       height: 300px; }
       @media (max-width: 767px) {
-        .page-error__title svg {
+        .page-error__bg-wrapper svg {
           min-width: 288px;
           min-height: 168px;
           width: 100%;
