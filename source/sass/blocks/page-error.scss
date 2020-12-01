@@ -115,9 +115,9 @@
 
     @include viewport--sm {
       top: auto;
-      max-width: 63vw;
+      max-width: 71vw;
       width: 100%;
-      transform: translateX(-50%) translateY(-19%);
+      transform: translateX(-50%) translateY(-22%);
     }
 
     @include viewport--xs {

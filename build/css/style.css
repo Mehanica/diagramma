@@ -2943,10 +2943,10 @@ button,
     @media (max-width: 767px) {
       .page-error .page-error__circles-bg {
         top: auto;
-        max-width: 63vw;
+        max-width: 71vw;
         width: 100%;
-        -webkit-transform: translateX(-50%) translateY(-19%);
-                transform: translateX(-50%) translateY(-19%); } }
+        -webkit-transform: translateX(-50%) translateY(-22%);
+                transform: translateX(-50%) translateY(-22%); } }
     @media (max-width: 539px) {
       .page-error .page-error__circles-bg {
         min-width: 90vw;
