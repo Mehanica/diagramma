@@ -58,10 +58,10 @@
   }
 
   &__item {
+    display: flex;
     width: calc(25% - 32px);
     margin-bottom: 57px;
     margin-right: 32px;
-    height: auto;
 
     @include viewport--lg {
       width: calc(33.3333% - 16px);
