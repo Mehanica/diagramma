@@ -1,0 +1,111 @@
+.recipe-preview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      .recipe-preview__heading {
+        color: $color-carrot-orange;
+      }
+
+      .recipe-preview__description {
+        color: $color-default-white;
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+    min-height: 268px;
+
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* stylelint-disable */
+      font-family: 'object-fit: cover;';
+      /* stylelint-enable */
+    }
+
+    @include viewport--lg {
+      margin-bottom: 22px;
+    }
+
+    @include viewport--sm {
+      min-height: 288px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__details-wrapper {
+    display: flex;
+
+    margin-bottom: 17px;
+  }
+
+  &__details {
+    @include font(h6);
+
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    svg {
+      margin: 3px 10px 0 0;
+      fill: $color-transparent;
+    }
+  }
+
+  &__cooking-time {
+    margin-right: 3px;
+  }
+
+  &__serves {
+    margin-left: 5px;
+  }
+
+  &__heading {
+    @include font(h4);
+
+    margin: 0 0 4px;
+    color: $color-default-white;
+
+    transition: color $default-transition-settings;
+
+    @include viewport--lg {
+      margin: 0 0 2px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    color: $color-puerto-rico;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: lowercase;
+
+    transition: color $default-transition-settings;
+
+    @include viewport--lg {
+      max-width: 204px;
+      line-height: 28px;
+    }
+
+    @include viewport--sm {
+      max-width: 100%;
+    }
+  }
+}
