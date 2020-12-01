@@ -2834,11 +2834,10 @@ button,
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-  padding-bottom: 61px;
   height: 100%; }
   @media (max-width: 767px) {
     .page-error {
-      padding-bottom: 20px; } }
+      padding-bottom: 60px; } }
   .page-error__bg-wrapper {
     position: relative;
     display: -webkit-box;
@@ -2849,26 +2848,22 @@ button,
             justify-content: center;
     width: 100%;
     height: auto;
-    max-width: 662px;
-    margin: 0 0 38px 0;
-    color: #248274;
-    font-family: "El Messiri", "Times New Roman", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 400px;
-    line-height: 300px; }
+    margin: -16% 0 0; }
     @media (max-width: 767px) {
       .page-error__bg-wrapper {
-        margin: 0 0 8px 0; } }
-    .page-error__bg-wrapper svg {
-      width: 812px;
-      height: 300px; }
-      @media (max-width: 767px) {
-        .page-error__bg-wrapper svg {
-          min-width: 288px;
-          min-height: 168px;
-          width: 100%;
-          height: auto; } }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 15% 0 0; } }
+  .page-error__404 {
+    fill: rgba(255, 255, 255, 0); }
+    @media (max-width: 767px) {
+      .page-error__404 {
+        padding: 0 5px;
+        margin-bottom: 28px;
+        width: 100%;
+        height: auto; } }
   .page-error__content-text {
     margin: -4px 9% 0 0;
     max-width: 432px;
@@ -2881,10 +2876,12 @@ button,
     @media (max-width: 767px) {
       .page-error__content-text {
         text-align: center;
-        margin: 8px 0 0 0;
+        margin: 0;
         font-size: 18px;
         line-height: 26px; } }
   .page-error__content {
+    position: absolute;
+    bottom: -44%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2897,19 +2894,22 @@ button,
     width: 100%; }
     @media (max-width: 767px) {
       .page-error__content {
+        position: relative;
+        bottom: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center;
+        bottom: -61.5%; } }
   .page-error__btn {
     margin-top: 6px;
     min-width: 128px; }
     @media (max-width: 767px) {
       .page-error__btn {
-        margin-top: 18px; } }
+        margin-top: 35px; } }
   .page-error__bg {
     position: absolute;
     top: 0;
@@ -2931,9 +2931,9 @@ button,
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-  .page-error__circles-bg {
+  .page-error .page-error__circles-bg {
     position: absolute;
-    top: -47%;
+    top: -52%;
     right: 558px;
     left: 50%;
     width: 578px;
@@ -2941,22 +2941,22 @@ button,
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
     @media (max-width: 767px) {
-      .page-error__circles-bg {
+      .page-error .page-error__circles-bg {
         top: auto;
         max-width: 63vw;
         width: 100%;
-        -webkit-transform: translateX(-50%) translateY(-23%);
-                transform: translateX(-50%) translateY(-23%); } }
+        -webkit-transform: translateX(-50%) translateY(-19%);
+                transform: translateX(-50%) translateY(-19%); } }
     @media (max-width: 539px) {
-      .page-error__circles-bg {
+      .page-error .page-error__circles-bg {
         min-width: 90vw;
-        -webkit-transform: translateX(-50%) translateY(-21%);
-                transform: translateX(-50%) translateY(-21%); } }
-  .page-error__circles {
+        -webkit-transform: translateX(-50%) translateY(-29%);
+                transform: translateX(-50%) translateY(-29%); } }
+  .page-error .page-error__circles {
     padding-bottom: 100%;
     border-radius: 50%;
     border: 1px solid rgba(36, 130, 116, 0.2); }
-    .page-error__circles::after, .page-error__circles::before {
+    .page-error .page-error__circles::after, .page-error .page-error__circles::before {
       content: '';
       position: absolute;
       top: 50%;
@@ -2965,28 +2965,28 @@ button,
               transform: translate(-50%, -50%);
       border-radius: 50%;
       border: 1px solid rgba(36, 130, 116, 0.2); }
-    .page-error__circles::before {
+    .page-error .page-error__circles::before {
       width: calc(100% + 250px);
       height: calc(100% + 250px);
       border: 1px solid rgba(36, 130, 116, 0.1); }
       @media (max-width: 1023px) {
-        .page-error__circles::before {
+        .page-error .page-error__circles::before {
           width: calc(100% + 192px);
           height: calc(100% + 192px); } }
       @media (max-width: 767px) {
-        .page-error__circles::before {
+        .page-error .page-error__circles::before {
           width: calc(100% + 120px);
           height: calc(100% + 120px); } }
-    .page-error__circles::after {
+    .page-error .page-error__circles::after {
       width: calc(100% - 200px);
       height: calc(100% - 200px);
       border: 1px solid rgba(36, 130, 116, 0.3); }
       @media (max-width: 1023px) {
-        .page-error__circles::after {
+        .page-error .page-error__circles::after {
           width: calc(100% - 192px);
           height: calc(100% - 192px); } }
       @media (max-width: 767px) {
-        .page-error__circles::after {
+        .page-error .page-error__circles::after {
           width: calc(100% - 120px);
           height: calc(100% - 120px); } }
   .page-error__bg-image-1, .page-error__bg-image-2 {
@@ -3001,29 +3001,30 @@ button,
       font-family: 'object-fit: contain;';
       /* stylelint-enable */ }
   .page-error__bg-image-1 {
-    top: -12px;
-    right: 174px;
+    top: -21px;
+    right: 36%;
     width: 110px;
     height: 114px; }
     @media (max-width: 767px) {
       .page-error__bg-image-1 {
-        top: -3%;
+        top: -10%;
         right: 23%;
         width: 79px;
         height: 80px; } }
   .page-error__bg-image-2 {
-    bottom: 12px;
-    left: 143px;
+    bottom: 1%;
+    left: 33.1%;
     width: 111px;
     height: 112px; }
     @media (max-width: 767px) {
       .page-error__bg-image-2 {
-        bottom: 3%;
+        bottom: 52%;
         left: 19%;
         width: 79px;
         height: 80px; } }
 
 .page-error-main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
