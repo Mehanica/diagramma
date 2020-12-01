@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0 22px;
+
+  font-family: $font-family--Ubuntu;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-default-black;
+
+  border-radius: 16px;
+  background-color:$color-default-white;
+  border: 1px solid $color-transparent;
+  cursor: pointer;
+
+  transition: color $default-transition-settings, border $default-transition-settings, background-color $default-transition-settings;
+
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--ghost {
+    background-color: $color-transparent;
+    border-color: $color-elm;
+    color: $color-default-white;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-carrot-orange;
+
+        border-color: $color-carrot-orange;
+      }
+
+      &:active {
+        color: $color-elm;
+        border-color: $color-cyprus;
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.page-error {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 61px;
+  height: 100%;
+
+  @include viewport--sm {
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 662px;
+    margin: 0 0 38px 0;
+
+    color: $color-elm;
+    font-family: $font-family--ElMessiri;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 400px;
+    line-height: 300px;
+
+    @include viewport--sm {
+      margin: 0 0 8px 0;
+    }
+
+    svg {
+      width: 812px;
+      height: 300px;
+
+      @include viewport--sm {
+        min-width: 288px;
+        min-height: 168px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__content-text {
+    margin: -4px 9% 0 0;
+    max-width: 432px;
+
+    color: $color-default-white;
+    font-family: $font-family--Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+
+    @include viewport--sm {
+      text-align: center;
+      margin: 8px 0 0 0;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+
+    @include viewport--sm {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    margin-top: 6px;
+    min-width: 128px;
+
+    @include viewport--sm {
+      margin-top: 18px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    width:100%;
+    height: 100%;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    @media (max-width: 2000px) {
+      justify-content: center;
+    }
+  }
+
+  &__circles-bg {
+    position: absolute;
+    top: -47%;
+    right: 558px;
+    left: 50%;
+    width: 578px;
+
+    z-index: 0;
+    transform: translateX(-50%);
+
+    @include viewport--sm {
+      top: auto;
+      max-width: 63vw;
+      width: 100%;
+      transform: translateX(-50%) translateY(-23%);
+    }
+
+    @include viewport--xs {
+      min-width: 90vw;
+      transform: translateX(-50%) translateY(-21%);
+    }
+  }
+
+  &__circles {
+    padding-bottom: 100%;
+
+    border-radius: 50%;
+    border: 1px solid $color-elm-semitransparent-02;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 1px solid $color-elm-semitransparent-02;
+    }
+
+    &::before {
+      width: calc(100% + 250px);
+      height: calc(100% + 250px);
+
+      border: 1px solid $color-elm-semitransparent-01;
+
+      @include viewport--md {
+        width: calc(100% + 192px);
+        height: calc(100% + 192px);
+      }
+
+      @include viewport--sm {
+        width: calc(100% + 120px);
+        height: calc(100% + 120px);
+      }
+    }
+
+    &::after {
+      width: calc(100% - 200px);
+      height: calc(100% - 200px);
+
+      border: 1px solid $color-elm-semitransparent-03;
+
+      @include viewport--md {
+        width: calc(100% - 192px);
+        height: calc(100% - 192px);
+      }
+
+      @include viewport--sm {
+        width: calc(100% - 120px);
+        height: calc(100% - 120px);
+      }
+    }
+  }
+
+  &__bg-image-1,
+  &__bg-image-2 {
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      /* stylelint-disable */
+      font-family: 'object-fit: contain;';
+      /* stylelint-enable */
+    }
+  }
+
+  &__bg-image-1 {
+    top: -12px;
+    right: 174px;
+
+    width: 110px;
+    height: 114px;
+
+    @include viewport--sm {
+      top: -3%;
+      right: 23%;
+
+      width: 79px;
+      height: 80px;
+    }
+  }
+
+  &__bg-image-2 {
+    bottom: 12px;
+    left: 143px;
+
+    width: 111px;
+    height: 112px;
+
+    @include viewport--sm {
+      bottom: 3%;
+      left: 19%;
+
+      width: 79px;
+      height: 80px;
+    }
+  }
+}
