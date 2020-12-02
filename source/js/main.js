@@ -9,7 +9,6 @@ import {initVideoPlayBtn} from './modules/init-video-play-btn';
 import {initRecipesSlider} from './modules/slider/init-recipes-slider';
 
 //Animation
-import {backgroundParallax} from './modules/animation/background-parallax';
 
 // Utils
 // ---------------------------------
@@ -28,4 +27,4 @@ initVideoPlayBtn();
 initRecipesSlider();
 
 // Animation
-backgroundParallax();
+
