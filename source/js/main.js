@@ -8,6 +8,9 @@ import {initVideoPlayBtn} from './modules/init-video-play-btn';
 //Sliders
 import {initRecipesSlider} from './modules/slider/init-recipes-slider';
 
+//Animation
+import {backgroundParallax} from './modules/animation/background-parallax';
+
 // Utils
 // ---------------------------------
 
@@ -23,3 +26,6 @@ initVideoPlayBtn();
 
 // Sliders
 initRecipesSlider();
+
+// Animation
+backgroundParallax();
