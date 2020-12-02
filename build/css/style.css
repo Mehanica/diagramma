@@ -1789,6 +1789,9 @@ button,
     @media (max-width: 767px) {
       .section__category {
         margin-bottom: 13px; } }
+    .section__category.container {
+      margin-left: auto;
+      margin-right: auto; }
   .section__heading {
     margin: 0;
     font-weight: 400;
@@ -1805,6 +1808,9 @@ button,
     @media (max-width: 767px) {
       .section__heading {
         margin-bottom: 9px; } }
+    .section__heading.container {
+      margin-left: auto;
+      margin-right: auto; }
   .section__intro {
     margin: 0;
     font-weight: 400;
@@ -3299,6 +3305,34 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.contacts {
+  margin-top: 138px;
+  margin-bottom: 0; }
+  @media (max-width: 1919px) {
+    .contacts {
+      margin-top: 98px; } }
+  @media (max-width: 1023px) {
+    .contacts {
+      margin-top: 88px; } }
+  @media (max-width: 767px) {
+    .contacts {
+      margin-top: 48px; } }
+  .contacts__map-wrapper {
+    width: 100vw;
+    height: 500px;
+    margin-top: 40px; }
+    @media (max-width: 1023px) {
+      .contacts__map-wrapper {
+        height: 553px; } }
+    @media (max-width: 767px) {
+      .contacts__map-wrapper {
+        height: 460px;
+        margin-top: 30px; } }
+  .contacts__map {
+    height: 100%; }
+  .contacts .ymaps-2-1-77-map {
+    min-height: 100%; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
