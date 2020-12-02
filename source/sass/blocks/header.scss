@@ -1,11 +1,18 @@
 .header {
   position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   min-height: 84px;
   padding-top: 28px;
   padding-bottom: 28px;
 
   background-color: $color-transparent;
+  transform: translateY(0);
+  z-index: 1000;
+
+  transition: transform $default-transition-settings;
 
   @include viewport--md {
     min-height: auto;
@@ -17,6 +24,15 @@
     min-height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  &--hidden {
+    transform: translateZ(0) translateY(-100%);
+  }
+
+  &--fixed {
+    position: fixed;
+    background-color: $color-dark-green;
   }
 
   &__wrapper {
@@ -69,6 +85,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       width: 100vw;
+      height: 2400px;
       padding: 0 16px;
 
       min-height: 100vh;
