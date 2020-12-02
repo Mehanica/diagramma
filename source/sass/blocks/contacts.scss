@@ -1,0 +1,42 @@
+.contacts {
+  margin-top: 138px; // Это, возможно, убрать, когда сделает единообразные отступы
+  margin-bottom: 0;
+
+  @include viewport--xxl {
+    margin-top: 98px; // Это, возможно, убрать, когда сделает единообразные отступы
+  }
+
+  @include viewport--md {
+    margin-top: 88px; // Это, возможно, убрать, когда сделает единообразные отступы
+  }
+
+  @include viewport--sm {
+    margin-top: 48px; // Это, возможно, убрать, когда сделает единообразные отступы
+  }
+
+  &__map-wrapper {
+    width: 100vw;
+    height: 500px;
+    margin-top: 40px;
+
+    @include viewport--lg {
+    }
+
+    @include viewport--md {
+      height: 553px;
+    }
+
+    @include viewport--sm {
+      height: 460px;
+      margin-top: 30px;
+    }
+  }
+
+  &__map {
+    height: 100%;
+  }
+
+  .ymaps-2-1-77-map {
+    min-height: 100%;
+  }
+}

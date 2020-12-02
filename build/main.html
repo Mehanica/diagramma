@@ -28,6 +28,7 @@
 <link rel="preload" href="fonts/ubuntu-latin-medium.woff2" as="font" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/style.min.css">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=bf7e453c-59db-45f1-85bf-37a7703899a2" type="text/javascript"></script>
 
   <title>ProjectName — Главная</title>
 
@@ -563,6 +564,14 @@
             <source type="image/webp" srcset="img/bg/farfalle-2@1x.webp 1x, img/bg/farfalle-2@2x.webp 2x">
             <img src="img/bg/farfalle-2@1x.png" srcset="img/bg/farfalle-2@2x.png 2x" width="164" height="164" alt="Picture">
           </picture>
+        </div>
+      </section>
+
+      <section class="contacts section">
+        <span class="section__category container">Contacts</span>
+        <h2 class="section__heading container">Find a store</h2>
+        <div class="contacts__map-wrapper">
+          <div class="contacts__map" id="map"></div>
         </div>
       </section>
 

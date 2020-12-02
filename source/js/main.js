@@ -5,10 +5,14 @@ import {initModals} from './modules/init-modals';
 import {initMenu} from './modules/init-menu';
 import {initVideoPlayBtn} from './modules/init-video-play-btn';
 
-//Sliders
+// Sliders
 import {initRecipesSlider} from './modules/slider/init-recipes-slider';
 
-//Animation
+// Animation
+
+
+// Map
+import {initMap} from './modules/map/init-map';
 
 // Utils
 // ---------------------------------
@@ -28,3 +32,5 @@ initRecipesSlider();
 
 // Animation
 
+// Map
+initMap();
