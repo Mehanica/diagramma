@@ -71,21 +71,46 @@
 
   &__close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 14px;
+    right: 14px;
 
     display: block;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 1px solid $color-default-white;
     z-index: 10;
+
+    transition: border-color $default-transition-settings;
+
+    @include viewport--md {
+      top: -46px;
+      right: -46px;
+    }
+
+    @include viewport--sm {
+      top: -44px;
+      right: 12px;
+    }
 
     svg {
       width: 13px;
       height: 13px;
 
       fill: $color-default-white;
+
+      transition: fill $default-transition-settings;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: $color-carrot-orange;
+
+        svg {
+          fill: $color-carrot-orange;
+        }
+      }
     }
   }
 
@@ -118,5 +143,18 @@
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+  }
+
+  &--recipes {
+    .modal__content {
+      padding: 0;
+    }
+
+    .modal__wrapper {
+      @include viewport--sm {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+    }
   }
 }
