@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  padding-bottom: 61px;
   height: 100%;
 
   @include viewport--sm {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 
   &__bg-wrapper {
@@ -18,30 +17,23 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    max-width: 662px;
-    margin: 0 0 38px 0;
 
-    color: $color-elm;
-    font-family: $font-family--ElMessiri;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 400px;
-    line-height: 300px;
+    margin: -16% 0 0;
 
     @include viewport--sm {
-      margin: 0 0 8px 0;
+      flex-direction: column;
+      margin: 15% 0 0;
     }
+  }
 
-    svg {
-      width: 812px;
-      height: 300px;
+  &__404 {
+    fill: $color-transparent;
 
-      @include viewport--sm {
-        min-width: 288px;
-        min-height: 168px;
-        width: 100%;
-        height: auto;
-      }
+    @include viewport--sm {
+      padding: 0 5px;
+      margin-bottom: 28px;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -58,21 +50,27 @@
 
     @include viewport--sm {
       text-align: center;
-      margin: 8px 0 0 0;
+      margin: 0;
       font-size: 18px;
       line-height: 26px;
     }
   }
 
   &__content {
+    position: absolute;
+    bottom: -44%;
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
 
     @include viewport--sm {
+      position: relative;
+      bottom: auto;
       flex-direction: column;
       align-items: center;
+      bottom: -61.5%;
     }
   }
 
@@ -81,7 +79,7 @@
     min-width: 128px;
 
     @include viewport--sm {
-      margin-top: 18px;
+      margin-top: 35px;
     }
   }
 
@@ -106,34 +104,32 @@
     }
   }
 
-  &__circles-bg {
+  .page-error__circles-bg {
     position: absolute;
-    top: -47%;
+    top: -52%;
     right: 558px;
     left: 50%;
     width: 578px;
-
     z-index: 0;
     transform: translateX(-50%);
 
     @include viewport--sm {
       top: auto;
-      max-width: 63vw;
+      max-width: 71vw;
       width: 100%;
-      transform: translateX(-50%) translateY(-23%);
+      transform: translateX(-50%) translateY(-22%);
     }
 
     @include viewport--xs {
       min-width: 90vw;
-      transform: translateX(-50%) translateY(-21%);
+      transform: translateX(-50%) translateY(-29%);
     }
   }
 
-  &__circles {
+  .page-error__circles {
     padding-bottom: 100%;
-
     border-radius: 50%;
-    border: 1px solid $color-elm-semitransparent-02;
+    border: 1px solid rgba(36, 130, 116, 0.2);
 
     &::after,
     &::before {
@@ -143,14 +139,13 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
-      border: 1px solid $color-elm-semitransparent-02;
+      border: 1px solid rgba(36, 130, 116, 0.2);
     }
 
     &::before {
       width: calc(100% + 250px);
       height: calc(100% + 250px);
-
-      border: 1px solid $color-elm-semitransparent-01;
+      border: 1px solid rgba(36, 130, 116, 0.1);
 
       @include viewport--md {
         width: calc(100% + 192px);
@@ -166,8 +161,7 @@
     &::after {
       width: calc(100% - 200px);
       height: calc(100% - 200px);
-
-      border: 1px solid $color-elm-semitransparent-03;
+      border: 1px solid rgba(36, 130, 116, 0.3);
 
       @include viewport--md {
         width: calc(100% - 192px);
@@ -197,14 +191,14 @@
   }
 
   &__bg-image-1 {
-    top: -12px;
-    right: 174px;
+    top: -21px;
+    right: 36%;
 
     width: 110px;
     height: 114px;
 
     @include viewport--sm {
-      top: -3%;
+      top: -10%;
       right: 23%;
 
       width: 79px;
@@ -213,14 +207,14 @@
   }
 
   &__bg-image-2 {
-    bottom: 12px;
-    left: 143px;
+    bottom: 1%;
+    left: 33.1%;
 
     width: 111px;
     height: 112px;
 
     @include viewport--sm {
-      bottom: 3%;
+      bottom: 52%;
       left: 19%;
 
       width: 79px;
