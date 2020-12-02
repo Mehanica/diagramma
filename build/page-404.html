@@ -29,47 +29,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>Компоненты</title>
-
-  <style>
-    main > .container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    .components-backwards {
-      display: inline-block;
-      margin-bottom: 10px;
-      margin-left: 7px;
-    }
-
-    .components-backwards span:first-child {
-      position: relative;
-      top: -3px;
-
-      display: inline-block;
-      margin-right: 15px;
-
-      font-size: 16px;
-      line-height: 24px;
-      vertical-align: top;
-
-      transform: scale(2);
-    }
-
-    .components-backwards span:last-child {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .components-backwards + h1 {
-      margin-bottom: 0;
-    }
-
-    .container > section {
-      padding: 20px 0;
-    }
-  </style>
+  <title>ProjectName — Page-404</title>
 
 </head>
 <body>
@@ -150,7 +110,7 @@
 </symbol></svg>
   </div>
 
-  <div class="wrapper">
+  <div class="wrapper page-landing">
     <header class="header container">
   <div class="header__wrapper">
     <a class="header__logo"  href="main.html" aria-label="Переход на главную">
@@ -249,47 +209,40 @@
 </header>
 
 
-    <main>
-      <div class="container">
-        <a class="components-backwards" href="index.html">
-          <span>&larr;</span>
-          <span>вернуться на разводящую</span>
-        </a>
-        <h1>Компоненты, используемые в вёрстке</h1>
+    <main class="page-error-main">
+      <section class="page-error container">
+        <h1 class="visually-hidden">Page-404</h1>
+        <div class="page-error__bg-wrapper">
+          <svg class="page-error__404" width="662" height="280" focusable="false">
+            <use xlink:href="#icon-404"></use>
+          </svg>
 
-        <section>
-          <h2>Название компонента или группы компонентов</h2>
+          <div class="page-error__content">
+            <p class="page-error__content-text">We can't find the page you are looking for.
+              Sorry for the inconvenience.</p>
 
-          <p>Класс компонента \ модификаторы</p>
-          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
-          <div>Компонент</div>
-        </section>
+            <a class="btn btn--ghost page-error__btn" href="main.html">Main</a>
+          </div>
 
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <!-- Social - начало -->
-        <section>
-          <h2>Social</h2>
+          <div class="page-error__bg">
+            <div class="page-error__circles-bg" aria-label="presentation"><div class="page-error__circles"></div></div>
 
-          <p>social</p>
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/makfaofficial/" aria-label="Follow us on Facebook">
-                <svg class="social__icon" width="8" height="14" focusable="false">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/makfa_world/" aria-label="Follow us on Instagram">
-                <svg class="social__icon" width="12" height="12" focusable="false">
-                  <use xlink:href="#icon-inst"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <!-- Social - конец -->
-      </div>
+            <div class="page-error__bg-image-1">
+              <picture>
+                <source type="image/webp" srcset="img/bg/farfalle-1@1x.webp 1x, img/bg/farfalle-1@2x.webp 2x">
+                <img src="img/bg/farfalle-1@1x.png" srcset="img/bg/farfalle-1@2x.png 2x" width="79" height="80" alt="Picture">
+              </picture>
+            </div>
+
+            <div class="page-error__bg-image-2">
+              <picture>
+                <source type="image/webp" srcset="img/bg/farfalle-2@1x.webp 1x, img/bg/farfalle-2@2x.webp 2x">
+                <img src="img/bg/farfalle-2@1x.png" srcset="img/bg/farfalle-2@2x.png 2x" width="79" height="80" alt="Picture">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

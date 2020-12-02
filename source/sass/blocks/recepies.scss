@@ -1,9 +1,0 @@
-.recepies {
-  &__intro {
-    max-width: 36%;
-
-    @include viewport--md {
-      width: 100%;
-    }
-  }
-}

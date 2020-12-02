@@ -13,11 +13,11 @@
     @include font(h6);
 
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     text-transform: uppercase;
 
     @include viewport--sm {
-      margin-bottom: 17px;
+      margin-bottom: 13px;
     }
   }
 
