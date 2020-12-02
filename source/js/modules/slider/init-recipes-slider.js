@@ -11,6 +11,7 @@ const initSwiper = (slider) => new Swiper(slider, {
   effect: 'fade',
   observer: true,
   observeParents: true,
+  autoHeight: true,
   navigation: {
     nextEl: btnNext,
     prevEl: btnPrev,
