@@ -2250,6 +2250,9 @@ button,
 .b2b {
   padding-top: 140px;
   padding-bottom: 132px; }
+  @media (max-width: 1919px) {
+    .b2b {
+      padding-top: 104px; } }
   @media (max-width: 1439px) {
     .b2b {
       padding-top: 100px;
