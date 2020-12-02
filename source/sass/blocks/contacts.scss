@@ -18,17 +18,21 @@
     width: 100vw;
     height: 500px;
     margin-top: 40px;
+    // margin-left: -162px;
 
     @include viewport--lg {
+      // margin-left: -60px;
     }
 
     @include viewport--md {
       height: 553px;
+      // margin-left: -32px;
     }
 
     @include viewport--sm {
       height: 460px;
       margin-top: 30px;
+      // margin-left: -24px;
     }
   }
 

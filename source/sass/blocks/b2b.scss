@@ -2,6 +2,10 @@
   padding-top: 140px;
   padding-bottom: 132px;
 
+  @include viewport--xxl {
+    padding-top: 104px;
+  }
+
   @include viewport--lg {
     padding-top: 100px;
     padding-bottom: 93px;
