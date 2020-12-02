@@ -1,6 +1,6 @@
 <header class="header @@if (context.mod) {header--@@mod}container">
   <div class="header__wrapper">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Go to the main">
       <!-- <svg class="social__icon" width="108" height="32" focusable="false">
         <use xlink:href="#icon-header-logo"></use>
       </svg> -->
@@ -8,7 +8,7 @@
     </a>
 
     <div class="header__menu-wrapper">
-      <a class="header__menu-logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+      <a class="header__menu-logo" @@if (!context.main) { href="main.html"} aria-label="Go to the main">
         <!-- <svg class="social__icon" width="108" height="32" focusable="false">
           <use xlink:href="#icon-header-logo"></use>
         </svg> -->
@@ -17,14 +17,14 @@
 
       <ul class="header__menu-social social">
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/makfaofficial/" aria-label="Follow us on Facebook">
+          <a class="social__link" href="https://www.facebook.com/makfaofficial/" target="_blank" rel="nofollow noopener" aria-label="Follow us on Facebook">
             <svg class="social__icon" width="8" height="14" focusable="false">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/makfa_world/" aria-label="Follow us on Instagram">
+          <a class="social__link" href="https://www.instagram.com/makfa_world/" target="_blank" rel="nofollow noopener" aria-label="Follow us on Instagram">
             <svg class="social__icon" width="12" height="12" focusable="false">
               <use xlink:href="#icon-inst"></use>
             </svg>
@@ -50,22 +50,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Product</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) {main-nav__link--active}js-trigger" @@if (context.headerActiveLinkIndex !== 0) { href="#products" }>Product</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Experiment</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) {main-nav__link--active}js-trigger" @@if (context.headerActiveLinkIndex !== 1) { href="#experiment" }>Experiment</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Recipes</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) {main-nav__link--active}js-trigger" @@if (context.headerActiveLinkIndex !== 2) { href="#recipes" }>Recipes</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="#" }>Store</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) {main-nav__link--active}js-trigger" @@if (context.headerActiveLinkIndex !== 3) { href="#" }>Store</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 4) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 4) { href="https://makfahealth.com/contacts/" }>Contacts</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 4) {main-nav__link--active}" target="_blank" rel="nofollow noopener" @@if (context.headerActiveLinkIndex !== 4) { href="https://makfahealth.com/contacts/" }>Contacts</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 5) { main-nav__link--active }main-nav__link--ttup-mobile" @@if (context.headerActiveLinkIndex !== 5) { href="#" }>b2b</a>
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 5) {main-nav__link--active}main-nav__link--ttup-mobile js-trigger" @@if (context.headerActiveLinkIndex !== 5) { href="#b2b" }>b2b</a>
             </li>
           </ul>
         </div>
@@ -74,14 +74,14 @@
 
     <ul class="header__social social">
       <li class="social__item">
-        <a class="social__link" href="https://www.facebook.com/makfaofficial/" aria-label="Follow us on Facebook">
+        <a class="social__link" href="https://www.facebook.com/makfaofficial/" target="_blank" rel="nofollow noopener" aria-label="Follow us on Facebook">
           <svg class="social__icon" width="8" height="14" focusable="false">
             <use xlink:href="#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://www.instagram.com/makfa_world/" aria-label="Follow us on Instagram">
+        <a class="social__link" href="https://www.instagram.com/makfa_world/" target="_blank" rel="nofollow noopener" aria-label="Follow us on Instagram">
           <svg class="social__icon" width="12" height="12" focusable="false">
             <use xlink:href="#icon-inst"></use>
           </svg>
