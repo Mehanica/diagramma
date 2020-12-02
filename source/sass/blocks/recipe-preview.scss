@@ -37,6 +37,10 @@
       /* stylelint-enable */
     }
 
+    @include viewport--xl {
+      min-height: 204px;
+    }
+
     @include viewport--lg {
       margin-bottom: 22px;
     }
