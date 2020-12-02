@@ -1,4 +1,5 @@
 .recipes {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: -237px;
@@ -9,6 +10,10 @@
 
   &__intro {
     max-width: 36%;
+
+    @include viewport--xl {
+      max-width: 508px;
+    }
 
     @include viewport--lg {
       max-width: 62%;
@@ -44,6 +49,13 @@
 
     list-style: none;
 
+    @include viewport--xl {
+      top: -238px;
+
+      margin: 0 -24px -35px 0;
+      width: calc(75% + 24px * 3);
+    }
+
     @include viewport--lg {
       top: auto;
       right: auto;
@@ -62,6 +74,12 @@
     width: calc(25% - 32px);
     margin-bottom: 57px;
     margin-right: 32px;
+
+    @include viewport--xl {
+      width: calc(25% - 24px);
+      margin-bottom: 35px;
+      margin-right: 24px;
+    }
 
     @include viewport--lg {
       width: calc(33.3333% - 16px);
@@ -83,6 +101,61 @@
 
     @include viewport--lg {
       display: none;
+    }
+  }
+
+  &__figure {
+    position: absolute;
+    top: 28%;
+    left: 21%;
+    max-width: 162px;
+    max-height: 168px;
+
+    @include viewport--xl {
+      top: 29%;
+      left: 22.5%;
+      max-width: 110px;
+      max-height: 114px;
+    }
+
+    @include viewport--lg {
+      top: -11.5%;
+      right: 34%;
+      left: auto;
+    }
+
+    @include viewport--sm {
+      top: -2.9%;
+      right: 0%;
+      max-width: 79px;
+      max-height: 80px;
+    }
+  }
+
+  &__figure--2 {
+    top: 41%;
+    left: 11.7%;
+    max-width: 164px;
+    max-height: 164px;
+
+    @include viewport--xl {
+      top: 38%;
+      left: 14%;
+      max-width: 111px;
+      max-height: 112px;
+    }
+
+    @include viewport--lg {
+      top: -3%;
+      right: 16%;
+      left: auto;
+    }
+
+    @include viewport--sm {
+      top: -1%;
+      right: 20%;
+      max-width: 79px;
+      max-height: 80px;
     }
   }
 }
