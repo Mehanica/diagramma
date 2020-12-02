@@ -2,15 +2,15 @@
   position: relative;
   display: flex;
   min-height: 84px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   background-color: $color-transparent;
 
   @include viewport--md {
     min-height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @include viewport--sm {
@@ -56,6 +56,7 @@
   &__menu-wrapper {
     display: flex;
     align-self: flex-start;
+    padding-top: 7px;
 
     @include viewport--sm {
       position: fixed;
