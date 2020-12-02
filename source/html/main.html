@@ -48,7 +48,7 @@
       <section class="section products container">
         <span class="section__category">Types of pasta</span>
         <h2 class="section__heading">Product</h2>
-        <p class="section__intro products__intro">Traditional Italian pasta with authentic taste for restaurant level cooking in your home kitchen.</p>
+        <p class="section__intro products__intro">Traditional Italian pasta with authentic taste for restaurant level cooking in&nbsp;your home kitchen.</p>
         <ul class="products__list">
           <li class="products__item">
             <div class="products__pasta-photo">
@@ -173,7 +173,7 @@
 
         <ul class="recipes__list">
           <li class="recipes__item recipes__item--plug">
-            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="0">
               <div class="recipe-preview__img">
                 <picture>
                   <source type="image/webp" srcset="img/content/recipes/recipes-spaghetti@1x.webp 1x, img/content/recipes/recipes-spaghetti@2x.webp 2x"/>
@@ -233,7 +233,7 @@
           </li>
 
           <li class="recipes__item">
-            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="2">
               <div class="recipe-preview__img">
                 <picture>
                   <source type="image/webp" srcset="img/content/recipes/recipes-campanelle@1x.webp 1x, img/content/recipes/recipes-campanelle@2x.webp 2x"/>
@@ -263,7 +263,7 @@
           </li>
 
           <li class="recipes__item">
-            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="0">
               <div class="recipe-preview__img">
                 <picture>
                   <source type="image/webp" srcset="img/content/recipes/recipes-spaghetti@1x.webp 1x, img/content/recipes/recipes-spaghetti@2x.webp 2x"/>
@@ -323,7 +323,7 @@
           </li>
 
           <li class="recipes__item">
-            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="2">
               <div class="recipe-preview__img">
                 <picture>
                   <source type="image/webp" srcset="img/content/recipes/recipes-farfalle@1x.webp 1x, img/content/recipes/recipes-farfalle@2x.webp 2x"/>
@@ -353,7 +353,7 @@
           </li>
 
           <li class="recipes__item">
-            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="0">
               <div class="recipe-preview__img">
                 <picture>
                   <source type="image/webp" srcset="img/content/recipes/recipes-penne_rigate@1x.webp 1x, img/content/recipes/recipes-penne_rigate@2x.webp 2x"/>
@@ -476,7 +476,9 @@
     @@include("source/html/base/footer.html")
 
     @@include("source/html/base/modal.html", {
-      "name": "recipes"
+      "name": "recipes",
+      "fitContent": true,
+      "mod": "recipes",
     })
   </div>
 
