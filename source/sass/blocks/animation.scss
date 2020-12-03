@@ -1,7 +1,7 @@
 .animation-group,
 .hero {
   // fade-in-left
-  .fil-2ms,
+  .fil-3ms,
   .fil-4ms {
     transform: translateX(-100%);
   }
@@ -34,7 +34,7 @@
   }
 
   &.show {
-    .fil-2ms {
+    .fil-3ms {
       transform: translateX(0);
 
       animation-name: fil;
@@ -62,6 +62,10 @@
       animation-timing-function: linear;
 
       animation-fill-mode: both;
+
+      @include viewport--sm {
+        animation-name: move-in-top-35;
+      }
     }
 
     .mtb-50 {
