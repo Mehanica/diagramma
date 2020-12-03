@@ -21,6 +21,7 @@ const toggleHeaderState = () => {
 
   const stickyTop = header.offsetTop;
   const hasVScroll = document.body.offsetHeight - difference > document.documentElement.clientHeight;
+
   // Desktop
   if (window.innerWidth >= 1024) {
     if (window.scrollY <= header.offsetHeight) {
@@ -36,18 +37,14 @@ const toggleHeaderState = () => {
           header.style = "background-color: transparent";
         } else {
           // Down
-          if (scrollstart - lastScrollTop > 0) {
-            header.classList.add('header--no-animation');
-          }
+          if (header.classList.contains('.header--fixed')) {
+            header.classList.remove('header--fixed');
+          };
           header.classList.add('header--fixed');
           header.classList.add('header--hidden');
           header.style = "background-color: #07352e";
-          setTimeout(() => {
-            header.classList.remove('header--no-animation');
-          }, 300);
         }
       } else {
-        header.classList.remove('header--no-animation');
         header.classList.add('header--fixed');
         header.style = "background-color: #07352e";
         header.classList.remove('header--hidden');
@@ -62,12 +59,14 @@ const toggleHeaderState = () => {
     }
 
     const documentScrollHandler = () => {
-      if (window.scrollY > stickyTop) {
-        header.style = "background-color: #07352e";
-        header.classList.add('header--fixed');
-      } else {
-        header.style = "background-color: transparent";
-        header.classList.remove('header--fixed');
+      if (window.innerWidth <= 1024) {
+        if (window.scrollY > stickyTop) {
+          header.style = "background-color: #07352e";
+          header.classList.add('header--fixed');
+        } else {
+          header.style = "background-color: transparent";
+          header.classList.remove('header--fixed');
+        }
       }
     }
 
