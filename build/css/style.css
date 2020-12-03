@@ -1348,8 +1348,8 @@ button,
   -webkit-transform: translateY(0);
           transform: translateY(0);
   z-index: 1000;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease; }
+  -webkit-transition: background-color 0.3s ease, opacity 0.5s ease;
+  transition: background-color 0.3s ease, opacity 0.5s ease; }
   @media (max-width: 1023px) {
     .header {
       min-height: auto;
@@ -3417,11 +3417,7 @@ button,
             transform: scale(1.1);
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
-    -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+    pointer-events: none; }
     @media (max-width: 1919px) {
       .contacts__map-popup {
         width: 356px; } }
@@ -3437,7 +3433,7 @@ button,
               transform: scale(1);
       visibility: visible;
       opacity: 1;
-      pointer-events: auto; }
+      pointer-events: initial; }
   .contacts__map-popup-heading {
     margin: 0;
     font-weight: 400;
@@ -3616,16 +3612,8 @@ button,
 
 .animation-group.show .grow,
 .hero.show .grow {
-  -webkit-animation-name: grow;
-          animation-name: grow;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
+  -webkit-animation: 1.6s linear infinite alternate grow;
+          animation: 1.6s linear infinite alternate grow; }
 
 .animation-group.show .grow-2,
 .hero.show .grow-2 {

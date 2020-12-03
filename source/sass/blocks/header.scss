@@ -12,7 +12,7 @@
   transform: translateY(0);
   z-index: 1000;
 
-  transition: opacity $extended-transition-settings;
+  transition: background-color $default-transition-settings, opacity $extended-transition-settings;
 
   @include viewport--md {
     min-height: auto;

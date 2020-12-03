@@ -7,7 +7,6 @@ const closePopup = function () {
 };
 
 const renderPopup = (manager, object) => {
-
   if (!popup) {
     return;
   }
@@ -17,24 +16,12 @@ const renderPopup = (manager, object) => {
     return;
   }
 
-  let timeoutNeeded;
 
   if (popup.classList.contains('contacts__map-popup--active')) {
     closePopup();
-    timeoutNeeded = true;
-  }
-
-  const refreshPopup = () => {
+  } else {
     popupAddress.innerText = object.properties.data.address;
     popup.classList.add('contacts__map-popup--active');
-  };
-
-  if (timeoutNeeded) {
-    setTimeout(() => {
-      refreshPopup();
-    }, 300);
-  } else {
-    refreshPopup();
   }
 
   popupCloseBtn.addEventListener('click', () => {
@@ -46,7 +33,6 @@ const renderPopup = (manager, object) => {
   });
 
   window.addEventListener('keydown', (evt) => {
-    popup.classList.remove('contacts__map-popup--active');
     if (evt.keyCode === 27 && popup.classList.contains('contacts__map-popup--active')) {
       evt.preventDefault();
       manager.objects.events.fire(['click'], {
