@@ -3414,6 +3414,13 @@ button,
           transform: scale(1, 1);
   opacity: 1; }
 
+.animation-group .grow-2 {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
 .animation-group.show .fil-2ms {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -3475,8 +3482,20 @@ button,
 .animation-group.show .grow {
   -webkit-animation-name: grow;
           animation-name: grow;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.animation-group.show .grow-2 {
+  -webkit-animation-name: grow-2;
+          animation-name: grow-2;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

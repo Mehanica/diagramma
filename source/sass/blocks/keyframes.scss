@@ -47,10 +47,15 @@
   100% {
     transform: scale3d(1.5, 1.5, 1.5)
   }
-
-
-  // 100% {
-  //   opacity: 0;
-  //   transform: scale(1.8, 1.8);
-  // }
 }
+
+// @keyframes grow-2 {
+//   0% {
+//     opacity: 1;
+//     transform: scale(0.8);
+//   }
+
+//   100% {
+//     transform: scale(1.6, 1.6, 1.6)
+//   }
+// }

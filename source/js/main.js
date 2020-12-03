@@ -10,7 +10,7 @@ import moveToAnchor from './modules/move-to-anchor';
 import {initRecipesSlider} from './modules/slider/init-recipes-slider';
 
 // Header
-// import {fixHeader} from './modules/header/fix-header';
+import {fixHeader} from './modules/header/fix-header';
 
 // Animation
 import {initAnimation} from './modules/animation/init-animation';
@@ -36,7 +36,7 @@ moveToAnchor();
 initRecipesSlider();
 
 // Header
-// fixHeader();
+fixHeader();
 
 // Animation
 initAnimation();
