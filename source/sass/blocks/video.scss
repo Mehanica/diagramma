@@ -1,5 +1,9 @@
 .video {
 
+  &__inner {
+    overflow: hidden;
+  }
+
   &__intro {
     max-width: 70%;
     margin-bottom: 49px;

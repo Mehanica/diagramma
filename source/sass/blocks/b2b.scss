@@ -1,6 +1,5 @@
 .b2b {
   padding-top: 140px;
-  padding-bottom: 132px;
 
   @include viewport--xxl {
     padding-top: 104px;
@@ -8,12 +7,15 @@
 
   @include viewport--lg {
     padding-top: 100px;
-    padding-bottom: 93px;
   }
 
   @include viewport--sm {
     padding-top: 60px;
-    padding-bottom: 38px;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    overflow: hidden;
   }
 
   &__partner-logo {
@@ -44,10 +46,10 @@
 
   &__intro {
     max-width: 40%;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 
     @include viewport--xxl {
-      margin-bottom: 49px;
+      margin-bottom: 52px;
     }
 
     @include viewport--lg {
@@ -109,7 +111,7 @@
     @include viewport--sm {
       align-items: center;
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 34px;
     }
   }
 

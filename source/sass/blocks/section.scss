@@ -1,8 +1,8 @@
 .section {
-  margin-bottom: 130px;
+  margin-bottom: 132px;
 
   @include viewport--xxl {
-    margin-bottom: 85px;
+    margin-bottom: 92px;
   }
 
   @include viewport--sm {
@@ -30,6 +30,7 @@
     @include font(h2);
 
     margin-bottom: 12px;
+    width: 100%;
 
     @include viewport--sm {
       margin-bottom: 9px;

@@ -48,23 +48,23 @@ const toggleHeaderState = () => {
   lastScrollTop = scrollstart <= 0 ? 0 : scrollstart;
 };
 
-const fixHeader = () => {
-  if (header) {
+// const fixHeader = () => {
+//   if (header) {
 
-    setInitialHeaderState();
+//     setInitialHeaderState();
 
-    const onResize = () => {
-      if (breakpointLg.matches) {
-        toggleHeaderState();
-      }
-    };
+//     const onResize = () => {
+//       if (breakpointLg.matches) {
+//         toggleHeaderState();
+//       }
+//     };
 
-    breakpointLg.addListener(onResize);
-    window.addEventListener('load', setScrollListener);
-  }
-};
-const setScrollListener = () => {
-  document.addEventListener('scroll', toggleHeaderState);
-};
+//     breakpointLg.addListener(onResize);
+//     window.addEventListener('load', setScrollListener);
+//   }
+// };
+// const setScrollListener = () => {
+//   document.addEventListener('scroll', toggleHeaderState);
+// };
 
-export {fixHeader};
+// export {fixHeader};

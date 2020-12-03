@@ -1,4 +1,4 @@
-const screens = document.querySelectorAll('[data-animate]');
+const screens = document.querySelectorAll('.animation-group');
 
 let elTop;
 let windowHeight;
