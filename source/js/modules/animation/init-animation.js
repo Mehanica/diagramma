@@ -31,7 +31,7 @@ const initAnimation = () => {
 
     setTimeout(() => {
       heroBlock.classList.add('show');
-    }, 100);
+    }, 400);
   });
 };
 

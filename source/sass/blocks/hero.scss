@@ -145,6 +145,8 @@
       width: 100vw;
       max-width: 1920px;
 
+      transition: opacity $extended-transition-settings;
+
       @include viewport--xl {
         top: -120px;
         width: 103.5vw;
