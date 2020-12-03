@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -9,10 +9,7 @@
   padding-bottom: 28px;
 
   background-color: $color-transparent;
-  transform: translateY(0);
   z-index: 1000;
-
-  transition: transform $default-transition-settings;
 
   @include viewport--md {
     min-height: auto;
@@ -26,12 +23,12 @@
     padding-bottom: 15px;
   }
 
-  &--hidden {
-    transform: translateZ(0) translateY(-100%);
-  }
+  // &--hidden {
+  //   transform: translateZ(0) translateY(-100%);
+  // }
 
-  &--fixed {
-    position: fixed;
+  &--bg-filled {
+    background-color: $color-dark-green;
   }
 
   &__wrapper {
