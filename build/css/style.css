@@ -2331,7 +2331,7 @@ button,
       .b2b__intro {
         max-width: 100%;
         margin-bottom: 34px; } }
-  .b2b__partner-contacts {
+  .b2b__contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2341,13 +2341,35 @@ button,
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: -2.2%;
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    list-style: none; }
     @media (max-width: 767px) {
-      .b2b__partner-contacts {
+      .b2b__contacts-list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        margin-right: 0; } }
+  .b2b__contacts-item {
+    width: calc(20% - 125px);
+    margin-bottom: 20px;
+    margin-right: 125px; }
+    @media (max-width: 1559px) {
+      .b2b__contacts-item {
+        width: calc(20% - 55px);
+        margin-right: 55px; } }
+    @media (max-width: 1439px) {
+      .b2b__contacts-item {
+        width: calc(33.3333% - 55px);
+        margin-right: 55px; } }
+    @media (max-width: 767px) {
+      .b2b__contacts-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 34px; } }
   .b2b__partner-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2355,9 +2377,7 @@ button,
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    width: 20%;
-    margin-bottom: 20px; }
+            flex-direction: column; }
     @media (hover: hover), screen and (min-width: 0\0) {
       .b2b__partner-link:hover .b2b__partner-contact, .b2b__partner-link:focus .b2b__partner-contact {
         color: #f39d23; }
@@ -2368,16 +2388,6 @@ button,
       color: #248274; }
       .b2b__partner-link:active .b2b__partner-contact::after {
         content: none; }
-    @media (max-width: 1439px) {
-      .b2b__partner-link {
-        width: 33.3333%; } }
-    @media (max-width: 767px) {
-      .b2b__partner-link {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        margin-bottom: 34px; } }
   .b2b__partner-link-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2398,7 +2408,7 @@ button,
         height: 128px; } }
     @media (max-width: 767px) {
       .b2b__partner-link-img {
-        margin-bottom: 0;
+        margin: 0 60px;
         width: 168px;
         height: 168px; } }
   .b2b__partner-link--tel .b2b__partner-link-img {
@@ -3365,7 +3375,7 @@ button,
   .contacts__map-wrapper {
     width: 100vw;
     height: 500px;
-    margin-top: 40px; }
+    margin-top: 30px; }
     @media (max-width: 1023px) {
       .contacts__map-wrapper {
         height: 553px; } }
