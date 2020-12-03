@@ -20,6 +20,12 @@
     opacity: 0;
   }
 
+  .grow {
+    transform: translateZ(0);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
   &.show {
     .fil-2ms {
       transform: translateX(0);
@@ -66,6 +72,14 @@
       animation-duration: 0.2s;
       animation-timing-function: ease-in-out;
 
+      animation-fill-mode: both;
+    }
+
+    .grow {
+      animation-name: grow;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
       animation-fill-mode: both;
     }
 
