@@ -43,6 +43,8 @@
   &__heading {
     max-width: 570px;
 
+    overflow: hidden;
+
     @media (max-width: 2000px) {
       max-width: 38.8%;
     }
@@ -87,6 +89,8 @@
   &__content {
     width: 38.8%;
     margin-bottom: 22px;
+
+    overflow: hidden;
 
     @media (max-width: 2000px) {
       margin-left: 25px;

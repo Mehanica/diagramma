@@ -1896,7 +1896,8 @@ button,
             -ms-flex-align: start;
                 align-items: flex-start; } }
   .hero__heading {
-    max-width: 570px; }
+    max-width: 570px;
+    overflow: hidden; }
     @media (max-width: 2000px) {
       .hero__heading {
         max-width: 38.8%; } }
@@ -1940,7 +1941,8 @@ button,
     text-transform: uppercase; }
   .hero__content {
     width: 38.8%;
-    margin-bottom: 22px; }
+    margin-bottom: 22px;
+    overflow: hidden; }
     @media (max-width: 2000px) {
       .hero__content {
         margin-left: 25px; } }
