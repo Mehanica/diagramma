@@ -57,4 +57,4 @@ const initMenu = () => {
   breakpointLg.addListener(closeMenuOnBreakpoiint);
 };
 
-export {initMenu};
+export {initMenu, closeMenu};
