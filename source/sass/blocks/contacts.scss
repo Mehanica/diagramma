@@ -15,6 +15,7 @@
   }
 
   &__map-wrapper {
+    position: relative;
     width: 100vw;
     height: 500px;
     margin-top: 40px;
@@ -40,6 +41,135 @@
 
   &__map {
     height: 100%;
+  }
+
+  &__map-popup-wrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    pointer-events: none;
+
+    @include viewport--xl {
+      bottom: 62px;
+    }
+
+    @include viewport--sm {
+      bottom: 40px;
+    }
+
+    @include viewport--xs {
+      bottom: 16px;
+    }
+  }
+
+  &__map-popup {
+    position: relative;
+
+    width: 468px;
+    padding: 36px 56px 33px 30px;
+
+    background-color: $color-dark-green;
+
+    pointer-events: initial;
+
+    transform: scale(1.1);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity $modal-transition-settings,
+    transform $modal-transition-settings,
+    visibility $modal-transition-settings;
+
+    @include viewport--xxl {
+      width: 356px;
+    }
+
+    @include viewport--md {
+      width: 368px;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      padding: 18px 42px 14px 10px;
+    }
+
+    &--active {
+      transform: scale(1);
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__map-popup-heading {
+    @include font(h4);
+
+    margin-bottom: 4px;
+
+    @include viewport--sm {
+      line-height: 28px;
+    }
+  }
+
+  &__map-popup-address {
+    @include font(h5);
+
+    margin-right: -20px;
+
+    color: $color-elm;
+    line-height: 24px;
+
+    opacity: 1;
+  }
+
+  &__map-popup-btn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color-default-white;
+    z-index: 10;
+
+    transition: border-color $default-transition-settings;
+
+    outline: none;
+
+    svg {
+      width: 12px;
+      height: 12px;
+
+      fill: $color-default-white;
+
+      transition: fill $default-transition-settings;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-color: $color-carrot-orange;
+
+        svg {
+          fill: $color-carrot-orange;
+        }
+      }
+    }
+
+    @include viewport--sm {
+      top: 8px;
+      right: 8px;
+
+      width: 28px;
+      height: 28px;
+    }
   }
 
   .ymaps-2-1-77-map {

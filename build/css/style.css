@@ -3318,6 +3318,7 @@ button,
     .contacts {
       margin-top: 48px; } }
   .contacts__map-wrapper {
+    position: relative;
     width: 100vw;
     height: 500px;
     margin-top: 40px;
@@ -3331,6 +3332,115 @@ button,
         margin-top: 30px; } }
   .contacts__map {
     height: 100%; }
+  .contacts__map-popup-wrapper {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    pointer-events: none; }
+    @media (max-width: 1559px) {
+      .contacts__map-popup-wrapper {
+        bottom: 62px; } }
+    @media (max-width: 767px) {
+      .contacts__map-popup-wrapper {
+        bottom: 40px; } }
+    @media (max-width: 539px) {
+      .contacts__map-popup-wrapper {
+        bottom: 16px; } }
+  .contacts__map-popup {
+    position: relative;
+    width: 468px;
+    padding: 36px 56px 33px 30px;
+    background-color: #07352e;
+    pointer-events: initial;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
+    @media (max-width: 1919px) {
+      .contacts__map-popup {
+        width: 356px; } }
+    @media (max-width: 1023px) {
+      .contacts__map-popup {
+        width: 368px; } }
+    @media (max-width: 767px) {
+      .contacts__map-popup {
+        width: 100%;
+        padding: 18px 42px 14px 10px; } }
+    .contacts__map-popup--active {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto; }
+  .contacts__map-popup-heading {
+    margin: 0;
+    font-weight: 400;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'El Messiri';
+    margin-bottom: 4px; }
+    @media (max-width: 767px) {
+      .contacts__map-popup-heading {
+        line-height: 28px; } }
+  .contacts__map-popup-address {
+    margin: 0;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Ubuntu';
+    margin-right: -20px;
+    color: #248274;
+    line-height: 24px;
+    opacity: 1; }
+    @media (max-width: 767px) {
+      .contacts__map-popup-address {
+        line-height: 26px; } }
+  .contacts__map-popup-btn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    z-index: 10;
+    -webkit-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    outline: none; }
+    .contacts__map-popup-btn svg {
+      width: 12px;
+      height: 12px;
+      fill: #ffffff;
+      -webkit-transition: fill 0.3s ease;
+      transition: fill 0.3s ease; }
+    @media (hover: hover), screen and (min-width: 0\0) {
+      .contacts__map-popup-btn:hover, .contacts__map-popup-btn:focus {
+        border-color: #f39d23; }
+        .contacts__map-popup-btn:hover svg, .contacts__map-popup-btn:focus svg {
+          fill: #f39d23; } }
+    @media (max-width: 767px) {
+      .contacts__map-popup-btn {
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px; } }
   .contacts .ymaps-2-1-77-map {
     min-height: 100%; }
   .contacts [class*="ymaps-2"][class*="-ground-pane"] {
