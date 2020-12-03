@@ -1334,7 +1334,7 @@ button,
           fill: #f39d23; } }
 
 .header {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -1773,6 +1773,8 @@ button,
       padding-left: 4px; } }
 
 .page-landing {
+  position: relative;
+  padding-top: 88px;
   background-image: radial-gradient(47.28% 47.28% at 49.46% 12.83%, #0B5146 0%, #032B25 100%), radial-gradient(54.95% 54.95% at 31.4% 72.59%, #0B5146 0%, #032B25 100%);
   background-position: top center, bottom center;
   background-repeat: no-repeat, no-repeat;
@@ -1783,9 +1785,11 @@ button,
       background-size: 100% 2310px, 100% calc(100% - 2310px); } }
   @media (max-width: 1023px) {
     .page-landing {
+      padding-top: 78px;
       background-image: radial-gradient(47.28% 47.28% at 50% 14.49%, #0B5146 0%, #032B25 100%), radial-gradient(54.95% 54.95% at 31.4% 72.59%, #0B5146 0%, #032B25 100%); } }
   @media (max-width: 767px) {
     .page-landing {
+      padding-top: 62px;
       background-image: radial-gradient(17.32% 17.32% at 50% 9.54%, #0B5146 0%, #032B25 100%), radial-gradient(60.49% 60.49% at 21% 62.32%, #0B5146 0%, #032B25 100%); } }
 
 .section {

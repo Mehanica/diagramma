@@ -1,4 +1,7 @@
 .page-landing {
+  position: relative;
+  padding-top: 88px;
+
   background-image: $bg-gradient-xl-top, $bg-gradient-xl-bottom;
   background-position: top center, bottom center;
   background-repeat: no-repeat, no-repeat;
@@ -10,10 +13,12 @@
   }
 
   @include viewport--md {
+    padding-top: 78px;
     background-image: $bg-gradient-md-top, $bg-gradient-xl-bottom;
   }
 
   @include viewport--sm {
+    padding-top: 62px;
     background-image: $bg-gradient-sm-top, $bg-gradient-sm-bottom;
   }
 }
