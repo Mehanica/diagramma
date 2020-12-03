@@ -27,32 +27,33 @@ $color-dark-green-2:              #032B25;
 $color-dark-green-3:              #051311;
 
 // Opacity
-$color-black-semitransparent:     rgba($color-default-black, 0.7); // оверлей
-$color-elm-semitransparent-03:       rgba($color-elm, 0.3);
-$color-elm-semitransparent-02:       rgba($color-elm, 0.2);
-$color-elm-semitransparent-01:       rgba($color-elm, 0.1);
+$color-black-semitransparent:       rgba($color-default-black, 0.7); // оверлей
+$color-elm-semitransparent-03:      rgba($color-elm, 0.3);
+$color-elm-semitransparent-02:      rgba($color-elm, 0.2);
+$color-elm-semitransparent-01:      rgba($color-elm, 0.1);
 
 
 // Gradient
 
-$bg-gradient-xl-top:                   radial-gradient(47.28% 47.28% at 49.46% 12.83%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 1920 top bg-height: 3000px
-$bg-gradient-xl-bottom:                radial-gradient(54.95% 54.95% at 31.4% 72.59%, $color-cyprus-2 0%,$color-dark-green-2 100%); // bg-height: 100% - высота верхнего
-$bg-gradient-lg-top:                   radial-gradient(47.28% 47.28% at 50% 5.83%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 1440 top bg-height: 2310
-$bg-gradient-md-top:                   radial-gradient(47.28% 47.28% at 50% 14.49%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 768 top bg-height: 2310
-$bg-gradient-sm-top:                   radial-gradient(17.32% 17.32% at 50% 9.54%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 320 top bg-height: 2400
-$bg-gradient-sm-bottom:                radial-gradient(60.49% 60.49% at 21% 62.32%, $color-cyprus-2 0%,$color-dark-green-2 100%);
-// $bg-gradient-hero:                     radial-gradient(circle at center, $color-transparent 0%, $color-transparent 48.5%, $color-elm-semitransparent 48.5%, $color-elm-semitransparent calc(48.5% + 1px), $color-transparent calc(48.5% + 1px), $color-transparent 74.2%, $color-elm-semitransparent 74.2%, $color-elm-semitransparent calc(74.2% + 1px), $color-transparent calc(74.2% + 1px), $color-transparent calc(100% - 1px), $color-elm-semitransparent calc(100% - 1px), $color-elm-semitransparent 100%);
+$bg-gradient-xl-top:                radial-gradient(47.28% 47.28% at 49.46% 12.83%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 1920 top bg-height: 3000px
+$bg-gradient-xl-bottom:             radial-gradient(54.95% 54.95% at 31.4% 72.59%, $color-cyprus-2 0%,$color-dark-green-2 100%); // bg-height: 100% - высота верхнего
+$bg-gradient-lg-top:                radial-gradient(47.28% 47.28% at 50% 5.83%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 1440 top bg-height: 2310
+$bg-gradient-md-top:                radial-gradient(47.28% 47.28% at 50% 14.49%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 768 top bg-height: 2310
+$bg-gradient-sm-top:                radial-gradient(17.32% 17.32% at 50% 9.54%, $color-cyprus-2 0%,$color-dark-green-2 100%); // main 320 top bg-height: 2400
+$bg-gradient-sm-bottom:             radial-gradient(60.49% 60.49% at 21% 62.32%, $color-cyprus-2 0%,$color-dark-green-2 100%);
+// $bg-gradient-hero:               radial-gradient(circle at center, $color-transparent 0%, $color-transparent 48.5%, $color-elm-semitransparent 48.5%, $color-elm-semitransparent calc(48.5% + 1px), $color-transparent calc(48.5% + 1px), $color-transparent 74.2%, $color-elm-semitransparent 74.2%, $color-elm-semitransparent calc(74.2% + 1px), $color-transparent calc(74.2% + 1px), $color-transparent calc(100% - 1px), $color-elm-semitransparent calc(100% - 1px), $color-elm-semitransparent 100%);
 
 // Typography
 //---------------------------------
 
-$font-family--ElMessiri:                     "El Messiri", "Times New Roman", serif;
-$font-family--Ubuntu:                        "Ubuntu", "Arial", sans-serif;
+$font-family--ElMessiri:            "El Messiri", "Times New Roman", serif;
+$font-family--Ubuntu:               "Ubuntu", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
 
 $default-transition-settings:       0.3s ease;
+$extended-transition-settings:      0.5s ease;
 $modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
 
 // Viewports

@@ -7,18 +7,22 @@
   }
 
   @include viewport--md {
-    margin-top: 88px; // Это, возможно, убрать, когда сделает единообразные отступы
+    margin-top: 93px; // Это, возможно, убрать, когда сделает единообразные отступы
   }
 
   @include viewport--sm {
     margin-top: 48px; // Это, возможно, убрать, когда сделает единообразные отступы
   }
 
+  &__inner {
+    overflow: hidden;
+  }
+
   &__map-wrapper {
     position: relative;
     width: 100vw;
     height: 500px;
-    margin-top: 40px;
+    margin-top: 30px;
     // margin-left: -162px;
 
     font-family: 'El Messiri';

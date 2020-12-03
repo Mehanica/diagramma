@@ -1,16 +1,23 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   min-height: 84px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   background-color: $color-transparent;
+  transform: translateY(0);
+  z-index: 1000;
+
+  transition: opacity $extended-transition-settings;
 
   @include viewport--md {
     min-height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @include viewport--sm {
@@ -19,15 +26,14 @@
     padding-bottom: 15px;
   }
 
+  &--bg-colored {
+    background-color: $color-dark-green;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
     width: 100%;
-  }
-
-  a,
-  p {
-    color: $color-default-white;
   }
 
   &__logo {
@@ -56,6 +62,7 @@
   &__menu-wrapper {
     display: flex;
     align-self: flex-start;
+    padding-top: 7px;
 
     @include viewport--sm {
       position: fixed;
@@ -68,6 +75,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       width: 100vw;
+      height: 2400px;
       padding: 0 16px;
 
       min-height: 100vh;

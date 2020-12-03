@@ -9,8 +9,11 @@ import moveToAnchor from './modules/move-to-anchor';
 // Sliders
 import {initRecipesSlider} from './modules/slider/init-recipes-slider';
 
-// Animation
+// Header
+import {fixHeader} from './modules/header/fix-header';
 
+// Animation
+import {initAnimation} from './modules/animation/init-animation';
 
 // Map
 import {initMap} from './modules/map/init-map';
@@ -32,7 +35,11 @@ moveToAnchor();
 // Sliders
 initRecipesSlider();
 
+// Header
+fixHeader();
+
 // Animation
+initAnimation();
 
 // Map
 initMap();
