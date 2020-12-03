@@ -1578,6 +1578,7 @@ button,
         background-color: #248274; }
 
 .footer {
+  position: relative;
   min-height: auto;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -3405,6 +3406,13 @@ button,
 .animation-group .fi {
   opacity: 0; }
 
+.animation-group .grow {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1; }
+
 .animation-group.show .fil-2ms {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -3460,6 +3468,18 @@ button,
           animation-duration: 0.2s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.animation-group.show .grow {
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -3566,6 +3586,24 @@ button,
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes grow {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+            transform: scale3d(1.5, 1.5, 1.5); } }
+
+@keyframes grow {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+            transform: scale3d(1.5, 1.5, 1.5); } }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
