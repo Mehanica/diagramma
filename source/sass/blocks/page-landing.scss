@@ -21,4 +21,14 @@
     padding-top: 62px;
     background-image: $bg-gradient-sm-top, $bg-gradient-sm-bottom;
   }
+
+  &--loading {
+    .header {
+      opacity: 0;
+    }
+
+    .hero__bg picture {
+      opacity: 0;
+    }
+  }
 }
