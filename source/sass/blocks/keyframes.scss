@@ -14,7 +14,17 @@
   }
 
   100% {
-    transform: translateY(-100)px;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes move-in-top-35 {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-35px);
   }
 }
 
@@ -24,7 +34,7 @@
   }
 
   100% {
-    transform: translateY(50)px;
+    transform: translateY(50px);
   }
 }
 
