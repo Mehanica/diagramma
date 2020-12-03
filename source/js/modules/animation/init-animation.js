@@ -1,4 +1,6 @@
 const screens = document.querySelectorAll('.animation-group');
+const wrapper = document.querySelector('.page-landing');
+const heroBlock = document.querySelector('.hero');
 
 let elTop;
 let windowHeight;
@@ -23,6 +25,14 @@ const initAnimation = () => {
     window.addEventListener('scroll', trackingScreenBlock);
     window.addEventListener('orientationchange', trackingScreenBlock);
   }
+
+  window.addEventListener('load', () => {
+    wrapper.classList.remove('page-landing--loading');
+
+    setTimeout(() => {
+      heroBlock.classList.add('show');
+    }, 100);
+  });
 };
 
 export {initAnimation};
