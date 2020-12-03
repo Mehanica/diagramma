@@ -36,7 +36,7 @@
             <p class="hero__content-text fil-4ms d-400">You can refine everything using a&nbsp;right tool. Using a&nbsp;bronze die equipment instead of&nbsp;teflon die we&nbsp;create our delicious pasta, which absorbs more sauce and makes your meal a&nbsp;step closer to&nbsp;perfection.</p>
           </div>
           <div class="hero__bg">
-            <picture>
+            <picture class="fi">
               <source type="image/webp" srcset="img/content/fork-lg@1x.webp 1x, img/content/fork-lg@2x.webp 2x"/>
               <img src="img/content/fork-lg@1x.png" srcset="img/content/fork-lg@2x.png 2x" width="168" height="49" alt="Fork with pasta"/>
             </picture>
@@ -389,6 +389,17 @@
         </div>
         <div class="contacts__map-wrapper">
           <div class="contacts__map" id="map"></div>
+          <div class="contacts__map-popup-wrapper container">
+            <div class="contacts__map-popup">
+              <button class="contacts__map-popup-btn btn-reset" type="button" aria-label="close placemark information window">
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
+              <h3 class="contacts__map-popup-heading">Office in the United Kingdom</h3>
+              <p class="contacts__map-popup-address">Address: <span></span></p>
+            </div>
+          </div>
         </div>
       </section>
 

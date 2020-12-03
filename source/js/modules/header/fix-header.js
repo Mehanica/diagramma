@@ -7,7 +7,6 @@ const toggleHeaderState = () => {
     header.classList.remove('header--bg-colored');
   }
 };
-
 const fixHeader = () => {
   if (header) {
     document.addEventListener('scroll', toggleHeaderState);
