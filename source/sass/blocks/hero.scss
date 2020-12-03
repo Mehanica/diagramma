@@ -1,6 +1,7 @@
 .hero {
   position: relative;
 
+  margin-top: 15px;
   padding-top: 306px;
   padding-bottom: 104px;
 
@@ -18,7 +19,8 @@
   }
 
   @include viewport--sm {
-    margin-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 53px;
     padding-top: 2px;
   }
 

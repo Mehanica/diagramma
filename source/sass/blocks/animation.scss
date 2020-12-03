@@ -1,0 +1,41 @@
+.animation-group {
+  // fade-in-left
+  .fil-2ms,
+  .fil-4ms {
+    transform: translateX(-100%);
+  }
+
+  &.show {
+    .fil-2ms {
+      transform: translateX(0);
+
+      animation-name: fil;
+      animation-duration: 0.2s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .fil-4ms {
+      transform: translateX(0);
+
+      animation-name: fil;
+      animation-duration: 0.3s;
+      animation-timing-function: ease-in-out;
+
+      animation-fill-mode: both;
+    }
+
+    .del-2ms {
+      animation-delay: 0.2s;
+    }
+
+    .del-4ms {
+      animation-delay: 0.4s;
+    }
+
+    .del-5ms {
+      animation-delay: 0.5s;
+    }
+  }
+}

@@ -31,7 +31,15 @@
   }
 
   &__social {
-    margin-right: 23px;
+    margin-right: 4.2%;
+
+    @include viewport--xl {
+      margin-right: 5.5%;
+    }
+
+    @include viewport--md {
+      margin-right: 9%;
+    }
 
     @include viewport--sm {
       order: -1;

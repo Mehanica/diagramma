@@ -7,11 +7,15 @@
   }
 
   @include viewport--md {
-    margin-top: 88px; // Это, возможно, убрать, когда сделает единообразные отступы
+    margin-top: 93px; // Это, возможно, убрать, когда сделает единообразные отступы
   }
 
   @include viewport--sm {
     margin-top: 48px; // Это, возможно, убрать, когда сделает единообразные отступы
+  }
+
+  &__inner {
+    overflow: hidden;
   }
 
   &__map-wrapper {
