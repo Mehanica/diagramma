@@ -1366,8 +1366,7 @@ button,
     -webkit-transform: translateZ(0) translateY(-100%);
             transform: translateZ(0) translateY(-100%); }
   .header--fixed {
-    position: fixed;
-    background-color: #07352e; }
+    position: fixed; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
