@@ -145,6 +145,8 @@
       width: 100vw;
       max-width: 1920px;
 
+      transition: opacity $extended-transition-settings;
+
       @include viewport--xl {
         top: -120px;
         width: 103.5vw;
@@ -274,5 +276,13 @@
         height: calc(100% - 120px);
       }
     }
+  }
+
+  .grow {
+    animation-name: grow;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
   }
 }

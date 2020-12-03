@@ -1,9 +1,10 @@
 const header = document.querySelector('header');
+
 const toggleHeaderState = () => {
   if (window.scrollY > 0) {
-    header.classList.add('header--bg-filled');
+    header.classList.add('header--bg-colored');
   } else {
-    header.classList.remove('header--bg-filled');
+    header.classList.remove('header--bg-colored');
   }
 };
 const fixHeader = () => {
@@ -11,4 +12,5 @@ const fixHeader = () => {
     document.addEventListener('scroll', toggleHeaderState);
   }
 };
+
 export {fixHeader};

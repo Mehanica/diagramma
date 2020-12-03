@@ -11,6 +11,8 @@
   background-color: $color-transparent;
   z-index: 1000;
 
+  transition: opacity $extended-transition-settings;
+
   @include viewport--md {
     min-height: auto;
     padding-top: 23px;
@@ -23,11 +25,7 @@
     padding-bottom: 15px;
   }
 
-  // &--hidden {
-  //   transform: translateZ(0) translateY(-100%);
-  // }
-
-  &--bg-filled {
+  &--bg-colored {
     background-color: $color-dark-green;
   }
 
@@ -35,11 +33,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-  }
-
-  a,
-  p {
-    color: $color-default-white;
   }
 
   &__logo {

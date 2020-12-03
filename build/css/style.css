@@ -1345,7 +1345,9 @@ button,
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: rgba(255, 255, 255, 0);
-  z-index: 1000; }
+  z-index: 1000;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; }
   @media (max-width: 1023px) {
     .header {
       min-height: auto;
@@ -1356,7 +1358,7 @@ button,
       min-height: auto;
       padding-top: 15px;
       padding-bottom: 15px; } }
-  .header--bg-filled {
+  .header--bg-colored {
     background-color: #07352e; }
   .header__wrapper {
     display: -webkit-box;
@@ -1366,9 +1368,6 @@ button,
         -ms-flex-align: center;
             align-items: center;
     width: 100%; }
-  .header a,
-  .header p {
-    color: #ffffff; }
   .header__logo {
     display: none; }
     @media (max-width: 767px) {
@@ -1784,7 +1783,7 @@ button,
       background-image: radial-gradient(17.32% 17.32% at 50% 9.54%, #0B5146 0%, #032B25 100%), radial-gradient(60.49% 60.49% at 21% 62.32%, #0B5146 0%, #032B25 100%); } }
   .page-landing--loading .header {
     opacity: 0; }
-  .page-landing--loading .hero__bg picture {
+  .page-landing--loading .hero__bg img {
     opacity: 0; }
 
 .section {
@@ -2002,7 +2001,9 @@ button,
       position: relative;
       top: -100px;
       width: 100vw;
-      max-width: 1920px; }
+      max-width: 1920px;
+      -webkit-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
       @media (max-width: 1559px) {
         .hero__bg img {
           top: -120px;
@@ -2102,6 +2103,17 @@ button,
         .hero__circles::after {
           width: calc(100% - 120px);
           height: calc(100% - 120px); } }
+  .hero .grow {
+    -webkit-animation-name: grow;
+            animation-name: grow;
+    -webkit-animation-duration: 1.6s;
+            animation-duration: 1.6s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
 
 .main-nav {
   display: -webkit-box;
@@ -3495,23 +3507,10 @@ button,
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
-.animation-group.show .grow,
-.hero.show .grow {
-  -webkit-animation-name: grow;
-          animation-name: grow;
-  -webkit-animation-duration: 1.6s;
-          animation-duration: 1.6s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
 .animation-group.show .grow-2,
 .hero.show .grow-2 {
-  -webkit-animation-name: grow-2;
-          animation-name: grow-2;
+  -webkit-animation-name: grow;
+          animation-name: grow;
   -webkit-animation-duration: 1.6s;
           animation-duration: 1.6s;
   -webkit-animation-timing-function: linear;
