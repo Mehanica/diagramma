@@ -3212,6 +3212,7 @@ button,
         line-height: 26px; } }
   .page-error__content {
     position: absolute;
+    left: 0;
     bottom: -44%;
     display: -webkit-box;
     display: -ms-flexbox;
