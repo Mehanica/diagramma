@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 
   <meta charset="UTF-8">
@@ -7,6 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Makfa">
 
+
+  <meta property="og:type" content="recipe" />
+  <meta property="og:url"                content="http://htmlonelove.top/makfa-dev/main-share-campanelle.html" />
+  <meta property="og:title"              content="Campanelle" />
+  <meta property="og:description"        content="Recipe. Campanelle with mussels, olives, parmigiana and passata" />
+  <meta property="og:image"              content="img/content/recipes/recipes-campanelle@1x.png" />
 
 
 
@@ -18,47 +24,7 @@
 <link rel="stylesheet" href="css/style.min.css">
 <script src="https://api-maps.yandex.ru/2.1/?lang=en_US&amp;apikey=bf7e453c-59db-45f1-85bf-37a7703899a2" type="text/javascript"></script>
 
-  <title>Компоненты</title>
-
-  <style>
-    main > .container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    .components-backwards {
-      display: inline-block;
-      margin-bottom: 10px;
-      margin-left: 7px;
-    }
-
-    .components-backwards span:first-child {
-      position: relative;
-      top: -3px;
-
-      display: inline-block;
-      margin-right: 15px;
-
-      font-size: 16px;
-      line-height: 24px;
-      vertical-align: top;
-
-      transform: scale(2);
-    }
-
-    .components-backwards span:last-child {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .components-backwards + h1 {
-      margin-bottom: 0;
-    }
-
-    .container > section {
-      padding: 20px 0;
-    }
-  </style>
+  <title>ProjectName — Main</title>
 
 </head>
 <body>
@@ -153,11 +119,11 @@
 </symbol></svg>
   </div>
 
-  <div class="wrapper">
+  <div class="wrapper page-landing page-landing--loading js-page-recipe js-page-recipe--campanelle">
     <header class="header  fi">
   <div class="container">
     <div class="header__wrapper">
-      <a class="header__logo"  href="main.html" aria-label="Go to the main">
+      <a class="header__logo"  aria-label="Go to the main">
         <!-- <svg class="social__icon" width="108" height="32" focusable="false">
           <use xlink:href="#icon-header-logo"></use>
         </svg> -->
@@ -165,7 +131,7 @@
       </a>
 
       <div class="header__menu-wrapper">
-        <a class="header__menu-logo"  href="main.html" aria-label="Go to the main">
+        <a class="header__menu-logo"  aria-label="Go to the main">
           <!-- <svg class="social__icon" width="108" height="32" focusable="false">
             <use xlink:href="#icon-header-logo"></use>
           </svg> -->
@@ -255,46 +221,440 @@
 
 
     <main>
-      <div class="container">
-        <a class="components-backwards" href="index.html">
-          <span>&larr;</span>
-          <span>вернуться на разводящую</span>
-        </a>
-        <h1>Компоненты, используемые в вёрстке</h1>
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__heading">
+            <div class="hero__logo fil-3ms">
+              <picture>
+                <source type="image/webp" srcset="img/content/logo@1x.webp 1x, img/content/logo@2x.webp 2x"/>
+                <img src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x" width="168" height="49" alt="Company logo"/>
+              </picture>
+            </div>
+            <h1 class="hero__title fil-4ms d-100">
+              <span class="hero__title-brand">MAKFA</span> bronze die
+            </h1>
+          </div>
+          <div class="hero__content">
+            <h2 class="hero__content-title fil-3ms d-300">Pasta</h2>
+            <p class="hero__content-text fil-4ms d-400">You can refine everything using a&nbsp;right tool. Using a&nbsp;bronze die equipment instead of&nbsp;teflon die we&nbsp;create our delicious pasta, which absorbs more sauce and makes your meal a&nbsp;step closer to&nbsp;perfection.</p>
+          </div>
+          <div class="hero__bg">
+            <picture class="fi">
+              <source type="image/webp" srcset="img/content/fork-lg@1x.webp 1x, img/content/fork-lg@2x.webp 2x"/>
+              <img src="img/content/fork-lg@1x.png" srcset="img/content/fork-lg@2x.png 2x" width="168" height="49" alt="Fork with pasta"/>
+            </picture>
+            <div class="hero__circles-bg" aria-label="presentation"><div class="hero__circles grow"></div></div>
+            <!-- <div class="hero__circles-bg" aria-label="presentation"><div class="hero__circles grow-2 d-800"></div></div> -->
+          </div>
+        </div>
+      </section>
 
-        <section>
-          <h2>Название компонента или группы компонентов</h2>
+      <section class="section products container animation-group scrl-bl" id="products">
+        <div class="products__inner">
+          <span class="section__category fil-3ms">Types of pasta</span>
+          <h2 class="section__heading fil-4ms d-100">Product</h2>
+          <p class="section__intro products__intro fil-4ms d-400">Traditional Italian pasta with authentic taste for restaurant level cooking in&nbsp;your home kitchen.</p>
+          <ul class="products__list">
+            <li class="products__item fi d-600">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/campanelle@1x.webp 1x, img/content/pasta/campanelle@2x.webp 2x"/>
+                  <img src="img/content/pasta/campanelle@1x.png" srcset="img/content/pasta/campanelle@2x.png 2x" width="138" height="197" alt="Campanelle"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/campanelle@1x.webp 1x, img/content/products/campanelle@2x.webp 2x"/>
+                  <img src="img/content/products/campanelle@1x.png" srcset="img/content/products/campanelle@2x.png 2x" width="138" height="197" alt="Campanelle"/>
+                </picture>
+              </div>
+              <p class="products__name">Campanelle</p>
+            </li>
+            <li class="products__item fi d-700">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/cavatappi@1x.webp 1x, img/content/pasta/cavatappi@2x.webp 2x"/>
+                  <img src="img/content/pasta/cavatappi@1x.png" srcset="img/content/pasta/cavatappi@2x.png 2x" width="138" height="197" alt="cavatappi"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/cavatappi@1x.webp 1x, img/content/products/cavatappi@2x.webp 2x"/>
+                  <img src="img/content/products/cavatappi@1x.png" srcset="img/content/products/cavatappi@2x.png 2x" width="138" height="197" alt="cavatappi"/>
+                </picture>
+              </div>
+              <p class="products__name">Cavatappi</p>
+            </li>
+            <li class="products__item fi d-800">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/farfalle@1x.webp 1x, img/content/pasta/farfalle@2x.webp 2x"/>
+                  <img src="img/content/pasta/farfalle@1x.png" srcset="img/content/pasta/farfalle@2x.png 2x" width="138" height="197" alt="farfalle"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/farfalle@1x.webp 1x, img/content/products/farfalle@2x.webp 2x"/>
+                  <img src="img/content/products/farfalle@1x.png" srcset="img/content/products/farfalle@2x.png 2x" width="138" height="197" alt="farfalle"/>
+                </picture>
+              </div>
+              <p class="products__name">Farfalle</p>
+            </li>
+            <li class="products__item fi d-900">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/fusilli@1x.webp 1x, img/content/pasta/fusilli@2x.webp 2x"/>
+                  <img src="img/content/pasta/fusilli@1x.png" srcset="img/content/pasta/fusilli@2x.png 2x" width="138" height="197" alt="fusilli"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/fusilli@1x.webp 1x, img/content/products/fusilli@2x.webp 2x"/>
+                  <img src="img/content/products/fusilli@1x.png" srcset="img/content/products/fusilli@2x.png 2x" width="138" height="197" alt="fusilli"/>
+                </picture>
+              </div>
+              <p class="products__name">Fusilli</p>
+            </li>
+            <li class="products__item fi d-1000">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/penne-rigate@1x.webp 1x, img/content/pasta/penne-rigate@2x.webp 2x"/>
+                  <img src="img/content/pasta/penne-rigate@1x.png" srcset="img/content/pasta/penne-rigate@2x.png 2x" width="138" height="197" alt="penne-rigate"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/penne-rigate@1x.webp 1x, img/content/products/penne-rigate@2x.webp 2x"/>
+                  <img src="img/content/products/penne-rigate@1x.png" srcset="img/content/products/penne-rigate@2x.png 2x" width="138" height="197" alt="penne-rigate"/>
+                </picture>
+              </div>
+              <p class="products__name">Penne rigate</p>
+            </li>
+            <li class="products__item fi d-1100">
+              <div class="products__pasta-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/pasta/spaghetti@1x.webp 1x, img/content/pasta/spaghetti@2x.webp 2x"/>
+                  <img src="img/content/pasta/spaghetti@1x.png" srcset="img/content/pasta/spaghetti@2x.png 2x" width="138" height="197" alt="spaghetti"/>
+                </picture>
+              </div>
+              <div class="products__package-photo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/products/spaghetti@1x.webp 1x, img/content/products/spaghetti@2x.webp 2x"/>
+                  <img src="img/content/products/spaghetti@1x.png" srcset="img/content/products/spaghetti@2x.png 2x" width="138" height="197" alt="spaghetti"/>
+                </picture>
+              </div>
+              <p class="products__name">Spaghetti</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <p>Класс компонента \ модификаторы</p>
-          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
-          <div>Компонент</div>
-        </section>
+      <section class="video section container animation-group" id="experiment">
+        <div class="video__inner">
+          <span class="section__category fil-3ms">Video</span>
+          <h2 class="section__heading fil-4ms d-100">Experiment</h2>
+          <p class="section__intro video__intro fil-4ms d-400">Simple pasta made with teflon die sure gives you an opportunity to cook something nice. But can you imagine an Italian chef being satisfied with «nice»? We can’t either. That’s why we follow traditional Italian ways and use bronze die instead. Watch our video and see the difference between just pasta and masterpiece of cooking.</p>
 
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <!-- Social - начало -->
-        <section>
-          <h2>Social</h2>
+          <div class="video__wrapper fil-4ms d-800">
+            <video class="video__container" width="1468" height="656">
+              <source src="video/bronze-vs-teflon.mp4">
+            </video>
 
-          <p>social</p>
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/makfaofficial/" aria-label="Follow us on Facebook">
-                <svg class="social__icon" width="8" height="14" focusable="false">
-                  <use xlink:href="#icon-fb"></use>
+            <div class="video__overlay"></div>
+
+            <div class="video__play-button-wrapper">
+              <button class="video__play-btn btn-reset" type="button" aria-label="video play button">
+                <svg width="50" height="60" focusable="false">
+                  <use xlink:href="#icon-play-btn"></use>
                 </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes section container animation-group" id="recipes">
+        <div class="recipes__inner">
+          <span class="section__category fil-3ms">Kitchen</span>
+          <h2 class="section__heading fil-4ms d-100">Recipes</h2>
+          <p class="section__intro recipes__intro fil-4ms d-400">Go classic or explore your own creativity — you will always get a meal like it was made by your favorite chef.</p>
+        </div>
+        <ul class="recipes__list">
+          <li class="recipes__item recipes__item--plug">
+          </li>
+
+          <li class="recipes__item recipes__item--plug">
+          </li>
+
+          <li class="recipes__item fi d-600">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="0">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-campanelle@1x.webp 1x, img/content/recipes/recipes-campanelle@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-campanelle@1x.png" srcset="img/content/recipes/recipes-campanelle@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">15</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">2</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Campanelle</h3>
+              <p class="recipe-preview__description">with mussels, olives, parmigiana</p>
+            </a>
+          </li>
+
+          <li class="recipes__item fi d-700">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="1">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-spaghetti@1x.webp 1x, img/content/recipes/recipes-spaghetti@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-spaghetti@1x.png" srcset="img/content/recipes/recipes-spaghetti@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">12</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">2</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Spaghetti</h3>
+              <p class="recipe-preview__description">Gorgonzola and grapes</p>
+            </a>
+          </li>
+
+          <li class="recipes__item fi d-800">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="2">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-fusilli@1x.webp 1x, img/content/recipes/recipes-fusilli@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-fusilli@1x.png" srcset="img/content/recipes/recipes-fusilli@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">20</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">4</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Fusilli</h3>
+              <p class="recipe-preview__description">with chili pepper, veal and tomato sauce</p>
+            </a>
+          </li>
+
+          <li class="recipes__item fi d-900">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="3">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-farfalle@1x.webp 1x, img/content/recipes/recipes-farfalle@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-farfalle@1x.png" srcset="img/content/recipes/recipes-farfalle@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">15</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">2</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Farfalle</h3>
+              <p class="recipe-preview__description">with mussels and mint</p>
+            </a>
+          </li>
+
+          <li class="recipes__item fi d-1000">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="4">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-penne_rigate@1x.webp 1x, img/content/recipes/recipes-penne_rigate@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-penne_rigate@1x.png" srcset="img/content/recipes/recipes-penne_rigate@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">20</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">4</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Penne rigate</h3>
+              <p class="recipe-preview__description">with fried rocket, prawns and double cream</p>
+            </a>
+          </li>
+
+          <li class="recipes__item fi d-1100">
+            <a class="recipe-preview" href="#" data-modal="recipes" data-slider="5">
+              <div class="recipe-preview__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/recipes/recipes-cavatappi@1x.webp 1x, img/content/recipes/recipes-cavatappi@2x.webp 2x"/>
+                  <img src="img/content/recipes/recipes-cavatappi@1x.png" srcset="img/content/recipes/recipes-cavatappi@2x.png 2x" width="268" height="268" alt="Recipe photo"/>
+                </picture>
+              </div>
+
+              <div class="recipe-preview__details-wrapper">
+                <p class="recipe-preview__details">
+                  <svg width="14" height="14" focusable="false">
+                    <use xlink:href="#icon-time"></use>
+                  </svg>
+                  <span class="recipe-preview__cooking-time">15</span>
+                  min
+                </p>
+                <p class="recipe-preview__details">
+                  <svg width="18" height="10" focusable="false">
+                    <use xlink:href="#icon-dish"></use>
+                  </svg>
+                  serves
+                  <span class="recipe-preview__serves">2</span>
+                </p>
+              </div>
+              <h3 class="recipe-preview__heading">Cavatappi</h3>
+              <p class="recipe-preview__description">with chanterelles mushrooms and blue cheese cream sauce</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="recipes__figure mtb-50 d-500">
+          <picture>
+            <source type="image/webp" srcset="img/bg/farfalle-1@1x.webp 1x, img/bg/farfalle-1@2x.webp 2x">
+            <img src="img/bg/farfalle-1@1x.png" srcset="img/bg/farfalle-1@2x.png 2x" width="162" height="168" alt="Picture">
+          </picture>
+        </div>
+
+        <div class="recipes__figure recipes__figure--2 mit-100 d-500">
+          <picture>
+            <source type="image/webp" srcset="img/bg/farfalle-2@1x.webp 1x, img/bg/farfalle-2@2x.webp 2x">
+            <img src="img/bg/farfalle-2@1x.png" srcset="img/bg/farfalle-2@2x.png 2x" width="164" height="164" alt="Picture">
+          </picture>
+        </div>
+
+      </section>
+
+      <section class="contacts section animation-group" id="store">
+        <div class="container">
+          <div class="contacts__inner">
+            <span class="section__category fil-3ms">Contacts</span>
+            <h2 class="section__heading fil-4ms d-100">Find a store</h2>
+          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <div class="contacts__map" id="map"></div>
+          <div class="contacts__map-popup-wrapper container">
+            <div class="contacts__map-popup">
+              <button class="contacts__map-popup-btn btn-reset" type="button" aria-label="close placemark information window">
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-close"></use>
+                </svg>
+              </button>
+              <h3 class="contacts__map-popup-heading">Office in the United Kingdom</h3>
+              <p class="contacts__map-popup-address">Address: <span></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="b2b section container animation-group" id="b2b">
+        <div class="b2b__inner">
+          <a class="b2b__partner-logo fil-3ms" href="http://shop.monolith.mobi/" target="_blank" rel="nofollow noopener" aria-label="Go to the partner website">
+            <svg width="128" height="69" focusable="false">
+              <use xlink:href="#icon-monolith"></use>
+            </svg>
+          </a>
+
+          <h2 class="b2b__title section__heading fil-4ms d-100">Our distributor in&nbsp;the&nbsp;United Kingdom Monolith UK Ltd.</h2>
+
+          <p class="b2b__intro section__intro fil-4ms d-400">A leading distributor of European foods and spirits to the United Kingdom.</p>
+
+          <ul class="b2b__contacts-list">
+            <li class="b2b__contacts-item fi d-600">
+              <a class="b2b__partner-link b2b__partner-link--tel" href="tel:+44(0)2075400039">
+                <span class="b2b__partner-link-img">
+                  <svg width="64" height="64" focusable="false">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </span>
+                <h3 class="b2b__partner-link-title">Phone</h3>
+                <span class="b2b__partner-contact">+44 (0) 2075400039</span>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/makfa_world/" aria-label="Follow us on Instagram">
-                <svg class="social__icon" width="12" height="12" focusable="false">
-                  <use xlink:href="#icon-inst"></use>
-                </svg>
+            <li class="b2b__contacts-item fi d-700">
+              <a class="b2b__partner-link b2b__partner-link--email" href="mailto:uk.sales@monolith-uk.com">
+                <span class="b2b__partner-link-img">
+                  <svg width="76" height="48" focusable="false">
+                    <use xlink:href="#icon-email"></use>
+                  </svg>
+                </span>
+                <h3 class="b2b__partner-link-title">Email</h3>
+                <span class="b2b__partner-contact">uk.sales@monolith-uk.com</span>
+              </a>
+            </li>
+            <li class="b2b__contacts-item fi d-800">
+              <a class="b2b__partner-link b2b__partner-link--website" href="http://shop.monolith.mobi">
+                <span class="b2b__partner-link-img">
+                  <svg width="64" height="70" focusable="false">
+                    <use xlink:href="#icon-website"></use>
+                  </svg>
+                </span>
+                <h3 class="b2b__partner-link-title">Website</h3>
+                <span class="b2b__partner-contact">shop.monolith.mobi</span>
               </a>
             </li>
           </ul>
-        </section>
-        <!-- Social - конец -->
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -323,6 +683,558 @@
     </a>
   </div>
 </footer>
+
+
+    <div class="modal modal--preload modal--recipes   modal--fit-content    modal--recipes ">
+  <div class="modal__wrapper">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+
+      <div class="modal__recipes recipes-slider">
+  <div class="swiper-container js-recipes-slider">
+    <div class="swiper-wrapper">
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-campanelle@1x.webp 1x, img/content/recipes/recipes-campanelle@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-campanelle@1x.png" srcset="img/content/recipes/recipes-campanelle@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">15</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">2</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Campanelle</h2>
+        <p class="recipe__description section__intro">with mussels, olives, parmigiana and passata</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Campanelle MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">120 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Olive oil</mark></span>
+            <span class="recipe__quantity">30 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Mussels</mark></span>
+            <span class="recipe__quantity">300 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Olives</mark></span>
+            <span class="recipe__quantity">200 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Passata</mark></span>
+            <span class="recipe__quantity">240 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parmesan</mark></span>
+            <span class="recipe__quantity">20 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Garlic</mark></span>
+            <span class="recipe__quantity">5 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Basil leaves</mark></span>
+            <span class="recipe__quantity">10 g</span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil Campanelle al dente.</li>
+          <li class="recipe__instructions-item">Clean mussels and fry them with olive oil and chopped garlic for 1,5-2 min.</li>
+          <li class="recipe__instructions-item">Add passata, olives and stew at low heat for a further 2-3 min.</li>
+          <li class="recipe__instructions-item">Once Campanelle is ready, place it in the pan with mussels, add grated parmesan, a pinch of salt, pepper and mix.</li>
+          <li class="recipe__instructions-item">Sprinkle with grated parmesan over the pasta and garnish with basil to serve.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-campanelle.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Campanelle"  data-url="http://htmlonelove.top/makfa-dev/main-campanelle.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-spaghetti@1x.webp 1x, img/content/recipes/recipes-spaghetti@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-spaghetti@1x.png" srcset="img/content/recipes/recipes-spaghetti@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">12</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">2</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Spaghetti</h2>
+        <p class="recipe__description section__intro">gorgonzola and grapes</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">SPAGHETTI MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">160 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Double cream</mark></span>
+            <span class="recipe__quantity">200 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Gorgonzola (or another blue cheese)</mark></span>
+            <span class="recipe__quantity">40 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Seedless grapes</mark></span>
+            <span class="recipe__quantity">100 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Mint</mark></span>
+            <span class="recipe__quantity">5 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Basil leaves</mark></span>
+            <span class="recipe__quantity">5 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of salt</mark></span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of pepper</mark></span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil spaghetti al dente.</li>
+          <li class="recipe__instructions-item">Cut grapes in half, place them in a pan and toast.</li>
+          <li class="recipe__instructions-item">Heat the cream with gorgonzola cheese until the cheese completely dissolve, add toasted grapes and stir for 2-3 min.</li>
+          <li class="recipe__instructions-item">Once the spaghetti is ready, add the drained pasta into the pan and stir with sauce for 1 min.</li>
+          <li class="recipe__instructions-item">Finally, add some chopped mint, a pinch of salt and pepper.</li>
+          <li class="recipe__instructions-item">Serve on a plate with basil garnish.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-spaghetti.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Spaghetti"  data-url="http://htmlonelove.top/makfa-dev/main-spaghetti.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-fusilli@1x.webp 1x, img/content/recipes/recipes-fusilli@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-fusilli@1x.png" srcset="img/content/recipes/recipes-fusilli@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">20</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">4</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Fusilli</h2>
+        <p class="recipe__description section__intro">with chili pepper, veal and tomato sauce.</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Fusilli MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">250 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Chili pepper (1/3 of pod)</mark></span>
+            <span class="recipe__quantity">5 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Veal</mark></span>
+            <span class="recipe__quantity">400 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Olive oil</mark></span>
+            <span class="recipe__quantity">60 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Coriander leaves</mark></span>
+            <span class="recipe__quantity">50 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Tin diced tomatoes</mark></span>
+            <span class="recipe__quantity">400 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parmesan</mark></span>
+            <span class="recipe__quantity">50 g</span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil Fusilli al dente.</li>
+          <li class="recipe__instructions-item">Add fine chopped chili pepper without seeds, coriander leaves, tin diced tomatoes and stew at low heat for 1,5 -2 min.</li>
+          <li class="recipe__instructions-item">Place Fusili in the pan with sauce and stir.</li>
+          <li class="recipe__instructions-item">Add grated parmesan, salt and pepper.</li>
+          <li class="recipe__instructions-item">Sprinkle with grated parmesan to serve and garnish with coriander leaves.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-fusilli.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Fusilli"  data-url="http://htmlonelove.top/makfa-dev/main-fusilli.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-farfalle@1x.webp 1x, img/content/recipes/recipes-farfalle@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-farfalle@1x.png" srcset="img/content/recipes/recipes-farfalle@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">15</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">2</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Farfalle</h2>
+        <p class="recipe__description section__intro">with mussels and mint</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Farfalle MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">260 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">White wine</mark></span>
+            <span class="recipe__quantity">70 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Almonds</mark></span>
+            <span class="recipe__quantity">100 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Olive oil</mark></span>
+            <span class="recipe__quantity">60 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Mint</mark></span>
+            <span class="recipe__quantity">10 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Double cream</mark></span>
+            <span class="recipe__quantity">140 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parmesan</mark></span>
+            <span class="recipe__quantity">20 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Seasoning:</mark></span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Dried herbs</mark></span>
+            <span class="recipe__quantity">5 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of salt</mark></span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of pepper</mark></span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil Farfalle al dente.</li>
+          <li class="recipe__instructions-item">Chopped almonds and toast them.</li>
+          <li class="recipe__instructions-item">Cook half of almonds with white wine for 2-3 min, add double cream and stew a bit more until it becomes a sauce.</li>
+          <li class="recipe__instructions-item">Place Farfalle, dried herbs in the pan with the sauce, mix and add a half of parmesan, chopped mint, salt and pepper.</li>
+          <li class="recipe__instructions-item">Scatter with the rest of toasted almonds, grated parmesan and garnish with mint to serve.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-farfalle.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Farfalle"  data-url="http://htmlonelove.top/makfa-dev/main-farfalle.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-penne_rigate@1x.webp 1x, img/content/recipes/recipes-penne_rigate@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-penne_rigate@1x.png" srcset="img/content/recipes/recipes-penne_rigate@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">20</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">4</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Penne Rigate</h2>
+        <p class="recipe__description section__intro">with fried rocket, prawns and double cream</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Penne Rigate MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">250 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Rocket</mark></span>
+            <span class="recipe__quantity">60 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Tiger prawns</mark></span>
+            <span class="recipe__quantity">300 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Olive oil</mark></span>
+            <span class="recipe__quantity">60 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Double cream</mark></span>
+            <span class="recipe__quantity">400 ml</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parmesan</mark></span>
+            <span class="recipe__quantity">50 g</span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil Penne Rigate al dente.</li>
+          <li class="recipe__instructions-item">Clean tiger prawns and fry them with olive oil for 1,5-2 min.</li>
+          <li class="recipe__instructions-item">Once cooked, add rocket, double cream and stew at low heat for a further 1,5-2 min.</li>
+          <li class="recipe__instructions-item">Place cooked Penne Rigate in the pan with the sauce, stir while it is stewing for a min.</li>
+          <li class="recipe__instructions-item">At the end, add grated parmesan, salt and pepper, food is ready to serve.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-penne-rigat.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Penne Rigat"  data-url="http://htmlonelove.top/makfa-dev/main-penne-rigat.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="recipe section swiper-slide">
+        <figure class="recipe__figure">
+          <picture>
+            <source type="image/webp" srcset="img/content/recipes/recipes-cavatappi@1x.webp 1x, img/content/recipes/recipes-cavatappi@2x.webp 2x"/>
+            <img src="img/content/recipes/recipes-cavatappi@1x.png" srcset="img/content/recipes/recipes-cavatappi@2x.png 2x" width="168" height="49" alt="Company logo"/>
+          </picture>
+        </figure>
+        <div class="recipe__header">
+          <p class="recipe__details">
+            <svg width="14" height="14" focusable="false">
+              <use xlink:href="#icon-time"></use>
+            </svg>
+            <span class="recipe__cooking-time">15</span>
+            min
+          </p>
+          <p class="recipe__details">
+            <svg width="18" height="10" focusable="false">
+              <use xlink:href="#icon-dish"></use>
+            </svg>
+            serves
+            <span class="recipe__serves">2</span>
+          </p>
+        </div>
+        <h2 class="recipe__heading section__heading">Cavatappi</h2>
+        <p class="recipe__description section__intro">with chanterelles mushrooms and blue cheese cream sauce</p>
+        <h3 class="recipe__ingredients-heading">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Cavatappi MAKFA bronze die</mark></span>
+            <span class="recipe__quantity">250 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Chanterelles mushrooms</mark></span>
+            <span class="recipe__quantity">150 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Double cream</mark></span>
+            <span class="recipe__quantity">200 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Blue cheese</mark></span>
+            <span class="recipe__quantity">50 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parmesan</mark></span>
+            <span class="recipe__quantity">30 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Parsley</mark></span>
+            <span class="recipe__quantity">15 g</span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of salt</mark></span>
+          </li>
+          <li class="recipe__ingredients-item">
+            <span class="recipe__ingredient"><mark class="recipe__ingredient-mark">Pinch of pepper</mark></span>
+          </li>
+        </ul>
+        <h3 class="recipe__instructions-heading">Cooking</h3>
+        <ol class="recipe__instructions-list">
+          <li class="recipe__instructions-item">Boil Cavatappi al dente.</li>
+          <li class="recipe__instructions-item">Stew mushrooms with double cream for 3-4 min, add blue cheese, stir until the cheese completely dissolve.</li>
+          <li class="recipe__instructions-item">Once Cavatappi cooked, place it in the pan with sauce, add salt, pepper, a half of grated parmesan, and chopped parsley, mix.</li>
+          <li class="recipe__instructions-item">Sprinkle with the rest of grated parmesan over the pasta to serve.</li>
+        </ol>
+        <div class="recipe__share">
+          <span>Share on</span>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" data-url="http://htmlonelove.top/makfa-dev/main-cavatappi.html" data-sharer="facebook">
+                <svg class="social__icon" width="8" height="14" focusable="false">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" data-sharer="whatsapp" data-title="Cavatappi"  data-url="http://htmlonelove.top/makfa-dev/main-cavatappi.html">
+                <svg class="social__icon" width="14" height="14" focusable="false">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="slider-button slider-button--next swiper-button-next"></div>
+  <div class="slider-button slider-button--prev swiper-button-prev"></div>
+</div>
+
+
+      <button class="modal__close-btn btn-reset" type="button" aria-label="close modal window">
+        <svg width="32" height="32">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
 
   </div>
 

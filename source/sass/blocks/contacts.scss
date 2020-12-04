@@ -117,12 +117,17 @@
   &__map-popup-address {
     @include font(h5);
 
+    min-height: 48px;
     margin-right: -20px;
 
     color: $color-elm;
     line-height: 24px;
 
     opacity: 1;
+
+    @include viewport--xxl {
+      min-height: 72px;
+    }
   }
 
   &__map-popup-btn {

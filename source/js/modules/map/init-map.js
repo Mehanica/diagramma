@@ -21,7 +21,7 @@ function init() {
     clusterDisableClickZoom: false,
 
     clusterIconLayout: 'default#imageWithContent',
-    clusterIconImageHref: '../img/sprite/icon-cluster.svg',
+    clusterIconImageHref: './img/content/map/icon-cluster.svg',
     clusterIconImageSize: [38, 38],
     clusterIconImageOffset: [-19, -19],
     clusterIconRadius: 1,
@@ -42,7 +42,7 @@ function init() {
     // Указываем тип макета
     iconLayout: 'default#imageWithContent',
     // Добавляем своё изображение иконки метки
-    iconImageHref: '../img/sprite/icon-placemark.svg',
+    iconImageHref: '../img/content/map/icon-placemark.svg',
     // Указываем размеры метки
     iconImageSize: [32, 40],
     // Изменяем положение левого верхнего угла иконки относительно её точки привязки
@@ -54,7 +54,7 @@ function init() {
   function setDefaultColor(objectId) {
     objectManager.objects.setObjectOptions(objectId, {
       iconLayout: 'default#imageWithContent',
-      iconImageHref: '../img/sprite/icon-placemark.svg',
+      iconImageHref: '../img/content/map/icon-placemark.svg',
       iconImageSize: [32, 40],
       iconImageOffset: [-17, -40],
       hideIconOnBalloonOpen: false,
@@ -64,7 +64,7 @@ function init() {
   function setActiveColor(objectId) {
     objectManager.objects.setObjectOptions(objectId, {
       iconLayout: 'default#imageWithContent',
-      iconImageHref: '../img/sprite/icon-placemark-active.svg',
+      iconImageHref: '../img/content/map/icon-placemark-active.svg',
       iconImageSize: [32, 40],
       iconImageOffset: [-17, -40],
       hideIconOnBalloonOpen: false,
