@@ -1,5 +1,13 @@
 .video {
 
+  @include viewport--md {
+    margin-bottom: 97px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 58px;
+  }
+
   &__inner {
     overflow: hidden;
   }
