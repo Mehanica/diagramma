@@ -22,7 +22,7 @@
     position: relative;
     width: 100vw;
     height: 500px;
-    margin-top: 30px;
+    margin-top: 17px;
     // margin-left: -162px;
 
     font-family: 'El Messiri';
@@ -33,12 +33,13 @@
 
     @include viewport--md {
       height: 553px;
+      margin-top: 29px;
       // margin-left: -32px;
     }
 
     @include viewport--sm {
       height: 460px;
-      margin-top: 30px;
+      margin-top: 22px;
       // margin-left: -24px;
     }
   }

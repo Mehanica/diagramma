@@ -1878,7 +1878,7 @@ button,
       padding-bottom: 74px; } }
   @media (max-width: 1023px) {
     .hero {
-      margin-bottom: 80px;
+      margin-bottom: 76px;
       padding-top: 500px;
       padding-bottom: 0; } }
   @media (max-width: 767px) {
@@ -2328,7 +2328,7 @@ button,
       padding-top: 100px; } }
   @media (max-width: 767px) {
     .b2b {
-      padding-top: 60px;
+      padding-top: 55px;
       margin-bottom: 40px; } }
   .b2b__inner {
     overflow: hidden; }
@@ -2802,6 +2802,14 @@ button,
           margin-left: 18px;
           margin-right: -6px; } }
 
+@media (max-width: 1023px) {
+  .video {
+    margin-bottom: 97px; } }
+
+@media (max-width: 767px) {
+  .video {
+    margin-bottom: 58px; } }
+
 .video__inner {
   overflow: hidden; }
 
@@ -2926,7 +2934,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: -237px; }
+  margin-bottom: -233px; }
   @media (max-width: 1439px) {
     .recipes {
       margin-bottom: 0; } }
@@ -3087,13 +3095,24 @@ button,
     display: flex;
     margin-bottom: 25px;
     width: 100%;
-    min-height: 268px; }
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 100%; }
     .recipe-preview__img picture {
       width: 100%;
-      height: 100%; }
-    .recipe-preview__img img {
       height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      font-size: 0;
+      line-height: 0; }
+    .recipe-preview__img img {
+      position: absolute;
       width: 100%;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       /* stylelint-disable */
@@ -3419,15 +3438,16 @@ button,
     position: relative;
     width: 100vw;
     height: 500px;
-    margin-top: 30px;
+    margin-top: 17px;
     font-family: 'El Messiri'; }
     @media (max-width: 1023px) {
       .contacts__map-wrapper {
-        height: 553px; } }
+        height: 553px;
+        margin-top: 29px; } }
     @media (max-width: 767px) {
       .contacts__map-wrapper {
         height: 460px;
-        margin-top: 30px; } }
+        margin-top: 22px; } }
   .contacts__map {
     height: 100%; }
   .contacts__map-popup-wrapper {
@@ -3654,8 +3674,16 @@ button,
 
 .animation-group.show .grow,
 .hero.show .grow {
-  -webkit-animation: 1.6s linear infinite alternate grow;
-          animation: 1.6s linear infinite alternate grow; }
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 .animation-group.show .grow-2,
 .hero.show .grow-2 {
