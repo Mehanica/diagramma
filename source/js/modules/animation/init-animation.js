@@ -29,9 +29,11 @@ const initAnimation = () => {
   window.addEventListener('load', () => {
     wrapper.classList.remove('page-landing--loading');
 
-    setTimeout(() => {
-      heroBlock.classList.add('show');
-    }, 400);
+    if (heroBlock) {
+      setTimeout(() => {
+        heroBlock.classList.add('show');
+      }, 400);
+    }
   });
 };
 
