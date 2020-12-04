@@ -45,7 +45,9 @@
     position: relative;
 
     margin: 0;
+    height: 0;
     padding-bottom: 100%;
+    overflow: hidden;
 
     picture  {
       position: absolute;
@@ -111,7 +113,9 @@
   &__heading {
     grid-area: heading;
 
-    word-break: break-word;
+    @media (max-width: 880px) and (min-width: 768px) {
+      font-size: 54px;
+    }
 
     @include viewport--sm {
       margin-bottom: 7px;
@@ -125,6 +129,10 @@
     margin-bottom: 30px;
 
     text-transform: lowercase;
+
+    @media (max-width: 880px) and (min-width: 768px) {
+      font-size: 22px;
+    }
 
     @include viewport--sm {
       margin-bottom: 24px;

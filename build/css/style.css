@@ -1253,7 +1253,12 @@ button,
       border-color: #f39d23; }
       .slider-button:hover::after, .slider-button:focus::after {
         border-right: 1px solid #f39d23;
-        border-top: 1px solid #f39d23; } }
+        border-top: 1px solid #f39d23; }
+    .slider-button:active {
+      border-color: #0c4c42; }
+      .slider-button:active::after {
+        border-right: 1px solid #0c4c42;
+        border-top: 1px solid #0c4c42; } }
   .slider-button::before {
     content: "";
     position: absolute;
@@ -1740,10 +1745,15 @@ button,
       -webkit-transition: fill 0.3s ease;
       transition: fill 0.3s ease; }
     @media (hover: hover), screen and (min-width: 0\0) {
-      .modal__close-btn:hover, .modal__close-btn:focus, .modal__close-btn:active {
+      .modal__close-btn:hover, .modal__close-btn:focus {
         border-color: #f39d23; }
-        .modal__close-btn:hover svg, .modal__close-btn:focus svg, .modal__close-btn:active svg {
+        .modal__close-btn:hover svg, .modal__close-btn:focus svg {
           fill: #f39d23; } }
+    @media (hover: hover), screen and (min-width: 0\0) {
+      .modal__close-btn:active {
+        border-color: #0c4c42; }
+        .modal__close-btn:active svg {
+          fill: #0c4c42; } }
   .modal--responsive .modal__content {
     width: 100%; }
   .modal--fit-content .modal__content {
@@ -1907,6 +1917,7 @@ button,
                 align-items: flex-start; } }
   .hero__heading {
     max-width: 570px;
+    margin-right: auto;
     overflow: hidden; }
     @media (max-width: 2000px) {
       .hero__heading {
@@ -2557,7 +2568,9 @@ button,
     grid-area: figure;
     position: relative;
     margin: 0;
-    padding-bottom: 100%; }
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden; }
     .recipe__figure picture {
       position: absolute;
       top: 0;
@@ -2616,8 +2629,10 @@ button,
   .recipe__heading {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: heading;
-    word-break: break-word; }
+    grid-area: heading; }
+    @media (max-width: 880px) and (min-width: 768px) {
+      .recipe__heading {
+        font-size: 54px; } }
     @media (max-width: 767px) {
       .recipe__heading {
         margin-bottom: 7px; } }
@@ -2627,6 +2642,9 @@ button,
     grid-area: description;
     margin-bottom: 30px;
     text-transform: lowercase; }
+    @media (max-width: 880px) and (min-width: 768px) {
+      .recipe__description {
+        font-size: 22px; } }
     @media (max-width: 767px) {
       .recipe__description {
         margin-bottom: 24px; } }
@@ -3492,6 +3510,7 @@ button,
     font-size: 14px;
     line-height: 28px;
     font-family: 'Ubuntu';
+    min-height: 48px;
     margin-right: -20px;
     color: #248274;
     line-height: 24px;
@@ -3499,6 +3518,9 @@ button,
     @media (max-width: 767px) {
       .contacts__map-popup-address {
         line-height: 26px; } }
+    @media (max-width: 1919px) {
+      .contacts__map-popup-address {
+        min-height: 72px; } }
   .contacts__map-popup-btn {
     position: absolute;
     top: 13px;
