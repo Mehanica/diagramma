@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   z-index: 1000;
 
   display: flex;
@@ -80,6 +80,7 @@
     border-radius: 50%;
     border: 1px solid $color-default-white;
     z-index: 10;
+    outline: none;
 
     transition: border-color $default-transition-settings;
 
@@ -94,8 +95,8 @@
     }
 
     svg {
-      width: 13px;
-      height: 13px;
+      width: 12px;
+      height: 12px;
 
       fill: $color-default-white;
 
@@ -104,7 +105,8 @@
 
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         border-color: $color-carrot-orange;
 
         svg {
@@ -147,10 +149,14 @@
 
   &--recipes {
     .modal__content {
+      height: 100%;
       padding: 0;
+      background-color: $color-transparent;
     }
 
     .modal__wrapper {
+      cursor: initial;
+
       @include viewport--sm {
         padding-right: 4px;
         padding-left: 4px;

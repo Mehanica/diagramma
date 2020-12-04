@@ -83,10 +83,6 @@
     opacity: 0;
     pointer-events: none;
 
-    transition: opacity $modal-transition-settings,
-    transform $modal-transition-settings,
-    visibility $modal-transition-settings;
-
     @include viewport--xxl {
       width: 356px;
     }
@@ -104,7 +100,7 @@
       transform: scale(1);
       visibility: visible;
       opacity: 1;
-      pointer-events: auto;
+      pointer-events: initial;
     }
   }
 
