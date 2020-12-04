@@ -1,6 +1,6 @@
 const popup = document.querySelector('.contacts__map-popup');
-const popupAddress = popup.querySelector('.contacts__map-popup-address span');
-const popupCloseBtn = popup.querySelector('.contacts__map-popup-btn');
+const popupAddress = document.querySelector('.contacts__map-popup-address span');
+const popupCloseBtn = document.querySelector('.contacts__map-popup-btn');
 
 const closePopup = function () {
   popup.classList.remove('contacts__map-popup--active');
