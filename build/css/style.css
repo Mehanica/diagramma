@@ -1254,6 +1254,12 @@ button,
       .slider-button:hover::after, .slider-button:focus::after {
         border-right: 1px solid #f39d23;
         border-top: 1px solid #f39d23; } }
+  .slider-button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px; }
   .slider-button::after {
     content: "";
     display: block;
@@ -1648,8 +1654,8 @@ button,
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1718,6 +1724,7 @@ button,
     border-radius: 50%;
     border: 1px solid #ffffff;
     z-index: 10;
+    outline: none;
     -webkit-transition: border-color 0.3s ease;
     transition: border-color 0.3s ease; }
     @media (max-width: 1023px) {
@@ -1729,15 +1736,15 @@ button,
         top: -44px;
         right: 12px; } }
     .modal__close-btn svg {
-      width: 13px;
-      height: 13px;
+      width: 12px;
+      height: 12px;
       fill: #ffffff;
       -webkit-transition: fill 0.3s ease;
       transition: fill 0.3s ease; }
     @media (hover: hover), screen and (min-width: 0\0) {
-      .modal__close-btn:hover, .modal__close-btn:focus {
+      .modal__close-btn:hover, .modal__close-btn:focus, .modal__close-btn:active {
         border-color: #f39d23; }
-        .modal__close-btn:hover svg, .modal__close-btn:focus svg {
+        .modal__close-btn:hover svg, .modal__close-btn:focus svg, .modal__close-btn:active svg {
           fill: #f39d23; } }
   .modal--responsive .modal__content {
     width: 100%; }
@@ -1758,11 +1765,15 @@ button,
     opacity: 1;
     pointer-events: auto; }
   .modal--recipes .modal__content {
-    padding: 0; }
-  @media (max-width: 767px) {
-    .modal--recipes .modal__wrapper {
-      padding-right: 4px;
-      padding-left: 4px; } }
+    height: 100%;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0); }
+  .modal--recipes .modal__wrapper {
+    cursor: initial; }
+    @media (max-width: 767px) {
+      .modal--recipes .modal__wrapper {
+        padding-right: 4px;
+        padding-left: 4px; } }
 
 .page-landing {
   position: relative;

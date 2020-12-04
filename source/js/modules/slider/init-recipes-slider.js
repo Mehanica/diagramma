@@ -1,8 +1,10 @@
 const sliderElementSelector = '.js-recipes-slider';
 const sliderElement = document.querySelector(sliderElementSelector);
+const breakpoint = window.matchMedia('(max-width: 767px)');
 let btnNext;
 let btnPrev;
 let myNewSwiper;
+let autoHeight;
 
 // eslint-disable-next-line no-undef
 const initSwiper = (slider) => new Swiper(slider, {
@@ -11,7 +13,8 @@ const initSwiper = (slider) => new Swiper(slider, {
   effect: 'fade',
   observer: true,
   observeParents: true,
-  autoHeight: true,
+  autoHeight: autoHeight,
+  loop: true,
   navigation: {
     nextEl: btnNext,
     prevEl: btnPrev,
@@ -19,13 +22,21 @@ const initSwiper = (slider) => new Swiper(slider, {
 });
 
 const initRecipesSlider = (eventTrigger) => {
-
   if (!sliderElement) {
     return;
   }
 
+  if (breakpoint.matches) {
+    autoHeight = true;
+  }
+
   btnNext = sliderElement.closest('.modal__content').querySelector('.swiper-button-next');
   btnPrev = sliderElement.closest('.modal__content').querySelector('.swiper-button-prev');
+
+  if (myNewSwiper) {
+    myNewSwiper.destroy(true, true);
+  }
+
   myNewSwiper = initSwiper(sliderElement);
 
   myNewSwiper.on('slideChange', () => {
@@ -35,7 +46,8 @@ const initRecipesSlider = (eventTrigger) => {
   });
 
   if (eventTrigger) {
-    myNewSwiper.slideTo(eventTrigger.dataset.slider, 0);
+    const index = +eventTrigger.dataset.slider;
+    myNewSwiper.slideToLoop(index, 0);
   }
 };
 

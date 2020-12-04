@@ -1,4 +1,5 @@
 const openModal = (modal, callback, preventScrollLock, btn) => {
+  console.log(btn);
   modal.classList.add('modal--active');
 
   if (callback) {
