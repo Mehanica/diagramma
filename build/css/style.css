@@ -1141,7 +1141,7 @@ button,
           flex-direction: column;
   min-height: 100vh;
   min-height: calc(100 * var(--vh, 1vh));
-  overflow-x: hidden; }
+  overflow: hidden; }
   .wrapper--no-scrollbar {
     height: 100vh;
     height: calc(100 * var(--vh, 1vh));
@@ -1418,7 +1418,6 @@ button,
             -ms-flex-pack: start;
                 justify-content: flex-start;
         width: 100vw;
-        height: 2400px;
         padding: 0 16px;
         min-height: 100vh;
         min-height: calc(100 * var(--vh, 1vh));
@@ -3228,15 +3227,23 @@ button,
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-  height: 100%; }
+  padding-top: 140px; }
   @media (max-width: 767px) {
     .page-error {
-      padding-bottom: 60px; } }
+      padding-bottom: 60px;
+      padding-top: 0; } }
   .page-error__bg-wrapper {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3274,9 +3281,6 @@ button,
         font-size: 18px;
         line-height: 26px; } }
   .page-error__content {
-    position: absolute;
-    left: 0;
-    bottom: -44%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3286,11 +3290,10 @@ button,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
+    width: 100%;
+    margin-top: 47px; }
     @media (max-width: 767px) {
       .page-error__content {
-        position: relative;
-        bottom: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -3298,7 +3301,7 @@ button,
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        bottom: -61.5%; } }
+        margin-top: 0; } }
   .page-error__btn {
     margin-top: 6px;
     min-width: 128px; }
@@ -3328,7 +3331,7 @@ button,
                 justify-content: center; } }
   .page-error .page-error__circles-bg {
     position: absolute;
-    top: -52%;
+    top: -37%;
     right: 558px;
     left: 50%;
     width: 578px;
@@ -3407,7 +3410,7 @@ button,
         width: 79px;
         height: 80px; } }
   .page-error__bg-image-2 {
-    bottom: 1%;
+    bottom: 31%;
     left: 33.1%;
     width: 111px;
     height: 112px; }
