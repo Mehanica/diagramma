@@ -18,22 +18,30 @@ const initVideoPlayBtn = () => {
       breakpointChecker();
       breakpoint.addListener(breakpointChecker);
 
-      circlePlayButton.addEventListener('click', () => {
+      const playBtnHandler = () => {
+
         if (video.paused || video.ended) {
           video.play();
+          video.controls = true;
         } else {
           video.pause();
+          video.controls = false;
         }
-      });
+
+        circlePlayButton.removeEventListener('click', playBtnHandler);
+      }
+
+      circlePlayButton.addEventListener('click', playBtnHandler);
+
       video.addEventListener('playing', function () {
         circlePlayButton.style.opacity = 0;
-        video.controls = true;
         video.parentElement.querySelector('.video__overlay').style="display: none";
       });
       video.addEventListener('pause', function () {
         circlePlayButton.style.opacity = 1;
-        video.controls = false;
         video.parentElement.querySelector('.video__overlay').style="display: block";
+
+        circlePlayButton.addEventListener('click', playBtnHandler);
       });
     })
   }
