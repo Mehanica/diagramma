@@ -17,7 +17,7 @@ const getGeoJSON = (object) => {
 
     newObject.properties = {};
     newObject.properties.data = {};
-    newObject.properties.data.address = `${customer.Address} ${customer.City}, ${customer['Post code']}`;
+    newObject.properties.data.address = `${customer.Address}, ${customer.City}, ${customer['Post code']}`;
 
     geoJSON.features.push(newObject);
   });

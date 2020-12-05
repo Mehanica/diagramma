@@ -3,6 +3,22 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Makfa">
 
+@@if (context.recipe === "campanelle") {
+  <meta property="og:type" content="recipe" />
+  <meta property="og:url"                content="http://htmlonelove.top/makfa-dev/main-share-campanelle.html" />
+  <meta property="og:title"              content="Campanelle" />
+  <meta property="og:description"        content="Recipe. Campanelle with mussels, olives, parmigiana and passata" />
+  <meta property="og:image"              content="img/content/recipes/recipes-campanelle@1x.png" />
+}
+
+@@if (context.recipe === "spaghetti") {
+  <meta property="og:type" content="recipe" />
+  <meta property="og:url"                content="http://htmlonelove.top/makfa-dev/main-share-spaghetti.html" />
+  <meta property="og:title"              content="Spaghetti" />
+  <meta property="og:description"        content="Recipe. Pastagorgonzola and grapes" />
+  <meta property="og:image"              content="img/content/recipes/recipes-spaghetti@1x.png" />
+}
+
 <link rel="preload" href="fonts/ubuntu-latin-bold.woff2" as="font" crossorigin="anonymous">
 <link rel="preload" href="fonts/el-messiri-latin-medium.woff2" as="font" crossorigin="anonymous">
 <link rel="preload" href="fonts/ubuntu-latin-medium.woff2" as="font" crossorigin="anonymous">
