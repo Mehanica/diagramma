@@ -1,6 +1,7 @@
 const screens = document.querySelectorAll('.animation-group');
 const wrapper = document.querySelector('.page-landing');
 const heroBlock = document.querySelector('.hero');
+const productsBlock = document.querySelector('.products');
 
 let elTop;
 let windowHeight;
@@ -32,7 +33,13 @@ const initAnimation = () => {
     if (heroBlock) {
       setTimeout(() => {
         heroBlock.classList.add('show');
-      }, 400);
+      }, 200);
+    }
+
+    if (productsBlock) {
+      setTimeout(() => {
+        productsBlock.classList.add('show');
+      }, 300);
     }
   });
 };

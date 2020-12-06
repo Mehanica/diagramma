@@ -3594,26 +3594,32 @@ button,
 .animation-group .fil-3ms,
 .animation-group .fil-4ms,
 .hero .fil-3ms,
-.hero .fil-4ms {
+.hero .fil-4ms,
+.products .fil-3ms,
+.products .fil-4ms {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%); }
 
 .animation-group .mit-100,
-.hero .mit-100 {
+.hero .mit-100,
+.products .mit-100 {
   -webkit-transform: translateY(0);
           transform: translateY(0); }
 
 .animation-group .mtb-50,
-.hero .mtb-50 {
+.hero .mtb-50,
+.products .mtb-50 {
   -webkit-transform: translateY(0);
           transform: translateY(0); }
 
 .animation-group .fi,
-.hero .fi {
+.hero .fi,
+.products .fi {
   opacity: 0; }
 
 .animation-group .grow,
-.hero .grow {
+.hero .grow,
+.products .grow {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-transform: scale(1, 1);
@@ -3621,7 +3627,8 @@ button,
   opacity: 1; }
 
 .animation-group .grow-2,
-.hero .grow-2 {
+.hero .grow-2,
+.products .grow-2 {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-transform: scale(1);
@@ -3629,7 +3636,8 @@ button,
   opacity: 1; }
 
 .animation-group.show .fil-3ms,
-.hero.show .fil-3ms {
+.hero.show .fil-3ms,
+.products.show .fil-3ms {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-animation-name: fil;
@@ -3642,7 +3650,8 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .fil-4ms,
-.hero.show .fil-4ms {
+.hero.show .fil-4ms,
+.products.show .fil-4ms {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-animation-name: fil;
@@ -3655,7 +3664,8 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .mit-100,
-.hero.show .mit-100 {
+.hero.show .mit-100,
+.products.show .mit-100 {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
   -webkit-animation-name: move-in-top-100;
@@ -3668,12 +3678,14 @@ button,
           animation-fill-mode: both; }
   @media (max-width: 767px) {
     .animation-group.show .mit-100,
-    .hero.show .mit-100 {
+    .hero.show .mit-100,
+    .products.show .mit-100 {
       -webkit-animation-name: move-in-top-35;
               animation-name: move-in-top-35; } }
 
 .animation-group.show .mtb-50,
-.hero.show .mtb-50 {
+.hero.show .mtb-50,
+.products.show .mtb-50 {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   -webkit-animation-name: move-to-bottom-50;
@@ -3686,7 +3698,8 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .fi,
-.hero.show .fi {
+.hero.show .fi,
+.products.show .fi {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
   -webkit-animation-duration: 0.2s;
@@ -3697,7 +3710,8 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .grow,
-.hero.show .grow {
+.hero.show .grow,
+.products.show .grow {
   -webkit-animation-name: grow;
           animation-name: grow;
   -webkit-animation-duration: 1.6s;
@@ -3710,7 +3724,8 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .grow-2,
-.hero.show .grow-2 {
+.hero.show .grow-2,
+.products.show .grow-2 {
   -webkit-animation-name: grow;
           animation-name: grow;
   -webkit-animation-duration: 1.6s;
@@ -3723,57 +3738,68 @@ button,
           animation-fill-mode: both; }
 
 .animation-group.show .d-100,
-.hero.show .d-100 {
+.hero.show .d-100,
+.products.show .d-100 {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s; }
 
 .animation-group.show .d-200,
-.hero.show .d-200 {
+.hero.show .d-200,
+.products.show .d-200 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s; }
 
 .animation-group.show .d-300,
-.hero.show .d-300 {
+.hero.show .d-300,
+.products.show .d-300 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s; }
 
 .animation-group.show .d-400,
-.hero.show .d-400 {
+.hero.show .d-400,
+.products.show .d-400 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s; }
 
 .animation-group.show .d-500,
-.hero.show .d-500 {
+.hero.show .d-500,
+.products.show .d-500 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s; }
 
 .animation-group.show .d-600,
-.hero.show .d-600 {
+.hero.show .d-600,
+.products.show .d-600 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s; }
 
 .animation-group.show .d-700,
-.hero.show .d-700 {
+.hero.show .d-700,
+.products.show .d-700 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s; }
 
 .animation-group.show .d-800,
-.hero.show .d-800 {
+.hero.show .d-800,
+.products.show .d-800 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s; }
 
 .animation-group.show .d-900,
-.hero.show .d-900 {
+.hero.show .d-900,
+.products.show .d-900 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s; }
 
 .animation-group.show .d-1000,
-.hero.show .d-1000 {
+.hero.show .d-1000,
+.products.show .d-1000 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
 .animation-group.show .d-1100,
-.hero.show .d-1100 {
+.hero.show .d-1100,
+.products.show .d-1100 {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s; }
 
