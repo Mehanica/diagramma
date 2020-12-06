@@ -17,7 +17,7 @@ function init() {
 
   const objectManager = new ymaps.ObjectManager({
     clusterize: true,
-    // ObjectManager принимает те же опции, что и кластеризатор.
+    // ObjectManager accepts the same options as the clusterer.
     clusterDisableClickZoom: false,
 
     clusterIconLayout: 'default#imageWithContent',
@@ -30,24 +30,16 @@ function init() {
     clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #f39d23; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
   });
 
-
   const data = getData();
   const geoJSON = getGeoJSON(data);
 
-
   objectManager.add(geoJSON);
-  // Задаем опции для коллекции одиночных объектов (опция применится для меток).
 
   objectManager.objects.options.set({
-    // Указываем тип макета
     iconLayout: 'default#imageWithContent',
-    // Добавляем своё изображение иконки метки
     iconImageHref: './img/content/map/icon-placemark.svg',
-    // Указываем размеры метки
     iconImageSize: [32, 40],
-    // Изменяем положение левого верхнего угла иконки относительно её точки привязки
     iconImageOffset: [-17, -40],
-    // Не скрывать метку при открытии балуна
     hideIconOnBalloonOpen: false,
   });
 
@@ -71,6 +63,20 @@ function init() {
     });
   }
 
+  function setDefaultClusterColor(objectId) {
+    objectManager.clusters.setClusterOptions(objectId, {
+      clusterIconImageHref: './img/content/map/icon-cluster.svg',
+      clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #f39d23; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
+    });
+  }
+
+  function setActiveClusterColor(objectId) {
+    objectManager.clusters.setClusterOptions(objectId, {
+      clusterIconImageHref: './img/content/map/icon-cluster-active.svg',
+      clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #07352E; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
+    });
+  }
+
   function setDefaultMarkState() {
     objectManager.objects.setObjectOptions(activeObject, setDefaultColor(activeObject));
     activeObject = false;
@@ -78,11 +84,10 @@ function init() {
   }
 
   let activeObject;
-  // window.activeObject = activeObject;
 
   function onObjectClick(e) {
     let objectId;
-    // Если событие искусственно вызвано (при закрытии баллуна по кнопке)
+    // if event is triggered (after popup close)
     if (e.originalEvent.target) {
       objectId = e.originalEvent.target.id;
       objectManager.objects.setObjectOptions(activeObject, setDefaultColor(activeObject));
@@ -92,9 +97,7 @@ function init() {
       objectId = e.get('objectId');
     }
     const objectGeometry = objectManager.objects.getById(objectId).geometry.type;
-    // Если событие произошло на метке, изменяем цвет ее иконки.
     if (objectGeometry === 'Point') {
-      // Если уже есть активная кнопка, сбрасываем ее состояние.
       if (activeObject) {
         if (activeObject === objectId) {
           return;
@@ -112,8 +115,31 @@ function init() {
     renderPopup(objectManager, objectManager.clusters.getById(objectId));
   }
 
+  function onClusterMouseEvent(e) {
+    const objectId = e.get('objectId');
+    if (e.get('type') === 'mouseenter') {
+      setActiveClusterColor(objectId);
+    } else {
+      setDefaultClusterColor(objectId);
+    }
+  }
+
+  function onObjectMouseEvent(e) {
+    const objectId = e.get('objectId');
+    if (objectManager.objects.getById(objectId).geometry.type !== 'Point' || activeObject === objectId) {
+      return;
+    }
+    if (e.get('type') === 'mouseenter') {
+      objectManager.objects.setObjectOptions(objectId, setActiveColor(objectId));
+    } else {
+      objectManager.objects.setObjectOptions(objectId, setDefaultColor(objectId));
+    }
+  }
+
   objectManager.objects.events.add(['click'], onObjectClick);
+  objectManager.objects.events.add(['mouseenter', 'mouseleave'], onObjectMouseEvent);
   objectManager.clusters.events.add(['click'], onClusterClick);
+  objectManager.clusters.events.add(['mouseenter', 'mouseleave'], onClusterMouseEvent);
   myMap.events.add(['wheel'], setDefaultMarkState);
   myMap.events.add(['multitouchstart'], setDefaultMarkState);
 
