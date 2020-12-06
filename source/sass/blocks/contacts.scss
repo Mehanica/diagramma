@@ -1,9 +1,14 @@
 .contacts {
   margin-top: 138px; // Это, возможно, убрать, когда сделает единообразные отступы
-  margin-bottom: 0;
+  margin-bottom: 140px;
 
   @include viewport--xxl {
     margin-top: 98px; // Это, возможно, убрать, когда сделает единообразные отступы
+    margin-bottom: 104px;
+  }
+
+  @include viewport--lg {
+    margin-bottom: 100px;
   }
 
   @include viewport--md {
@@ -12,6 +17,7 @@
 
   @include viewport--sm {
     margin-top: 48px; // Это, возможно, убрать, когда сделает единообразные отступы
+    margin-bottom: 55px;
   }
 
   &__inner {
@@ -22,10 +28,15 @@
     position: relative;
     width: 100vw;
     height: 500px;
-    margin-top: 17px;
+    margin-top: 25px;
     // margin-left: -162px;
 
     font-family: 'El Messiri';
+
+    @include viewport--xl {
+      margin-top: 16px;
+      // margin-left: -60px;
+    }
 
     @include viewport--lg {
       // margin-left: -60px;

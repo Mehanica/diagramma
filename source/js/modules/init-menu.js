@@ -9,7 +9,7 @@ const openMenu = () => {
   headerMenuToggle.ariaPressed = 'true';
   mainMenu.classList.add('header__menu-wrapper--active');
 
-  window.disableBodyScroll(mainMenu);
+  // window.disableBodyScroll(mainMenu);
 
   document.addEventListener('keydown', (evt) => {
     onEscPress(evt);
@@ -22,7 +22,7 @@ const closeMenu = () => {
     headerMenuToggle.ariaPressed = 'false';
     mainMenu.classList.remove('header__menu-wrapper--active');
 
-    window.enableBodyScroll(mainMenu);
+    // window.enableBodyScroll(mainMenu);
   }
 };
 
