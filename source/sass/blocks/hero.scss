@@ -237,6 +237,17 @@
 
     width: 112px;
     height: 112px;
+    opacity: 1;
+    transition: opacity $extended-transition-settings;
+
+    @include viewport--sm {
+      top: 58%;
+      left: 40%;
+    }
+
+    @include viewport--xs {
+      left: 36%;
+    }
 
     img {
       position: relative;

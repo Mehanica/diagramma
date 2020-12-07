@@ -18,8 +18,7 @@
   }
 
   // fade-in
-  .fi,
-  .fi-2 {
+  .fi {
     opacity: 0;
   }
 
@@ -31,7 +30,6 @@
 
   .spin {
     transform: rotate(0);
-    opacity: 0;
   }
 
   &.show {
@@ -91,17 +89,25 @@
       animation-name: fade-in;
       animation-duration: 0.1s;
       animation-timing-function: ease-in-out;
-
+      animation-iteration-count: initial;
       animation-fill-mode: both;
     }
 
-    .pulse {
+    .page-error__circles.pulse {
       animation-name: pulse;
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-fill-mode: both;
     }
+
+    // .pulse {
+    //   animation-name: pulse;
+    //   animation-duration: 3s;
+    //   animation-timing-function: linear;
+    //   animation-iteration-count: infinite;
+    //   animation-fill-mode: both;
+    // }
 
     // .spin {
     //   animation-name: spin;
@@ -110,6 +116,10 @@
     //   animation-iteration-count: infinite;
     //   animation-fill-mode: both;
     // }
+
+    .hero__preloader-img {
+      opacity: 0;
+    }
 
     .d-100 {
       animation-delay: 0.1s;
