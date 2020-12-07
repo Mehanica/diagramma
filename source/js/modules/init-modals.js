@@ -5,7 +5,7 @@ const modals = document.querySelectorAll('.modal');
 const modalRecipes = document.querySelector('.modal--recipes');
 const modalRecipesBtns = document.querySelectorAll('[data-modal="recipes"]');
 
-// аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock)
+// аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock, showOnWindowLoad)
 // возможна инициализация только с первыми аргументом,
 // если вам нужно открывать модалку в другом месте под какими-нибудь условиями
 
@@ -22,7 +22,7 @@ const initModals = () => {
   });
 
   if (modalRecipes && modalRecipesBtns.length) {
-    setupModal(modalRecipes, false, modalRecipesBtns, initRecipesSlider, false);
+    setupModal(modalRecipes, false, modalRecipesBtns, initRecipesSlider, false, false, true);
   }
 };
 

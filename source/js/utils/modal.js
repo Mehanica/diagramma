@@ -1,8 +1,8 @@
-const openModal = (modal, callback, preventScrollLock, btn) => {
+const openModal = (modal, callback, preventScrollLock, index) => {
   modal.classList.add('modal--active');
 
   if (callback) {
-    callback(btn);
+    callback(index);
   }
 
   if (!preventScrollLock) {
@@ -50,7 +50,7 @@ const setModalListeners = (modal, closeCallback, preventScrollLock) => {
   });
 };
 
-const setupModal = (modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock) => {
+const setupModal = (modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock, showOnWindowLoad) => {
   if (modalBtns) {
 
     modalBtns.forEach((btn) => {
@@ -58,9 +58,21 @@ const setupModal = (modal, closeCallback, modalBtns, openCallback, noPrevDefault
         if (!noPrevDefault) {
           evt.preventDefault();
         }
-        openModal(modal, openCallback, preventScrollLock, btn);
+        let index;
+        if (btn.dataset.slider) {
+          index = +btn.dataset.slider;
+        }
+
+        openModal(modal, openCallback, preventScrollLock, index);
       });
     });
+  }
+
+  if (showOnWindowLoad) {
+    if (modal.dataset.initialSlide) {
+      const index = +modal.dataset.initialSlide;
+      openModal(modal, openCallback, preventScrollLock, index);
+    }
   }
 
   setModalListeners(modal, closeCallback, preventScrollLock);

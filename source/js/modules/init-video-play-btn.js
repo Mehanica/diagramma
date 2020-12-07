@@ -9,11 +9,11 @@ const initVideoPlayBtn = () => {
     videos.forEach((video) => {
       const breakpointChecker = () => {
         if (breakpoint.matches) {
-          video.poster = "img/bg/video-bg-mob.jpg";
+          video.poster = 'img/bg/video-bg-mob.jpg';
         } else {
           video.poster = 'img/bg/video-bg.jpg';
         }
-      }
+      };
 
       breakpointChecker();
       breakpoint.addListener(breakpointChecker);
@@ -29,22 +29,22 @@ const initVideoPlayBtn = () => {
         }
 
         circlePlayButton.removeEventListener('click', playBtnHandler);
-      }
+      };
 
       circlePlayButton.addEventListener('click', playBtnHandler);
 
       video.addEventListener('playing', function () {
         circlePlayButton.style.opacity = 0;
-        video.parentElement.querySelector('.video__overlay').style="display: none";
+        video.parentElement.querySelector('.video__overlay').style = 'display: none';
       });
       video.addEventListener('pause', function () {
         circlePlayButton.style.opacity = 1;
-        video.parentElement.querySelector('.video__overlay').style="display: block";
+        video.parentElement.querySelector('.video__overlay').style = 'display: block';
 
         circlePlayButton.addEventListener('click', playBtnHandler);
       });
-    })
+    });
   }
-}
+};
 
 export {initVideoPlayBtn};
