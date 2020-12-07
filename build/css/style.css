@@ -2093,7 +2093,17 @@ button,
     top: 45%;
     left: 43%;
     width: 112px;
-    height: 112px; }
+    height: 112px;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
+    @media (max-width: 767px) {
+      .hero__preloader-img {
+        top: 58%;
+        left: 40%; } }
+    @media (max-width: 539px) {
+      .hero__preloader-img {
+        left: 36%; } }
     .hero__preloader-img img {
       position: relative;
       top: auto;
@@ -3576,11 +3586,8 @@ button,
           transform: translateY(0); }
 
 .animation-group .fi,
-.animation-group .fi-2,
 .hero .fi,
-.hero .fi-2,
-.products .fi,
-.products .fi-2 {
+.products .fi {
   opacity: 0; }
 
 .animation-group .pulse,
@@ -3596,8 +3603,7 @@ button,
 .hero .spin,
 .products .spin {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
-  opacity: 0; }
+          transform: rotate(0); }
 
 .animation-group.show .fil-3ms,
 .hero.show .fil-3ms,
@@ -3682,12 +3688,14 @@ button,
           animation-duration: 0.1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
-.animation-group.show .pulse,
-.hero.show .pulse,
-.products.show .pulse {
+.animation-group.show .page-error__circles.pulse,
+.hero.show .page-error__circles.pulse,
+.products.show .page-error__circles.pulse {
   -webkit-animation-name: pulse;
           animation-name: pulse;
   -webkit-animation-duration: 3s;
@@ -3698,6 +3706,11 @@ button,
           animation-iteration-count: infinite;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
+
+.animation-group.show .hero__preloader-img,
+.hero.show .hero__preloader-img,
+.products.show .hero__preloader-img {
+  opacity: 0; }
 
 .animation-group.show .d-100,
 .hero.show .d-100,
