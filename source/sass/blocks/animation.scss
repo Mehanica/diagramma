@@ -126,6 +126,10 @@
 
     .d-600 {
       animation-delay: 0.6s;
+
+      @include viewport--sm {
+        animation-delay: 1s;
+      }
     }
 
     .d-700 {
@@ -150,66 +154,26 @@
 
     .d-1200 {
       animation-delay: 1.2s;
-    }
 
-    .d-1500 {
-      animation-delay: 1.5s;
-    }
-
-    .d-1600 {
-      animation-delay: 1.6s;
+      @include viewport--sm {
+        animation-delay: 2s;
+      }
     }
 
     .d-1800 {
       animation-delay: 1.8s;
-    }
 
-    .d-2000 {
-      animation-delay: 2s;
+      @include viewport--sm {
+        animation-delay: 3s;
+      }
     }
 
     .d-2400 {
       animation-delay: 2.4s;
-    }
 
-    .d-2500 {
-      animation-delay: 2.5s;
-    }
-
-    .d-3000 {
-      animation-delay: 3s;
-    }
-
-    .d-3200 {
-      animation-delay: 3.2s;
-    }
-
-    .d-3500 {
-      animation-delay: 3.5s;
-    }
-
-    .d-4000 {
-      animation-delay: 4s;
-    }
-
-    .d-4500 {
-      animation-delay: 4.5s;
-    }
-
-    .d-4800 {
-      animation-delay: 4.8s;
-    }
-
-    .d-5000 {
-      animation-delay: 5s;
-    }
-
-    .d-5500 {
-      animation-delay: 5.5s;
-    }
-
-    .d-6000 {
-      animation-delay: 6s;
+      @include viewport--sm {
+        display: none;
+      }
     }
   }
 }

@@ -3735,6 +3735,12 @@ button,
 .products.show .d-600 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s; }
+  @media (max-width: 767px) {
+    .animation-group.show .d-600,
+    .hero.show .d-600,
+    .products.show .d-600 {
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s; } }
 
 .animation-group.show .d-700,
 .hero.show .d-700,
@@ -3771,96 +3777,35 @@ button,
 .products.show .d-1200 {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s; }
-
-.animation-group.show .d-1500,
-.hero.show .d-1500,
-.products.show .d-1500 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s; }
-
-.animation-group.show .d-1600,
-.hero.show .d-1600,
-.products.show .d-1600 {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s; }
+  @media (max-width: 767px) {
+    .animation-group.show .d-1200,
+    .hero.show .d-1200,
+    .products.show .d-1200 {
+      -webkit-animation-delay: 2s;
+              animation-delay: 2s; } }
 
 .animation-group.show .d-1800,
 .hero.show .d-1800,
 .products.show .d-1800 {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s; }
-
-.animation-group.show .d-2000,
-.hero.show .d-2000,
-.products.show .d-2000 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s; }
+  @media (max-width: 767px) {
+    .animation-group.show .d-1800,
+    .hero.show .d-1800,
+    .products.show .d-1800 {
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s; } }
 
 .animation-group.show .d-2400,
 .hero.show .d-2400,
 .products.show .d-2400 {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s; }
-
-.animation-group.show .d-2500,
-.hero.show .d-2500,
-.products.show .d-2500 {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s; }
-
-.animation-group.show .d-3000,
-.hero.show .d-3000,
-.products.show .d-3000 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s; }
-
-.animation-group.show .d-3200,
-.hero.show .d-3200,
-.products.show .d-3200 {
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s; }
-
-.animation-group.show .d-3500,
-.hero.show .d-3500,
-.products.show .d-3500 {
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s; }
-
-.animation-group.show .d-4000,
-.hero.show .d-4000,
-.products.show .d-4000 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s; }
-
-.animation-group.show .d-4500,
-.hero.show .d-4500,
-.products.show .d-4500 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s; }
-
-.animation-group.show .d-4800,
-.hero.show .d-4800,
-.products.show .d-4800 {
-  -webkit-animation-delay: 4.8s;
-          animation-delay: 4.8s; }
-
-.animation-group.show .d-5000,
-.hero.show .d-5000,
-.products.show .d-5000 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s; }
-
-.animation-group.show .d-5500,
-.hero.show .d-5500,
-.products.show .d-5500 {
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s; }
-
-.animation-group.show .d-6000,
-.hero.show .d-6000,
-.products.show .d-6000 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s; }
+  @media (max-width: 767px) {
+    .animation-group.show .d-2400,
+    .hero.show .d-2400,
+    .products.show .d-2400 {
+      display: none; } }
 
 @-webkit-keyframes fil {
   0% {
