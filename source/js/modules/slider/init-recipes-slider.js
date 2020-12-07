@@ -21,7 +21,7 @@ const initSwiper = (slider) => new Swiper(slider, {
   },
 });
 
-const initRecipesSlider = (eventTrigger) => {
+const initRecipesSlider = (index) => {
   if (!sliderElement) {
     return;
   }
@@ -45,9 +45,8 @@ const initRecipesSlider = (eventTrigger) => {
     }
   });
 
-  if (eventTrigger) {
-    const index = +eventTrigger.dataset.slider;
-    myNewSwiper.slideToLoop(index, 0);
+  if (index) {
+    myNewSwiper.slideToLoop(+index, 0);
   }
 };
 
