@@ -46,12 +46,10 @@
     font-size: 0;
     line-height: 0;
 
-    @include viewport--md {
-      object-fit: cover;
-      /* stylelint-disable */
-      font-family: 'object-fit: cover;';
-      /* stylelint-enable */
-    }
+    object-fit: cover;
+    /* stylelint-disable */
+    font-family: 'object-fit: cover;';
+    /* stylelint-enable */
 
     source {
       position: absolute;
