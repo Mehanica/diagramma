@@ -58,7 +58,6 @@
   &__map {
     height: 100%;
 
-    // .ymaps-2-1-77-map
     > [class^="ymaps-2"] {
       min-height: 100%;
     }
@@ -66,10 +65,6 @@
     [class*="ymaps-2"][class*="-ground-pane"] {
       filter: grayscale(1);
     }
-
-    // .ymaps-2-1-77-image-with-content {
-    //   filter: hue-rotate(-180deg) saturate(0.4);
-    // }
   }
 
   &__map-popup-wrapper {
