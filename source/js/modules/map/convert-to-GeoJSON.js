@@ -12,8 +12,8 @@ const getGeoJSON = (object) => {
     newObject.geometry = {};
     newObject.geometry.type = 'Point';
     newObject.geometry.coordinates = [];
-    newObject.geometry.coordinates.push(customer.Latitude);
-    newObject.geometry.coordinates.push(customer.Longitude);
+    newObject.geometry.coordinates.push(+customer.Latitude);
+    newObject.geometry.coordinates.push(+customer.Longitude);
 
     newObject.properties = {};
     newObject.properties.data = {};
