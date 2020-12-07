@@ -32,6 +32,11 @@
     max-width: 662px;
     height: auto;
     width: 100%;
+
+    @include viewport--sm {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__404 {
@@ -40,8 +45,11 @@
     @include viewport--sm {
       padding: 0 5px;
       margin-bottom: 21px;
-      width: 100%;
-      height: auto;
+      // width: 100%;
+      // height: auto;
+
+      width: 288px;
+      height: 118px;
     }
   }
 
@@ -111,7 +119,6 @@
   .page-error__circles-bg {
     position: absolute;
     top: -100%;
-    right: 558px;
     left: 50%;
     width: 1048px;
     height: 100%;
@@ -119,13 +126,13 @@
     transform: translateX(-50%);
 
     @include viewport--sm {
-      top: -72%;
-      width: 100%;
-      margin: 15% 0 0;
+      top: -94%;
+      left: 50%;
+      width: 586px;
     }
 
     @include viewport--xs {
-      top: -50%;
+      top: -85%;
     }
   }
 
@@ -195,5 +202,13 @@
       width: 79px;
       height: 80px;
     }
+  }
+
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
   }
 }
