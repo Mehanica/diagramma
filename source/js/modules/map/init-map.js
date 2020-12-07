@@ -30,6 +30,7 @@ function init() {
     clusterIconContentSize: [38, 38],
     clusterIconContentOffset: [0, 10],
     clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #f39d23; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
+    zoomMargin: [170, 40, 40, 30],
   });
 
   const data = getData();
