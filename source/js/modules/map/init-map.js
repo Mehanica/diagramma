@@ -63,20 +63,6 @@ function init() {
     });
   }
 
-  function setDefaultClusterColor(objectId) {
-    objectManager.clusters.setClusterOptions(objectId, {
-      clusterIconImageHref: './img/content/map/icon-cluster.svg',
-      clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #f39d23; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
-    });
-  }
-
-  function setActiveClusterColor(objectId) {
-    objectManager.clusters.setClusterOptions(objectId, {
-      clusterIconImageHref: './img/content/map/icon-cluster-active.svg',
-      clusterIconContentLayout: ymaps.templateLayoutFactory.createClass('<div style="color: #07352E; font-weight: 500; font-size: 18px; line-height: 18px;">{{ properties.geoObjects.length }}</div>'),
-    });
-  }
-
   function setDefaultMarkState() {
     objectManager.objects.setObjectOptions(activeObject, setDefaultColor(activeObject));
     activeObject = false;
@@ -115,31 +101,8 @@ function init() {
     renderPopup(objectManager, objectManager.clusters.getById(objectId));
   }
 
-  function onClusterMouseEvent(e) {
-    const objectId = e.get('objectId');
-    if (e.get('type') === 'mouseenter') {
-      setActiveClusterColor(objectId);
-    } else {
-      setDefaultClusterColor(objectId);
-    }
-  }
-
-  function onObjectMouseEvent(e) {
-    const objectId = e.get('objectId');
-    if (objectManager.objects.getById(objectId).geometry.type !== 'Point' || activeObject === objectId) {
-      return;
-    }
-    if (e.get('type') === 'mouseenter') {
-      objectManager.objects.setObjectOptions(objectId, setActiveColor(objectId));
-    } else {
-      objectManager.objects.setObjectOptions(objectId, setDefaultColor(objectId));
-    }
-  }
-
   objectManager.objects.events.add(['click'], onObjectClick);
-  objectManager.objects.events.add(['mouseenter', 'mouseleave'], onObjectMouseEvent);
   objectManager.clusters.events.add(['click'], onClusterClick);
-  objectManager.clusters.events.add(['mouseenter', 'mouseleave'], onClusterMouseEvent);
   myMap.events.add(['wheel'], setDefaultMarkState);
   myMap.events.add(['multitouchstart'], setDefaultMarkState);
 
