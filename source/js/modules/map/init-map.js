@@ -2,8 +2,10 @@
 import {getData} from './contacts-data';
 import {getGeoJSON} from './convert-to-GeoJSON';
 import {renderPopup} from './render-popup';
+import {showMap} from './show-map';
 
 const contactsMap = document.querySelector('#map');
+const breakpoint = window.matchMedia('(max-width:767px)');
 
 function init() {
   const myMap = new ymaps.Map('map', {
@@ -45,21 +47,13 @@ function init() {
 
   function setDefaultColor(objectId) {
     objectManager.objects.setObjectOptions(objectId, {
-      iconLayout: 'default#imageWithContent',
       iconImageHref: './img/content/map/icon-placemark.svg',
-      iconImageSize: [32, 40],
-      iconImageOffset: [-17, -40],
-      hideIconOnBalloonOpen: false,
     });
   }
 
   function setActiveColor(objectId) {
     objectManager.objects.setObjectOptions(objectId, {
-      iconLayout: 'default#imageWithContent',
       iconImageHref: './img/content/map/icon-placemark-active.svg',
-      iconImageSize: [32, 40],
-      iconImageOffset: [-17, -40],
-      hideIconOnBalloonOpen: false,
     });
   }
 
@@ -84,6 +78,7 @@ function init() {
     }
     const objectGeometry = objectManager.objects.getById(objectId).geometry.type;
     if (objectGeometry === 'Point') {
+      // open popup
       if (activeObject) {
         if (activeObject === objectId) {
           return;
@@ -93,6 +88,16 @@ function init() {
       activeObject = objectId;
       objectManager.objects.setObjectOptions(objectId, setActiveColor(objectId));
       renderPopup(objectManager, objectManager.objects.getById(objectId));
+
+      if (breakpoint.matches) {
+        // set map center
+        myMap.setCenter(objectManager.objects.getById(objectId).geometry.coordinates, myMap.getZoom(), {
+          duration: 300,
+        });
+
+        // scroll map into viewport
+        showMap();
+      }
     }
   }
 
