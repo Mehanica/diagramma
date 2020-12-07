@@ -17,7 +17,6 @@ export default () => {
     trigger.addEventListener('click', () => {
       if (burgerBtn) {
         if (burgerBtn.ariaPressed === 'true') {
-          console.log('hi');
           closeMenu();
           moveTo.registerTrigger(trigger);
         }
