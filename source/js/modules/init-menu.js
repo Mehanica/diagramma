@@ -22,7 +22,7 @@ const closeMenu = () => {
     headerMenuToggle.ariaPressed = 'false';
     mainMenu.classList.remove('header__menu-wrapper--active');
 
-    // window.enableBodyScroll(mainMenu);
+    window.enableBodyScroll(mainMenu);
   }
 };
 
