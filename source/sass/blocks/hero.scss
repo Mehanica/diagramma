@@ -281,7 +281,7 @@
   &__preloader-img {
     display: block;
     position: absolute;
-    top: calc(50% - 56px);
+    top: 47%;
     left: calc(50% - 56px);
 
     width: 112px;
@@ -289,7 +289,9 @@
     // opacity: 1;
     transition: opacity $extended-transition-settings;
 
-
+    @include viewport--xl{
+      top: 44%;
+    }
 
     @include viewport--lg {
       top: 42%;
