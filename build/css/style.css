@@ -2126,22 +2126,27 @@ button,
   .hero__preloader-img {
     display: block;
     position: absolute;
-    top: 43%;
-    left: 43%;
+    top: calc(50% - 56px);
+    left: calc(50% - 56px);
     width: 112px;
     height: 112px;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
     @media (max-width: 1439px) {
       .hero__preloader-img {
-        top: 38%; } }
+        top: 42%; } }
+    @media (max-width: 1199px) {
+      .hero__preloader-img {
+        top: 35%; } }
+    @media (max-width: 1023px) {
+      .hero__preloader-img {
+        top: 42%; } }
     @media (max-width: 767px) {
       .hero__preloader-img {
-        top: 58%;
-        left: 40%; } }
+        top: 53%; } }
     @media (max-width: 539px) {
       .hero__preloader-img {
-        left: 36%; } }
+        top: 58%; } }
     .hero__preloader-img img {
       position: relative;
       top: auto;
