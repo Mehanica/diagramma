@@ -2094,12 +2094,12 @@ button,
     border: 1px solid #248274;
     border-radius: 50%; }
   .hero__preloader-img {
+    display: block;
     position: absolute;
     top: 45%;
     left: 43%;
     width: 112px;
     height: 112px;
-    opacity: 1;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
     @media (max-width: 767px) {
@@ -2131,8 +2131,8 @@ button,
   .hero .spin {
     -webkit-animation-name: spin;
             animation-name: spin;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -3757,7 +3757,7 @@ button,
 .animation-group.show .hero__preloader-img,
 .hero.show .hero__preloader-img,
 .products.show .hero__preloader-img {
-  opacity: 0; }
+  display: none; }
 
 .animation-group.show .d-100,
 .hero.show .d-100,
