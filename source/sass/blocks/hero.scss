@@ -22,6 +22,7 @@
   //   @include retina {
   //     background-image: url("../img/content/fork-lg@2x.png");
   //   }
+  // }
 
   @include viewport--xl {
     padding-top: 134px;
@@ -146,7 +147,9 @@
 
     display: flex;
     justify-content: flex-end;
-    height: auto;
+    // height: auto;
+    height: 0;
+    padding-bottom: 1004px;
 
     z-index: -1;
 
@@ -154,6 +157,34 @@
 
     @media (max-width: 2000px) {
       justify-content: center;
+    }
+
+    @include viewport--xxl {
+      padding-bottom: 52.2%;
+    }
+
+    @include viewport--xl {
+      padding-bottom: 54%;
+    }
+
+    @media (max-width: 1196px) {
+      padding-bottom: 647px;
+    }
+
+    @include viewport--md {
+      padding-bottom: 688px;
+    }
+
+    @include viewport--sm {
+      padding-bottom: 400px;
+    }
+
+    @include viewport--xs {
+      padding-bottom: 52.2%;
+    }
+
+    @media (max-width: 516px) {
+      padding-bottom: 270px;
     }
 
     img {
