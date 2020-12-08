@@ -3458,7 +3458,8 @@ button,
     width: 100vw;
     height: 500px;
     margin-top: 25px;
-    font-family: 'El Messiri'; }
+    font-family: 'El Messiri';
+    overflow: hidden; }
     @media (max-width: 1559px) {
       .contacts__map-wrapper {
         margin-top: 16px; } }
@@ -3471,7 +3472,8 @@ button,
         height: 460px;
         margin-top: 22px; } }
   .contacts__map {
-    height: 100%; }
+    height: calc(100% + 110px);
+    margin-top: -110px; }
     .contacts__map > [class^="ymaps-2"] {
       min-height: 100%; }
     .contacts__map [class*="ymaps-2"][class*="-ground-pane"] {
