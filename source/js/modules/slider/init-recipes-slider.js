@@ -1,6 +1,9 @@
+import MoveTo from '../../vendor/moveto.js';
+
 const sliderElementSelector = '.js-recipes-slider';
 const sliderElement = document.querySelector(sliderElementSelector);
 const breakpoint = window.matchMedia('(max-width: 767px)');
+const modal = document.querySelector('.modal--recipes');
 let btnNext;
 let btnPrev;
 let myNewSwiper;
@@ -19,6 +22,11 @@ const initSwiper = (slider) => new Swiper(slider, {
     nextEl: btnNext,
     prevEl: btnPrev,
   },
+});
+
+const moveTo = new MoveTo({
+  tolerance: 4,
+  container: modal,
 });
 
 const initRecipesSlider = (index) => {
@@ -42,6 +50,10 @@ const initRecipesSlider = (index) => {
   myNewSwiper.on('slideChange', () => {
     if (document.activeElement.closest(sliderElementSelector)) {
       document.activeElement.blur();
+    }
+
+    if (breakpoint.matches) {
+      moveTo.move(sliderElement);
     }
   });
 

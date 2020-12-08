@@ -1,6 +1,5 @@
 import MoveTo from '../../vendor/moveto.js';
 const map = document.querySelector('.contacts__map-wrapper');
-// const nextBlock = document.querySelector('.contacts + *');
 
 const moveTo = new MoveTo({
   tolerance: -20,
