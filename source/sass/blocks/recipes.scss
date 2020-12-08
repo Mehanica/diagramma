@@ -114,26 +114,28 @@
   &__figure {
     position: absolute;
     top: 28%;
-    left: 21%;
+    left: 21.7%;
     max-width: 162px;
     max-height: 168px;
 
+    transform: rotate(-24deg);
+
     @include viewport--xl {
-      top: 29%;
-      left: 22.5%;
+      top: 29.2%;
+      left: 23.2%;
       max-width: 110px;
       max-height: 114px;
     }
 
     @include viewport--lg {
       top: -11.5%;
-      right: 34%;
+      right: 32%;
       left: auto;
     }
 
     @include viewport--sm {
       top: -2.9%;
-      right: 0%;
+      right: -7px;
       max-width: 79px;
       max-height: 80px;
     }
@@ -141,26 +143,28 @@
 
   &__figure--2 {
     top: 41%;
-    left: 11.7%;
+    left: 12.2%;
     max-width: 164px;
     max-height: 164px;
 
+    transform: rotate(-12deg);
+
     @include viewport--xl {
-      top: 38%;
-      left: 14%;
+      top: 38.2%;
+      left: 14.5%;
       max-width: 111px;
       max-height: 112px;
     }
 
     @include viewport--lg {
       top: -3%;
-      right: 16%;
+      right: 15.7%;
       left: auto;
     }
 
     @include viewport--sm {
       top: -1%;
-      right: 20%;
+      right: 19%;
       max-width: 79px;
       max-height: 80px;
     }
