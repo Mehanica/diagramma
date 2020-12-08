@@ -3606,12 +3606,14 @@ button,
 .animation-group .mit-100,
 .hero .mit-100,
 .products .mit-100 {
+  opacity: 0;
   -webkit-transform: translateY(0) rotate(-12deg);
           transform: translateY(0) rotate(-12deg); }
 
 .animation-group .mtb-50,
 .hero .mtb-50,
 .products .mtb-50 {
+  opacity: 0;
   -webkit-transform: translateY(0) rotate(-24deg);
           transform: translateY(0) rotate(-24deg); }
 
@@ -3670,10 +3672,12 @@ button,
           transform: translateY(-100px);
   -webkit-animation-name: move-in-top-100;
           animation-name: move-in-top-100;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
   @media (max-width: 767px) {
@@ -3690,10 +3694,12 @@ button,
           transform: translateY(50px);
   -webkit-animation-name: move-to-bottom-50;
           animation-name: move-to-bottom-50;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
@@ -3824,17 +3830,29 @@ button,
 
 @-webkit-keyframes move-in-top-100 {
   0% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(-12deg);
+            transform: translateY(0) rotate(-12deg); }
+  15% {
+    opacity: 1;
     -webkit-transform: translateY(0) rotate(-12deg);
             transform: translateY(0) rotate(-12deg); }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(-100px) rotate(-12deg);
             transform: translateY(-100px) rotate(-12deg); } }
 
 @keyframes move-in-top-100 {
   0% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(-12deg);
+            transform: translateY(0) rotate(-12deg); }
+  15% {
+    opacity: 1;
     -webkit-transform: translateY(0) rotate(-12deg);
             transform: translateY(0) rotate(-12deg); }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(-100px) rotate(-12deg);
             transform: translateY(-100px) rotate(-12deg); } }
 
@@ -3856,17 +3874,29 @@ button,
 
 @-webkit-keyframes move-to-bottom-50 {
   0% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(-24deg);
+            transform: translateY(0) rotate(-24deg); }
+  15% {
+    opacity: 1;
     -webkit-transform: translateY(0) rotate(-24deg);
             transform: translateY(0) rotate(-24deg); }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(50px) rotate(-24deg);
             transform: translateY(50px) rotate(-24deg); } }
 
 @keyframes move-to-bottom-50 {
   0% {
+    opacity: 0;
+    -webkit-transform: translateY(0) rotate(-24deg);
+            transform: translateY(0) rotate(-24deg); }
+  15% {
+    opacity: 1;
     -webkit-transform: translateY(0) rotate(-24deg);
             transform: translateY(0) rotate(-24deg); }
   100% {
+    opacity: 1;
     -webkit-transform: translateY(50px) rotate(-24deg);
             transform: translateY(50px) rotate(-24deg); } }
 

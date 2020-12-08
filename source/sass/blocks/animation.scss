@@ -9,11 +9,13 @@
 
   // move-in-top-100
   .mit-100 {
+    opacity: 0;
     transform: translateY(0) rotate(-12deg);
   }
 
   // move-to-bottom-100
   .mtb-50 {
+    opacity: 0;
     transform: translateY(0) rotate(-24deg);
   }
 
@@ -57,9 +59,9 @@
       transform: translateY(-100px);
 
       animation-name: move-in-top-100;
-      animation-duration: 2s;
+      animation-duration: 2.3s;
       animation-timing-function: linear;
-
+      animation-delay: 0.4s;
       animation-fill-mode: both;
 
       @include viewport--sm {
@@ -71,9 +73,9 @@
       transform: translateY(50px);
 
       animation-name: move-to-bottom-50;
-      animation-duration: 2s;
+      animation-duration: 2.3s;
       animation-timing-function: linear;
-
+      animation-delay: 0.4s;
       animation-fill-mode: both;
     }
 
