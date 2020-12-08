@@ -291,4 +291,12 @@
     animation-iteration-count: infinite;
     animation-fill-mode: both;
   }
+
+  .d-1000 {
+    animation-delay: 1s;
+  }
+
+  .d-2000 {
+    animation-delay: 2s;
+  }
 }
