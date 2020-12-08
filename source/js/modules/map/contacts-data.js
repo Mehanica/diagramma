@@ -4,7 +4,7 @@ const contactsData = `{
           "CustomerID": "10004",
           "OrganizationName": "Kollos Super Market LTD",
           "Post code": "N16 7HU",
-          "Address": "Unit 6, Abney Park Court,",
+          "Address": "Unit 6, Abney Park Court",
           "City": "230-240 Stoke Newington High Steet",
           "County": "LONDON",
           "Latitude": "51.563052",
@@ -94,8 +94,8 @@ const contactsData = `{
           "CustomerID": "10249",
           "OrganizationName": "Trade Delegation Of The Russian Federation In The UK",
           "Post code": "N6 6NL",
-          "Address": "33 Highgate West Hill,",
-          "City": "Greater London,",
+          "Address": "33 Highgate West Hill",
+          "City": "Greater London",
           "County": "LONDON",
           "Latitude": "51.565685",
           "Longitude": "-0.153523"
@@ -224,8 +224,8 @@ const contactsData = `{
           "CustomerID": "10382",
           "OrganizationName": "Damla Super Market",
           "Post code": "E13 8EQ",
-          "Address": "249 Barking Road,",
-          "City": "Plaistow, London,",
+          "Address": "249 Barking Road",
+          "City": "Plaistow, London",
           "County": "LONDON",
           "Latitude": "51.519938",
           "Longitude": "0.017091"
@@ -324,8 +324,8 @@ const contactsData = `{
           "CustomerID": "10689",
           "OrganizationName": "Best Food - Azuolas",
           "Post code": "IG3 9UD",
-          "Address": "61 Goodmayes Road,",
-          "City": "Ilford, London,",
+          "Address": "61 Goodmayes Road",
+          "City": "Ilford, London",
           "County": "LONDON",
           "Latitude": "51.563964",
           "Longitude": "0.110461"
@@ -504,7 +504,7 @@ const contactsData = `{
           "CustomerID": "10967",
           "OrganizationName": "Vyton LTD",
           "Post code": "KT6 7BB",
-          "Address": "390 Ewel Road, Surbiton,",
+          "Address": "390 Ewel Road, Surbiton",
           "City": " Surrey",
           "County": "Surrey",
           "Latitude": "51.382434",
@@ -894,7 +894,7 @@ const contactsData = `{
           "CustomerID": "11468",
           "OrganizationName": "Food Store No.1 LTD",
           "Post code": "SE18 6LQ",
-          "Address": "Unit 6, 68 - 86 Powis Street,",
+          "Address": "Unit 6, 68 - 86 Powis Street",
           "City": "Wolwich, London",
           "County": "LONDON",
           "Latitude": "51.491732",
@@ -1144,7 +1144,7 @@ const contactsData = `{
           "CustomerID": "11880",
           "OrganizationName": "Rugelis LTD",
           "Post code": "SE9 6SX",
-          "Address": "4 Tudor Parade, Well Hall Road,",
+          "Address": "4 Tudor Parade, Well Hall Road",
           "City": "London",
           "County": "LONDON",
           "Latitude": "51.459129",
@@ -1164,7 +1164,7 @@ const contactsData = `{
           "CustomerID": "11894",
           "OrganizationName": "Europa Food Store (Evesham)",
           "Post code": "WR11 3LD",
-          "Address": "27-29 Port Street,",
+          "Address": "27-29 Port Street",
           "City": "Evesham",
           "County": "Wolverhampton",
           "Latitude": "52.091000",
@@ -3702,7 +3702,7 @@ const contactsData = `{
           "City": "West Midlands",
           "County": "Birmingham",
           "Latitude": "52.443734",
-          "Longitude": "-1.834943&#10;"
+          "Longitude": "-1.834943"
       },
       {
           "CustomerID": "18798",
@@ -5912,7 +5912,7 @@ const contactsData = `{
           "City": "Wolverhampton",
           "County": "Wolverhampton",
           "Latitude": "52.583103",
-          "Longitude": "-2.126407&#10;"
+          "Longitude": "-2.126407"
       },
       {
           "CustomerID": "20009",
