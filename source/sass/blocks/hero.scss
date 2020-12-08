@@ -7,6 +7,22 @@
 
   z-index: 1;
 
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url("../img/content/fork-lg@1x.png");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+
+  //   @include retina {
+  //     background-image: url("../img/content/fork-lg@2x.png");
+  //   }
+
   @include viewport--xl {
     padding-top: 134px;
     padding-bottom: 74px;

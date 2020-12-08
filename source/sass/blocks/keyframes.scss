@@ -10,11 +10,11 @@
 
 @keyframes move-in-top-100 {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(-12deg);
   }
 
   100% {
-    transform: translateY(-100px);
+    transform: translateY(-100px) rotate(-12deg);
   }
 }
 
@@ -30,11 +30,11 @@
 
 @keyframes move-to-bottom-50 {
   0% {
-    transform: translateY(0);
+    transform: translateY(0) rotate(-24deg);
   }
 
   100% {
-    transform: translateY(50px);
+    transform: translateY(50px) rotate(-24deg);
   }
 }
 
