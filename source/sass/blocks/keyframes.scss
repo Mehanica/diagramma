@@ -27,11 +27,18 @@
 
 @keyframes move-in-top-35 {
   0% {
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(0) rotate(-12deg);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0) rotate(-12deg);
   }
 
   100% {
-    transform: translateY(-35px);
+    opacity: 1;
+    transform: translateY(-35px) rotate(-12deg);
   }
 }
 
