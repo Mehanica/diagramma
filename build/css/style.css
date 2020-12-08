@@ -2120,8 +2120,8 @@ button,
   .hero .pulse {
     -webkit-animation-name: pulse;
             animation-name: pulse;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -2145,6 +2145,12 @@ button,
   .hero .d-2000 {
     -webkit-animation-delay: 2s;
             animation-delay: 2s; }
+  .hero .d-3000 {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s; }
+  .hero .d-4000 {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s; }
 
 .main-nav {
   display: -webkit-box;
@@ -3426,14 +3432,26 @@ button,
   .page-error .pulse {
     -webkit-animation-name: pulse;
             animation-name: pulse;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
+  .page-error .d-1000 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+  .page-error .d-2000 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s; }
+  .page-error .d-3000 {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s; }
+  .page-error .d-4000 {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s; }
 
 .page-error-main {
   position: relative;
