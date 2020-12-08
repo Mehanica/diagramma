@@ -278,7 +278,7 @@
 
   .pulse {
     animation-name: pulse;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
@@ -298,5 +298,13 @@
 
   .d-2000 {
     animation-delay: 2s;
+  }
+
+  .d-3000 {
+    animation-delay: 3s;
+  }
+
+  .d-4000 {
+    animation-delay: 4s;
   }
 }
