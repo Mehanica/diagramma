@@ -55,6 +55,11 @@
     line-height: 112px;
     font-family: 'El Messiri';
 
+    @media(max-width: 1279px) {
+      font-size: 86px;
+      line-height: 96px;
+    }
+
     @include viewport--md {
       font-size: 96px;
       line-height: 84px;

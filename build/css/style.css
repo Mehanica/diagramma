@@ -1958,6 +1958,10 @@ button,
     font-size: 106px;
     line-height: 112px;
     font-family: 'El Messiri'; }
+    @media (max-width: 1279px) {
+      .hero__title {
+        font-size: 86px;
+        line-height: 96px; } }
     @media (max-width: 1023px) {
       .hero__title {
         font-size: 96px;
@@ -2128,6 +2132,9 @@ button,
     height: 112px;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
+    @media (max-width: 1439px) {
+      .hero__preloader-img {
+        top: 38%; } }
     @media (max-width: 767px) {
       .hero__preloader-img {
         top: 58%;
