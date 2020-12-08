@@ -1332,6 +1332,7 @@ button,
     height: 100%;
     border: 1px solid #0c4c42;
     border-radius: 50%;
+    cursor: pointer;
     -webkit-transition: border-color 0.3s ease;
     transition: border-color 0.3s ease; }
     .social__link svg {
