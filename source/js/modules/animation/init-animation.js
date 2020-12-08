@@ -29,20 +29,22 @@ const initAnimation = () => {
   }
 
   window.addEventListener('load', () => {
-    wrapper.classList.remove('page-landing--loading');
-    body.style = 'overflow: auto;';
+    setTimeout(() => {
+      wrapper.classList.remove('page-landing--loading');
+      body.style = 'overflow: auto;';
 
-    if (heroBlock) {
-      setTimeout(() => {
-        heroBlock.classList.add('show');
-      }, 200);
-    }
+      if (heroBlock) {
+        setTimeout(() => {
+          heroBlock.classList.add('show');
+        }, 200);
+      }
 
-    if (productsBlock) {
-      setTimeout(() => {
-        productsBlock.classList.add('show');
-      }, 300);
-    }
+      if (productsBlock) {
+        setTimeout(() => {
+          productsBlock.classList.add('show');
+        }, 300);
+      }
+    }, 500);
   });
 };
 
