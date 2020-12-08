@@ -2126,12 +2126,15 @@ button,
   .hero__preloader-img {
     display: block;
     position: absolute;
-    top: calc(50% - 56px);
+    top: 47%;
     left: calc(50% - 56px);
     width: 112px;
     height: 112px;
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
+    @media (max-width: 1559px) {
+      .hero__preloader-img {
+        top: 44%; } }
     @media (max-width: 1439px) {
       .hero__preloader-img {
         top: 42%; } }
