@@ -1812,7 +1812,8 @@ button,
   .page-landing--loading .hero__bg img {
     opacity: 0; }
   .page-landing--loading .hero__preloader-img img {
-    opacity: 1; }
+    opacity: 1;
+    display: block; }
 
 .section {
   margin-bottom: 132px; }
@@ -2142,7 +2143,7 @@ button,
       width: 100%;
       height: 100%;
       min-width: auto;
-      opacity: 1; }
+      display: none; }
   .hero .pulse {
     -webkit-animation-name: pulse;
             animation-name: pulse;
