@@ -281,25 +281,36 @@
   &__preloader-img {
     display: block;
     position: absolute;
-    top: 43%;
-    left: 43%;
+    top: calc(50% - 56px);
+    left: calc(50% - 56px);
 
     width: 112px;
     height: 112px;
     // opacity: 1;
     transition: opacity $extended-transition-settings;
 
+
+
     @include viewport--lg {
-      top: 38%;
+      top: 42%;
+    }
+
+    @media(max-width: 1199px) {
+      top: 35%;
+    }
+
+    @include viewport--md {
+      top: 42%;
     }
 
     @include viewport--sm {
-      top: 58%;
-      left: 40%;
+      top: 53%;
+      // left: 40%;
     }
 
     @include viewport--xs {
-      left: 36%;
+      top: 58%;
+      // left: 36%;
     }
 
     img {
