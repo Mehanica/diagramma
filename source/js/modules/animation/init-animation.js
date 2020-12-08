@@ -2,6 +2,7 @@ const screens = document.querySelectorAll('.animation-group');
 const wrapper = document.querySelector('.page-landing');
 const heroBlock = document.querySelector('.hero');
 const productsBlock = document.querySelector('.products');
+const body = document.querySelector('body');
 
 let elTop;
 let windowHeight;
@@ -29,6 +30,7 @@ const initAnimation = () => {
 
   window.addEventListener('load', () => {
     wrapper.classList.remove('page-landing--loading');
+    body.style = 'overflow: auto;';
 
     if (heroBlock) {
       setTimeout(() => {

@@ -25,6 +25,8 @@ body {
   font-family: $font-family--Ubuntu;
   color: $color-default-white;
 
+  overflow: hidden;
+
   background-color: $color-dark-green-2;
 
   -webkit-font-smoothing: antialiased;
