@@ -9,7 +9,7 @@ const openMenu = () => {
   headerMenuToggle.ariaPressed = 'true';
   mainMenu.classList.add('header__menu-wrapper--active');
 
-  // window.disableBodyScroll(mainMenu);
+  window.disableBodyScroll(mainMenu);
 
   document.addEventListener('keydown', (evt) => {
     onEscPress(evt);
