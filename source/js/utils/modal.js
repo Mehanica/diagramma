@@ -21,6 +21,9 @@ const closeModal = (modal, callback, preventScrollLock) => {
     setTimeout(() => {
       window.enableBodyScroll(modal);
     }, 300);
+    setTimeout(() => {
+      document.querySelector('body').style.overflow = 'auto';
+    }, 310);
   }
 };
 
