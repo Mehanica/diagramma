@@ -18,22 +18,55 @@
   background-color: $color-dark-green;
 
   @include viewport--xl {
+    grid-template-areas: "header figure"
+    "heading figure"
+    "description figure"
+    "ingredients-heading figure"
+    "ingredients-list figure"
+    "instructions-heading instructions-heading"
+    "instructions-list instructions-list"
+    "share share";
     grid-template-columns: calc(47% - 12.7%) 53%;
+
     grid-column-gap: 12.7%;
   }
 
   @include viewport--lg {
+    grid-template-areas: "header figure"
+    "heading figure"
+    "description figure"
+    "ingredients-heading figure"
+    "ingredients-list figure"
+    "instructions-heading instructions-heading"
+    "instructions-list instructions-list"
+    "share share";
     grid-template-columns: calc(56% - 8%) 44%;
     grid-column-gap: 8%;
   }
 
   @include viewport--md {
+    grid-template-areas: "header figure"
+    "heading figure"
+    "description figure"
+    "ingredients-heading figure"
+    "ingredients-list figure"
+    "instructions-heading instructions-heading"
+    "instructions-list instructions-list"
+    "share share";
     grid-template-columns: calc(56% - 3%) 44%;
     grid-column-gap: 3%;
     padding: 40px;
   }
 
   @include viewport--sm {
+    grid-template-areas: "header figure"
+    "heading figure"
+    "description figure"
+    "ingredients-heading figure"
+    "ingredients-list figure"
+    "instructions-heading instructions-heading"
+    "instructions-list instructions-list"
+    "share share";
     display: block;
 
     padding: 12px;
