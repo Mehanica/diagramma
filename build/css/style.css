@@ -3811,8 +3811,7 @@ button,
 .animation-group.show .hero__preloader-img,
 .hero.show .hero__preloader-img,
 .products.show .hero__preloader-img {
-  display: none;
-  opacity: 0; }
+  display: none; }
 
 .animation-group.show .d-100,
 .hero.show .d-100,
