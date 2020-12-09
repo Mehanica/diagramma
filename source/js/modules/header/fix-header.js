@@ -1,7 +1,7 @@
 const header = document.querySelector('header');
 
 const toggleHeaderState = () => {
-  if (window.scrollY > 0) {
+  if (window.pageYOffset > 0) {
     header.classList.add('header--bg-colored');
   } else {
     header.classList.remove('header--bg-colored');

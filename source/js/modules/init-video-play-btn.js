@@ -15,7 +15,9 @@ const initVideoPlayBtn = () => {
         }
       };
 
-      breakpointChecker();
+      if (breakpoint.matches) {
+        breakpointChecker();
+      }
       breakpoint.addListener(breakpointChecker);
 
       const playBtnHandler = () => {
@@ -35,11 +37,11 @@ const initVideoPlayBtn = () => {
 
       video.addEventListener('playing', function () {
         circlePlayButton.style.opacity = 0;
-        video.parentElement.querySelector('.video__overlay').style = 'display: none';
+        video.parentElement.querySelector('.video__overlay').style.display = 'none';
       });
       video.addEventListener('pause', function () {
         circlePlayButton.style.opacity = 1;
-        video.parentElement.querySelector('.video__overlay').style = 'display: block';
+        video.parentElement.querySelector('.video__overlay').style.display = 'block';
 
         circlePlayButton.addEventListener('click', playBtnHandler);
       });

@@ -31,7 +31,7 @@ const initAnimation = () => {
   window.addEventListener('load', () => {
     setTimeout(() => {
       wrapper.classList.remove('page-landing--loading');
-      body.style = 'overflow: auto;';
+      body.style.overflow = 'auto';
 
       if (heroBlock) {
         setTimeout(() => {

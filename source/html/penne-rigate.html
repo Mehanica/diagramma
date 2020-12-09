@@ -5,7 +5,7 @@
   @@include("source/html/base/head.html", {
     "recipe": "penne-rigate"
   })
-  <title>ProjectName — Main</title>
+  <title>MAKFA — Penne Rigate</title>
 
 </head>
 <body>
@@ -14,7 +14,7 @@
     @@include("build/img/sprite_auto.svg")
   </div>
 
-  <div class="wrapper page-landing page-landing--loading js-page-recipe js-page-recipe--campanelle">
+  <div class="wrapper page-landing page-landing--loading js-page-recipe">
     @@include("source/html/base/header.html", {
       "main": true
     })
@@ -38,17 +38,28 @@
             <p class="hero__content-text fil-4ms d-400">You can refine everything using a&nbsp;right tool. Using a&nbsp;bronze die equipment instead of&nbsp;teflon die we&nbsp;create our delicious pasta, which absorbs more sauce and makes your meal a&nbsp;step closer to&nbsp;perfection.</p>
           </div>
           <div class="hero__bg">
-            <picture class="fi">
+            <picture>
               <source type="image/webp" srcset="img/content/fork-lg@1x.webp 1x, img/content/fork-lg@2x.webp 2x"/>
               <img src="img/content/fork-lg@1x.png" srcset="img/content/fork-lg@2x.png 2x" width="168" height="49" alt="Fork with pasta"/>
             </picture>
-            <div class="hero__circles-bg" aria-label="presentation"><div class="hero__circles grow"></div></div>
-            <!-- <div class="hero__circles-bg" aria-label="presentation"><div class="hero__circles grow-2 d-800"></div></div> -->
+
+            <div class="hero__circles-bg" aria-label="presentation">
+              <div class="hero__circles pulse"></div>
+              <div class="hero__circles pulse d-2000"></div>
+              <div class="hero__circles pulse d-4000"></div>
+
+              <div class="hero__preloader-img spin">
+                <picture>
+                  <source type="image/webp" srcset="img/bg/farfalle-preloader@1x.webp 1x, img/bg/farfalle-preloader@2x.webp 2x"/>
+                  <img src="img/bg/farfalle-preloader@1x.png" srcset="img/bg/farfalle-preloader@2x.png 2x" width="112" height="112" alt="Farfalle"/>
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section products container animation-group scrl-bl" id="products">
+      <section class="section products container scrl-bl" id="products">
         <div class="products__inner">
           <span class="section__category fil-3ms">Types of pasta</span>
           <h2 class="section__heading fil-4ms d-100">Product</h2>
@@ -127,7 +138,7 @@
                   <img src="img/content/products/penne-rigate@1x.png" srcset="img/content/products/penne-rigate@2x.png 2x" width="138" height="197" alt="penne-rigate"/>
                 </picture>
               </div>
-              <p class="products__name">Penne rigate</p>
+              <p class="products__name">Penne Rigate</p>
             </li>
             <li class="products__item fi d-1100">
               <div class="products__pasta-photo">
@@ -155,7 +166,7 @@
           <p class="section__intro video__intro fil-4ms d-400">Simple pasta made with teflon die sure gives you an opportunity to cook something nice. But can you imagine an Italian chef being satisfied with «nice»? We can’t either. That’s why we follow traditional Italian ways and use bronze die instead. Watch our video and see the difference between just pasta and masterpiece of cooking.</p>
 
           <div class="video__wrapper fil-4ms d-800">
-            <video class="video__container" width="1468" height="656">
+            <video class="video__container" poster="img/bg/video-bg.jpg" width="1468" height="656">
               <source src="video/bronze-vs-teflon.mp4">
             </video>
 
@@ -330,7 +341,7 @@
                   <span class="recipe-preview__serves">4</span>
                 </p>
               </div>
-              <h3 class="recipe-preview__heading">Penne rigate</h3>
+              <h3 class="recipe-preview__heading">Penne Rigate</h3>
               <p class="recipe-preview__description">with fried rocket, prawns and double cream</p>
             </a>
           </li>
@@ -366,14 +377,14 @@
           </li>
         </ul>
 
-        <div class="recipes__figure mtb-50 d-500">
+        <div class="recipes__figure mtb-50">
           <picture>
             <source type="image/webp" srcset="img/bg/farfalle-1@1x.webp 1x, img/bg/farfalle-1@2x.webp 2x">
             <img src="img/bg/farfalle-1@1x.png" srcset="img/bg/farfalle-1@2x.png 2x" width="162" height="168" alt="Picture">
           </picture>
         </div>
 
-        <div class="recipes__figure recipes__figure--2 mit-100 d-500">
+        <div class="recipes__figure recipes__figure--2 mit-100">
           <picture>
             <source type="image/webp" srcset="img/bg/farfalle-2@1x.webp 1x, img/bg/farfalle-2@2x.webp 2x">
             <img src="img/bg/farfalle-2@1x.png" srcset="img/bg/farfalle-2@2x.png 2x" width="164" height="164" alt="Picture">
@@ -441,7 +452,7 @@
               </a>
             </li>
             <li class="b2b__contacts-item fi d-800">
-              <a class="b2b__partner-link b2b__partner-link--website" href="http://shop.monolith.mobi">
+              <a class="b2b__partner-link b2b__partner-link--website" href="http://shop.monolith.mobi" target="_blank" rel="nofollow noopener">
                 <span class="b2b__partner-link-img">
                   <svg width="64" height="70" focusable="false">
                     <use xlink:href="#icon-website"></use>
