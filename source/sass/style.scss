@@ -2,7 +2,6 @@
 //---------------------------------
 
 @import "vendor/normalize";
-@import "vendor/swiper";
 
 // Global
 //---------------------------------
@@ -17,7 +16,9 @@
 // Blocks
 //---------------------------------
 
-// @import "blocks/btn.scss";
+@import "blocks/diagram";
+@import "blocks/animation";
+@import "blocks/keyframes";
 
 
 

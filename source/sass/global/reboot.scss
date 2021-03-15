@@ -22,19 +22,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: $font-family--Ubuntu;
-  color: $color-default-white;
+  font-family: $font-family--GothamPro;
+  color: $color-matterhorn;
 
   overflow: hidden;
 
-  background-color: $color-dark-green-2;
+  background-color: $color-whisper;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: $color-default-white;
+  color: $color-default-black;
   text-decoration: none;
 }
 
